@@ -1,4 +1,4 @@
-import { Fustat} from "next/font/google";
+import { Fustat } from "next/font/google";
 import localFont from "next/font/local";
 import "./style/globals.css";
 
@@ -17,7 +17,7 @@ const HelveticaNowDisplay = localFont({
       path: "../../public/fonts/helvetica-now-display/HelveticaNowDisplay-Regular.ttf",
       weight: "400",
       style: "normal",
-    }
+    },
   ],
 });
 
@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${HelveticaNowDisplay.variable} ${segoeUi.variable} ${theBoldFont.variable} ${fustate.variable} antialiased`}
+        className={`${fustate.variable} ${HelveticaNowDisplay.variable} ${segoeUi.variable} ${theBoldFont.variable} antialiased`}
       >
         {children}
       </body>
