@@ -1,14 +1,48 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fustat} from "next/font/google";
+import localFont from "next/font/local";
 import "./style/globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fustate = Fustat({
+  variable: "--font-fustate",
   subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const HelveticaNowDisplay = localFont({
+  variable: "--font-Helvetica-Now-Display",
+  display: "swap",
+  src: [
+    {
+      path: "../../public/fonts/helvetica-now-display/HelveticaNowDisplay-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    }
+  ],
+});
+
+const segoeUi = localFont({
+  variable: "--font-segoeUi",
+  display: "swap",
+  src: [
+    {
+      path: "../../public/fonts/segoe-ui-this/segoeuithis.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+});
+
+const theBoldFont = localFont({
+  variable: "--font-the-bold",
+  display: "swap",
+  src: [
+    {
+      path: "../../public/fonts/the_bold_font/THEBOLDFONT-FREEVERSION.ttf",
+      weight: "700",
+      style: "bold",
+    },
+  ],
 });
 
 export const metadata = {
@@ -20,7 +54,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${HelveticaNowDisplay.variable} ${segoeUi.variable} ${theBoldFont.variable} ${fustate.variable} antialiased`}
       >
         {children}
       </body>
