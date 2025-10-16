@@ -1,44 +1,56 @@
-import { Fustat } from "next/font/google";
 import localFont from "next/font/local";
 import "./style/globals.css";
 
-const fustate = Fustat({
-  variable: "--font-fustate",
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
-  display: "swap",
-});
-
-const HelveticaNowDisplay = localFont({
-  variable: "--font-Helvetica-Now-Display",
-  display: "swap",
+// Fustat
+const fustat = localFont({
   src: [
     {
-      path: "../../public/fonts/helvetica-now-display/HelveticaNowDisplay-Regular.ttf",
+      path: "./fonts/Fustat/static/Fustat-Regular.ttf",
       weight: "400",
-      style: "normal",
+      style: "regular",
+    },
+    {
+      path: "./fonts/Fustat/static/Fustat-Medium.ttf",
+      weight: "500",
+      style: "medium",
+    },
+    {
+      path: "./fonts/Fustat/static/Fustat-SemiBold.ttf",
+      weight: "600",
+      style: "semibold",
     },
   ],
+  variable: "--font-fustat",
+  display: "swap",
 });
 
+// Helvetica Now
+const helveticaNow = localFont({
+  src: "./fonts/helvetica-now-display/HelveticaNowDisplay-Regular.ttf",
+  variable: "--font-helvetica-now",
+  display: "swap",
+});
+
+// Segoe UI
 const segoeUi = localFont({
   variable: "--font-segoeUi",
   display: "swap",
   src: [
     {
-      path: "../../public/fonts/segoe-ui-this/segoeuithis.ttf",
+      path: "./fonts/segoe-ui-this/segoeuithis.ttf",
       weight: "400",
       style: "normal",
     },
   ],
 });
 
+// The Bold Font
 const theBoldFont = localFont({
   variable: "--font-the-bold",
   display: "swap",
   src: [
     {
-      path: "../../public/fonts/the_bold_font/THEBOLDFONT-FREEVERSION.ttf",
+      path: "./fonts/the_bold_font/THEBOLDFONT-FREEVERSION.ttf",
       weight: "700",
       style: "bold",
     },
@@ -54,7 +66,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${fustate.variable} ${HelveticaNowDisplay.variable} ${segoeUi.variable} ${theBoldFont.variable} antialiased`}
+        className={`${fustat.variable} ${helveticaNow.variable} ${segoeUi.variable} ${theBoldFont.variable} antialiased`}
       >
         {children}
       </body>
