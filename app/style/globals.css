@@ -87,15 +87,15 @@ h4 {
   font-size: 28px;
 }
 
-h5{
+h5 {
   font-size: 20px;
 }
 
-h6{
+h6 {
   font-size: 18px;
 }
 
-.f-12{
+.f-12 {
   font-size: 12px;
 }
 
@@ -112,39 +112,39 @@ h6{
   padding-bottom: 120px;
 }
 
-.p-70{
+.p-70 {
   padding: 70px;
 }
 
-.p-46{
+.p-46 {
   padding: 46px;
 }
 
-.p-25{
+.p-25 {
   padding: 25px;
 }
 
-.p-24{
+.p-24 {
   padding: 24px;
 }
 
-.p-20{
+.p-20 {
   padding: 20px;
 }
 
-.p-18{
+.p-18 {
   padding: 18px;
 }
 
-.p-15{
+.p-15 {
   padding: 15px;
 }
 
-.p-16{
+.p-16 {
   padding: 16px;
 }
 
-.price-box-padding{
+.price-box-padding {
   padding: 30px 22px;
 }
 
@@ -153,24 +153,22 @@ h6{
   font-size: 14px;
   font-weight: 700;
   border-radius: 6px;
-  font-family: var(--font-the-bold);
 }
 
 .btn-sm {
   padding: 16px;
   font-size: 16;
-  font-family: var(--font-segoeUi);
   border-radius: 100px;
 }
 
 .btn-md {
   padding: 12px 27px;
   font-size: 16px;
+  font-weight: 600;
 }
 
 .btn-lg {
   padding: 14px 90px;
-  font-weight: 700;
   font-size: 14px;
 }
 
@@ -185,6 +183,11 @@ h6{
   border: 1px solid #6c8e69;
   background: #d4dace;
   color: #6c8e69;
+}
+
+.btn-green {
+  background-color: #839e73;
+  color: white;
 }
 
 .btn-tertiary {
@@ -210,6 +213,12 @@ h6{
 .navbar {
 }
 
+.navbar-menu {
+  background-color: #fff;
+  padding: 16px 24px;
+  border-radius: 6px;
+}
+
 .navbar.scroll-down {
 }
 
@@ -220,9 +229,9 @@ h6{
 }
 
 .navbar .nav-link {
-  padding: 10px 6px;
-  transition: all 0.2s;
-  font-weight: 400;
+  padding: ;
+  transition: ;
+  font-weight: ;
 }
 
 .nav-icon {
@@ -242,15 +251,11 @@ h6{
 /* footer-section */
 
 @media screen and (min-width: 1279.97px) {
-
 }
-
 
 /* ------------ */
 
-
 @media screen and (max-width: 1399.97px) {
-
 }
 
 @media screen and (max-width: 1199.97px) {

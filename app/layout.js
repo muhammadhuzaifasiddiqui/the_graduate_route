@@ -37,9 +37,14 @@ const segoeUi = localFont({
   display: "swap",
   src: [
     {
-      path: "./fonts/segoe-ui-this/segoeuithis.ttf",
+      path: "./fonts/segoe-ui-this/Segoe UI Regular.ttf",
       weight: "400",
-      style: "normal",
+      style: "regular",
+    },
+    {
+      path: "./fonts/segoe-ui-this/3868-font.ttf",
+      weight: "600",
+      style: "semibold",
     },
   ],
 });

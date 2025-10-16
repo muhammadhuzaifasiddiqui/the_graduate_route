@@ -33,14 +33,14 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className="navbar absolute w-full left-0 px-3 md:px-3.5 lg:px-5"
+        className="navbar absolute top-[17px] w-full"
         id="navbar"
       >
-        <div className="w-full container nav-container mx-auto relative left-0">
+        <div className="w-full container mx-auto relative">
           <div className="bg-navbar flex justify-between items-center rounded-[30px]">
             <div className="logo-wrapper cursor-pointer">
               <Image
-                src={"/images/logo.svg"}
+                src={"/images/graduate-rout-logo.svg"}
                 width={151}
                 height={23}
                 alt="logo"
@@ -48,50 +48,27 @@ const Navbar = () => {
                 className="w-full! h-full! object-contain"
               />
             </div>
-            <div className="lg:flex hidden navbar-menu items-center justify-center gap-2 xl:gap-8">
-              <a className="fs-16 nav-link fw-normal active" href="#navbar">
+            <div className="lg:flex hidden navbar-menu items-center justify-center gap-6">
+              <a className="fs-14 font-segoeUi text-black" href="#navbar">
                 Home
               </a>
-              <a className="fs-16 nav-link font-normal" href="#trusted">
-                About
+              <a className="fs-14 font-segoeUi text-black" href="#ourmission">
+                Our Mission
               </a>
-              <a className="fs-16 nav-link font-normal" href="#service">
-                Services
+              <a className="fs-14 font-segoeUi text-black" href="#process">
+                How it Works
               </a>
-              <a className="fs-16 nav-link font-normal" href="#product">
-                Products
+              <a className="fs-14 font-segoeUi text-black" href="#testimonials">
+                Testimonials
               </a>
-              <a className="fs-16 nav-link font-normal" href="#blog">
-                Locations
-              </a>
-              <a className="fs-16 nav-link font-normal" href="#book">
-                Articles
+              <a className="fs-14 font-segoeUi text-black" href="#faqs">
+                FAQS
               </a>
             </div>
 
-            <div className="lg:flex hidden navbar-button gap-2">
-              <div className="nav-icon p-[10px] rounded-full">
-                <Image
-                  src={"/images/bag-2.svg"}
-                  width={20}
-                  height={20}
-                  alt="cart"
-                  unoptimized={true}
-                  className="w-full! h-full! object-cover cursor-pointer"
-                />
-              </div>
-              <div className="nav-icon p-[10px] rounded-full">
-                <Image
-                  src={"/images/profile.svg"}
-                  width={20}
-                  height={20}
-                  alt="cart"
-                  unoptimized={true}
-                  className="w-full! h-full! object-cover cursor-pointer"
-                />
-              </div>
-              <a href="#" className="btn btn-primary btn-sm fs-14 font-normal">
-                Login
+            <div className="lg:flex hidden">
+              <a href="#" className="btn btn-green btn-md font-segoeUi">
+                Contact Us
               </a>
             </div>
 
