@@ -10,8 +10,8 @@ body {
 }
 
 img {
-  height: auto;
-  width: auto;
+  height: auto !important;
+  width: auto !important;
   max-width: 100%;
 }
 
@@ -48,19 +48,19 @@ img {
 }
 
 .bg-light-green {
-  color: #d4dace;
+  background-color: #d4dace;
 }
 
 .bg-dark-green {
-  color: #6c8e69;
+  background-color: #6c8e69;
 }
 
 .bg-green {
-  color: #839e73;
+  background-color: #839e73;
 }
 
 .bg-primary {
-  background: #f4f3ee;
+  background-color: #f4f3ee;
 }
 
 .bg-light-gray {
@@ -112,8 +112,16 @@ h6 {
   padding-bottom: 120px;
 }
 
-.p-70 {
-  padding: 70px;
+.process-box-padding {
+  padding: 44px 70px;
+}
+
+.price-box-padding {
+  padding: 30px 22px;
+}
+
+.blog-box-padding{
+  padding: 16px 16px 20px 16px;
 }
 
 .p-46 {
@@ -142,10 +150,6 @@ h6 {
 
 .p-16 {
   padding: 16px;
-}
-
-.price-box-padding {
-  padding: 30px 22px;
 }
 
 .btn {
@@ -240,11 +244,21 @@ h6 {
 .nav-toggle-btn {
 }
 
-/* hero-section */
-/* service-section */
-/* product-section */
-/* trusted-section */
+/* HERO-SECTION */
+.hero-section {
+  background: rgba(190, 201, 184, 0.6);
+}
+.hero-section .image-wrapper {
+  width: 645px;
+  height: 610px;
+}
+/* STATISTICS-SECTION */
+/* WHAT-WE-DO-SECTION */
+/* PROCESS-SECTION */
 /* blog-section */
+.blog-section .imaege-wrapper{
+ width: 100%; 
+}
 /* marquee-section */
 /* book-now-section */
 /* contact-section */

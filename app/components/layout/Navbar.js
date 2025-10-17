@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className="navbar absolute top-[17px] w-full"
+        className="navbar absolute top-[17px] w-full z-10"
         id="navbar"
       >
         <div className="w-full container mx-auto relative">
