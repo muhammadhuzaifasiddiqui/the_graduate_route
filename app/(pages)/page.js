@@ -573,247 +573,613 @@ export default function Home() {
               </h3>
             </div>
             <div className="grid grid-cols-3 gap-5 mt-12.5">
-              <div className="bg-white price-box price-box-padding rounded-[16px]">
-                <div className="inline-block bg-dark-green rounded-[70px] px-[23px] py-[6px]">
-                  <span className="font-segoeUi font-semibold text-white">
+              <div className="bg-white price-box price-box-padding rounded-[16px] hover:bg-[#6C8E69] group transition duration-300 ease-in-out">
+                <div className="inline-block bg-dark-green rounded-[70px] px-[23px] py-[6px] group-hover:bg-white!">
+                  <span className="font-segoeUi font-semibold text-white group-hover:text-black">
                     Basic
                   </span>
                 </div>
-                <p className="fs-18 text-black leading-[145%] mt-7.5">
+                {/* Text color remains black (already black in the default state) */}
+                <p className="fs-18 text-black group-hover:text-white leading-[145%] mt-7.5">
                   Get 100 headshots with 10 unique backdrops and outfits.
                 </p>
-                <hr className="mt-5 opacity-[0.4]" />
+                {/* HR color changes to white with 50% opacity on hover */}
+                <hr className="mt-5 opacity-[0.4] group-hover:opacity-[0.5] group-hover:border-white" />
                 <div className="flex flex-col gap-3 py-5">
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={"/images/right-tick.png"}
-                      width={24}
-                      height={24}
-                      alt="right-tick"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <h5 className="leading-[160%] text-black">
+                  <div className="flex items-center gap-3 group-hover:text-white!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="transition duration-150"
+                    >
+                      <g clipPath="url(#clip0_22_4943)">
+                        <path
+                          d="M7 12L12 17L22 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
+                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
+                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                        />
+                        <path
+                          d="M2 12L7 17M12 12L17 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22_4943">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    {/* Text color remains black */}
+                    <h5 className="leading-[160%] text-black group-hover:text-white">
                       2 hours turnaround time
                     </h5>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={"/images/right-tick.png"}
-                      width={24}
-                      height={24}
-                      alt="right-tick"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <h5 className="leading-[160%] text-black">100 headshots</h5>
+                  <div className="flex items-center gap-3 group-hover:text-white!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="transition duration-150"
+                    >
+                      <g clipPath="url(#clip0_22_4943)">
+                        <path
+                          d="M7 12L12 17L22 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
+                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
+                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                        />
+                        <path
+                          d="M2 12L7 17M12 12L17 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22_4943">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    {/* Text color remains black */}
+                    <h5 className="leading-[160%] text-black group-hover:text-white">
+                      100 headshots
+                    </h5>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={"/images/right-tick.png"}
-                      width={24}
-                      height={24}
-                      alt="right-tick"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <h5 className="leading-[160%] text-black">
+                  <div className="flex items-center gap-3 group-hover:text-white!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="transition duration-150"
+                    >
+                      <g clipPath="url(#clip0_22_4943)">
+                        <path
+                          d="M7 12L12 17L22 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
+                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
+                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                        />
+                        <path
+                          d="M2 12L7 17M12 12L17 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22_4943">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    {/* Text color remains black */}
+                    <h5 className="leading-[160%] text-black group-hover:text-white">
                       Choice of 10 backdrops
                     </h5>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={"/images/right-tick.png"}
-                      width={24}
-                      height={24}
-                      alt="right-tick"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <h5 className="leading-[160%] text-black">
+                  <div className="flex items-center gap-3 group-hover:text-white!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="transition duration-150"
+                    >
+                      <g clipPath="url(#clip0_22_4943)">
+                        <path
+                          d="M7 12L12 17L22 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
+                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
+                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                        />
+                        <path
+                          d="M2 12L7 17M12 12L17 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22_4943">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    {/* Text color remains black */}
+                    <h5 className="leading-[160%] text-black group-hover:text-white">
                       Choice of 10 outfits
                     </h5>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={"/images/right-tick.png"}
-                      width={24}
-                      height={24}
-                      alt="right-tick"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <h5 className="leading-[160%] text-black">
+                  <div className="flex items-center gap-3 group-hover:text-white!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="transition duration-150"
+                    >
+                      <g clipPath="url(#clip0_22_4943)">
+                        <path
+                          d="M7 12L12 17L22 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
+                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
+                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                        />
+                        <path
+                          d="M2 12L7 17M12 12L17 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22_4943">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    {/* Text color remains black */}
+                    <h5 className="leading-[160%] text-black group-hover:text-white">
                       10 edit credits
                     </h5>
                   </div>
+                  {/* Button style changes on hover of the parent div */}
                   <Link
                     href="#"
-                    className="btn btn-secondary font-the-bold text-center"
+                    className="btn btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
+                    group-hover:bg-[#6C8E69]! group-hover:shadow-[0_4px_0_0_#1E1E1E] group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
+                    group-hover:hover:translate-y-[2px]"
                   >
                     GET IN TOUCH
                   </Link>
                 </div>
               </div>
-              <div className="bg-white price-box price-box-padding rounded-[16px]">
-                <div className="inline-block bg-dark-green rounded-[70px] px-[23px] py-[6px]">
-                  <span className="font-segoeUi font-semibold text-white">
+              <div className="bg-white price-box price-box-padding rounded-[16px] hover:bg-[#6C8E69] group transition duration-300 ease-in-out">
+                <div className="inline-block bg-dark-green rounded-[70px] px-[23px] py-[6px] group-hover:bg-white!">
+                  <span className="font-segoeUi font-semibold text-white group-hover:text-black">
                     Professional
                   </span>
                 </div>
-                <p className="fs-18 text-black leading-[145%] mt-7.5">
+                {/* Text color remains black (already black in the default state) */}
+                <p className="fs-18 text-black group-hover:text-white leading-[145%] mt-7.5">
                   Get 100 headshots with 10 unique backdrops and outfits.
                 </p>
-                <hr className="mt-5 opacity-[0.4]" />
+                {/* HR color changes to white with 50% opacity on hover */}
+                <hr className="mt-5 opacity-[0.4] group-hover:opacity-[0.5] group-hover:border-white" />
                 <div className="flex flex-col gap-3 py-5">
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={"/images/right-tick.png"}
-                      width={24}
-                      height={24}
-                      alt="right-tick"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <h5 className="leading-[160%] text-black">
+                  <div className="flex items-center gap-3 group-hover:text-white!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="transition duration-150"
+                    >
+                      <g clipPath="url(#clip0_22_4943)">
+                        <path
+                          d="M7 12L12 17L22 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
+                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
+                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                        />
+                        <path
+                          d="M2 12L7 17M12 12L17 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22_4943">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    {/* Text color remains black */}
+                    <h5 className="leading-[160%] text-black group-hover:text-white">
                       2 hours turnaround time
                     </h5>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={"/images/right-tick.png"}
-                      width={24}
-                      height={24}
-                      alt="right-tick"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <h5 className="leading-[160%] text-black">100 headshots</h5>
+                  <div className="flex items-center gap-3 group-hover:text-white!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="transition duration-150"
+                    >
+                      <g clipPath="url(#clip0_22_4943)">
+                        <path
+                          d="M7 12L12 17L22 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
+                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
+                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                        />
+                        <path
+                          d="M2 12L7 17M12 12L17 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22_4943">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    {/* Text color remains black */}
+                    <h5 className="leading-[160%] text-black group-hover:text-white">
+                      100 headshots
+                    </h5>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={"/images/right-tick.png"}
-                      width={24}
-                      height={24}
-                      alt="right-tick"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <h5 className="leading-[160%] text-black">
+                  <div className="flex items-center gap-3 group-hover:text-white!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="transition duration-150"
+                    >
+                      <g clipPath="url(#clip0_22_4943)">
+                        <path
+                          d="M7 12L12 17L22 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
+                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
+                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                        />
+                        <path
+                          d="M2 12L7 17M12 12L17 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22_4943">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    {/* Text color remains black */}
+                    <h5 className="leading-[160%] text-black group-hover:text-white">
                       Choice of 10 backdrops
                     </h5>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={"/images/right-tick.png"}
-                      width={24}
-                      height={24}
-                      alt="right-tick"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <h5 className="leading-[160%] text-black">
+                  <div className="flex items-center gap-3 group-hover:text-white!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="transition duration-150"
+                    >
+                      <g clipPath="url(#clip0_22_4943)">
+                        <path
+                          d="M7 12L12 17L22 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
+                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
+                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                        />
+                        <path
+                          d="M2 12L7 17M12 12L17 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22_4943">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    {/* Text color remains black */}
+                    <h5 className="leading-[160%] text-black group-hover:text-white">
                       Choice of 10 outfits
                     </h5>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={"/images/right-tick.png"}
-                      width={24}
-                      height={24}
-                      alt="right-tick"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <h5 className="leading-[160%] text-black">
+                  <div className="flex items-center gap-3 group-hover:text-white!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="transition duration-150"
+                    >
+                      <g clipPath="url(#clip0_22_4943)">
+                        <path
+                          d="M7 12L12 17L22 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
+                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
+                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                        />
+                        <path
+                          d="M2 12L7 17M12 12L17 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22_4943">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    {/* Text color remains black */}
+                    <h5 className="leading-[160%] text-black group-hover:text-white">
                       10 edit credits
                     </h5>
                   </div>
+                  {/* Button style changes on hover of the parent div */}
                   <Link
                     href="#"
-                    className="btn btn-secondary font-the-bold text-center"
+                    className="btn btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
+                    group-hover:bg-[#6C8E69]! group-hover:shadow-[0_4px_0_0_#1E1E1E] group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
+                    group-hover:hover:translate-y-[2px]"
                   >
                     GET IN TOUCH
                   </Link>
                 </div>
               </div>
-              <div className="bg-white price-box price-box-padding rounded-[16px]">
-                <div className="inline-block bg-dark-green rounded-[70px] px-[23px] py-[6px]">
-                  <span className="font-segoeUi font-semibold text-white">
+              <div className="bg-white price-box price-box-padding rounded-[16px] hover:bg-[#6C8E69] group transition duration-300 ease-in-out">
+                <div className="inline-block bg-dark-green rounded-[70px] px-[23px] py-[6px] group-hover:bg-white!">
+                  <span className="font-segoeUi font-semibold text-white group-hover:text-black">
                     Executive
                   </span>
                 </div>
-                <p className="fs-18 text-black leading-[145%] mt-7.5">
+                {/* Text color remains black (already black in the default state) */}
+                <p className="fs-18 text-black group-hover:text-white leading-[145%] mt-7.5">
                   Get 100 headshots with 10 unique backdrops and outfits.
                 </p>
-                <hr className="mt-5 opacity-[0.4]" />
+                {/* HR color changes to white with 50% opacity on hover */}
+                <hr className="mt-5 opacity-[0.4] group-hover:opacity-[0.5] group-hover:border-white" />
                 <div className="flex flex-col gap-3 py-5">
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={"/images/right-tick.png"}
-                      width={24}
-                      height={24}
-                      alt="right-tick"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <h5 className="leading-[160%] text-black">
+                  <div className="flex items-center gap-3 group-hover:text-white!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="transition duration-150"
+                    >
+                      <g clipPath="url(#clip0_22_4943)">
+                        <path
+                          d="M7 12L12 17L22 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
+                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
+                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                        />
+                        <path
+                          d="M2 12L7 17M12 12L17 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22_4943">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    {/* Text color remains black */}
+                    <h5 className="leading-[160%] text-black group-hover:text-white">
                       2 hours turnaround time
                     </h5>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={"/images/right-tick.png"}
-                      width={24}
-                      height={24}
-                      alt="right-tick"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <h5 className="leading-[160%] text-black">100 headshots</h5>
+                  <div className="flex items-center gap-3 group-hover:text-white!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="transition duration-150"
+                    >
+                      <g clipPath="url(#clip0_22_4943)">
+                        <path
+                          d="M7 12L12 17L22 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
+                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
+                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                        />
+                        <path
+                          d="M2 12L7 17M12 12L17 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22_4943">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    {/* Text color remains black */}
+                    <h5 className="leading-[160%] text-black group-hover:text-white">
+                      100 headshots
+                    </h5>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={"/images/right-tick.png"}
-                      width={24}
-                      height={24}
-                      alt="right-tick"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <h5 className="leading-[160%] text-black">
+                  <div className="flex items-center gap-3 group-hover:text-white!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="transition duration-150"
+                    >
+                      <g clipPath="url(#clip0_22_4943)">
+                        <path
+                          d="M7 12L12 17L22 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
+                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
+                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                        />
+                        <path
+                          d="M2 12L7 17M12 12L17 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22_4943">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    {/* Text color remains black */}
+                    <h5 className="leading-[160%] text-black group-hover:text-white">
                       Choice of 10 backdrops
                     </h5>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={"/images/right-tick.png"}
-                      width={24}
-                      height={24}
-                      alt="right-tick"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <h5 className="leading-[160%] text-black">
+                  <div className="flex items-center gap-3 group-hover:text-white!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="transition duration-150"
+                    >
+                      <g clipPath="url(#clip0_22_4943)">
+                        <path
+                          d="M7 12L12 17L22 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
+                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
+                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                        />
+                        <path
+                          d="M2 12L7 17M12 12L17 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22_4943">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    {/* Text color remains black */}
+                    <h5 className="leading-[160%] text-black group-hover:text-white">
                       Choice of 10 outfits
                     </h5>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={"/images/right-tick.png"}
-                      width={24}
-                      height={24}
-                      alt="right-tick"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <h5 className="leading-[160%] text-black">
+                  <div className="flex items-center gap-3 group-hover:text-white!">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="transition duration-150"
+                    >
+                      <g clipPath="url(#clip0_22_4943)">
+                        <path
+                          d="M7 12L12 17L22 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
+                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
+                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                        />
+                        <path
+                          d="M2 12L7 17M12 12L17 7"
+                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_22_4943">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    {/* Text color remains black */}
+                    <h5 className="leading-[160%] text-black group-hover:text-white">
                       10 edit credits
                     </h5>
                   </div>
+                  {/* Button style changes on hover of the parent div */}
                   <Link
                     href="#"
-                    className="btn btn-secondary font-the-bold text-center"
+                    className="btn btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
+                    group-hover:bg-[#6C8E69]! group-hover:shadow-[0_4px_0_0_#1E1E1E] group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
+                    group-hover:hover:translate-y-[2px]"
                   >
                     GET IN TOUCH
                   </Link>
