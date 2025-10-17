@@ -572,8 +572,253 @@ export default function Home() {
                 PRICING <span className="text-brown">PLANS</span>
               </h3>
             </div>
-            <div className="grid grid-cols-3 gap-5 mt-10">
-              {/* Price boxes would go here */}
+            <div className="grid grid-cols-3 gap-5 mt-12.5">
+              <div className="bg-white price-box price-box-padding rounded-[16px]">
+                <div className="inline-block bg-dark-green rounded-[70px] px-[23px] py-[6px]">
+                  <span className="font-segoeUi font-semibold text-white">
+                    Basic
+                  </span>
+                </div>
+                <p className="fs-18 text-black leading-[145%] mt-7.5">
+                  Get 100 headshots with 10 unique backdrops and outfits.
+                </p>
+                <hr className="mt-5 opacity-[0.4]" />
+                <div className="flex flex-col gap-3 py-5">
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={"/images/right-tick.png"}
+                      width={24}
+                      height={24}
+                      alt="right-tick"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <h5 className="leading-[160%] text-black">
+                      2 hours turnaround time
+                    </h5>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={"/images/right-tick.png"}
+                      width={24}
+                      height={24}
+                      alt="right-tick"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <h5 className="leading-[160%] text-black">100 headshots</h5>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={"/images/right-tick.png"}
+                      width={24}
+                      height={24}
+                      alt="right-tick"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <h5 className="leading-[160%] text-black">
+                      Choice of 10 backdrops
+                    </h5>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={"/images/right-tick.png"}
+                      width={24}
+                      height={24}
+                      alt="right-tick"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <h5 className="leading-[160%] text-black">
+                      Choice of 10 outfits
+                    </h5>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={"/images/right-tick.png"}
+                      width={24}
+                      height={24}
+                      alt="right-tick"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <h5 className="leading-[160%] text-black">
+                      10 edit credits
+                    </h5>
+                  </div>
+                  <Link
+                    href="#"
+                    className="btn btn-secondary font-the-bold text-center"
+                  >
+                    GET IN TOUCH
+                  </Link>
+                </div>
+              </div>
+              <div className="bg-white price-box price-box-padding rounded-[16px]">
+                <div className="inline-block bg-dark-green rounded-[70px] px-[23px] py-[6px]">
+                  <span className="font-segoeUi font-semibold text-white">
+                    Professional
+                  </span>
+                </div>
+                <p className="fs-18 text-black leading-[145%] mt-7.5">
+                  Get 100 headshots with 10 unique backdrops and outfits.
+                </p>
+                <hr className="mt-5 opacity-[0.4]" />
+                <div className="flex flex-col gap-3 py-5">
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={"/images/right-tick.png"}
+                      width={24}
+                      height={24}
+                      alt="right-tick"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <h5 className="leading-[160%] text-black">
+                      2 hours turnaround time
+                    </h5>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={"/images/right-tick.png"}
+                      width={24}
+                      height={24}
+                      alt="right-tick"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <h5 className="leading-[160%] text-black">100 headshots</h5>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={"/images/right-tick.png"}
+                      width={24}
+                      height={24}
+                      alt="right-tick"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <h5 className="leading-[160%] text-black">
+                      Choice of 10 backdrops
+                    </h5>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={"/images/right-tick.png"}
+                      width={24}
+                      height={24}
+                      alt="right-tick"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <h5 className="leading-[160%] text-black">
+                      Choice of 10 outfits
+                    </h5>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={"/images/right-tick.png"}
+                      width={24}
+                      height={24}
+                      alt="right-tick"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <h5 className="leading-[160%] text-black">
+                      10 edit credits
+                    </h5>
+                  </div>
+                  <Link
+                    href="#"
+                    className="btn btn-secondary font-the-bold text-center"
+                  >
+                    GET IN TOUCH
+                  </Link>
+                </div>
+              </div>
+              <div className="bg-white price-box price-box-padding rounded-[16px]">
+                <div className="inline-block bg-dark-green rounded-[70px] px-[23px] py-[6px]">
+                  <span className="font-segoeUi font-semibold text-white">
+                    Executive
+                  </span>
+                </div>
+                <p className="fs-18 text-black leading-[145%] mt-7.5">
+                  Get 100 headshots with 10 unique backdrops and outfits.
+                </p>
+                <hr className="mt-5 opacity-[0.4]" />
+                <div className="flex flex-col gap-3 py-5">
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={"/images/right-tick.png"}
+                      width={24}
+                      height={24}
+                      alt="right-tick"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <h5 className="leading-[160%] text-black">
+                      2 hours turnaround time
+                    </h5>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={"/images/right-tick.png"}
+                      width={24}
+                      height={24}
+                      alt="right-tick"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <h5 className="leading-[160%] text-black">100 headshots</h5>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={"/images/right-tick.png"}
+                      width={24}
+                      height={24}
+                      alt="right-tick"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <h5 className="leading-[160%] text-black">
+                      Choice of 10 backdrops
+                    </h5>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={"/images/right-tick.png"}
+                      width={24}
+                      height={24}
+                      alt="right-tick"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <h5 className="leading-[160%] text-black">
+                      Choice of 10 outfits
+                    </h5>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src={"/images/right-tick.png"}
+                      width={24}
+                      height={24}
+                      alt="right-tick"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <h5 className="leading-[160%] text-black">
+                      10 edit credits
+                    </h5>
+                  </div>
+                  <Link
+                    href="#"
+                    className="btn btn-secondary font-the-bold text-center"
+                  >
+                    GET IN TOUCH
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
