@@ -1,9 +1,24 @@
+"use client";
 import React from "react";
 import Navbar from "../components/layout/Navbar";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+  const [selectedOption, setSelectedOption] = useState("option1"); // Default selected
+
+  const options = [
+    { id: "option1", label: "Option 1" },
+    { id: "option2", label: "Option 2" },
+    { id: "option3", label: "Option 3" },
+    { id: "option4", label: "Option 4" },
+  ];
+
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+
   return (
     <>
       <Navbar />
@@ -443,10 +458,10 @@ export default function Home() {
                   unoptimized={true}
                   className=""
                 />
-                <p className="font-semibold">PROCESS</p>
+                <p className="font-semibold">BLOGS</p>
               </div>
               <h3 className="text-center justify-center font-the-bold">
-                HOW IT <span className="text-brown">WORKS</span>
+                OUR <span className="text-brown">BLOGS</span>
               </h3>
             </div>
             <div className="grid grid-cols-3 gap-5 mt-10">
@@ -544,6 +559,122 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* TAKE-THE-QUIZ-SECTION */}
+      <section className="take-the-quiz-section relative">
+        <Image
+          src={"/images/sharp-shape.png"}
+          width={114}
+          height={120}
+          alt="sharp-shape"
+          unoptimized={true}
+          className="absolute left-auto right-0 top-[15%] transform -translate-y-15%"
+        />
+        <div className="take-the-quiz-wrapper py-120">
+          <div className="container px-120 mx-auto">
+            <div className="flex flex-col items-center gap-3">
+              <div className="flex items-center gap-1.5">
+                <Image
+                  src={"/images/Ellipse.png"}
+                  width={9}
+                  height={9}
+                  alt="Ellipse"
+                  unoptimized={true}
+                  className=""
+                />
+                <p className="font-semibold uppercase">Take the Quiz</p>
+              </div>
+              <h3 className="text-center justify-center font-the-bold">
+                What’s Your Ideal <span className="text-brown">Graduate</span>{" "}
+                Route?
+              </h3>
+              <p className="p-60 text-center">
+                Answer 5 quick questions so we can pinpoint which route &
+                support package fits you best — and show how to amplify your
+                chances for admission and funding.
+              </p>
+            </div>
+            <div className="flex flex-col mt-50 rounded-[12px] bg-white p-25">
+              <h5 className="font-the-bold">
+                Q. What region do you plan to study in? (UK / US / Europe / Asia
+                / Other)
+              </h5>
+              <div className="flex items-center justify-center mt-[26px]">
+                <div className="flex flex-col w-full gap-3">
+                  {options.map((option) => (
+                    <label
+                      key={option.id}
+                      htmlFor={option.id}
+                      className={`
+              flex items-center p-4 rounded-lg border cursor-pointer
+              transition-all duration-200 ease-in-out
+              ${
+                selectedOption === option.id
+                  ? "border-transparent bg-[#F1F5F9]" // Styles for selected option
+                  : "border-1 border-[#D4D4D8] bg-white" // Styles for unselected
+              }
+            `}
+                    >
+                      <input
+                        type="radio"
+                        id={option.id}
+                        name="form-option" // All radios in a group must have the same name
+                        value={option.id}
+                        checked={selectedOption === option.id}
+                        onChange={handleOptionChange}
+                        className="hidden" // Hide the default radio button
+                      />
+
+                      {/* Custom Radio Indicator */}
+                      <div
+                        className={`
+                w-4 h-4 rounded-full border-1 flex items-center justify-center mr-3
+                ${
+                  selectedOption === option.id
+                    ? "border-[#6C8E69] bg-[#6C8E69] " // Border when selected, background for the inner dot
+                    : "border-[#000000] bg-white" // Border when unselected
+                }
+              `}
+                      >
+                        {selectedOption === option.id && (
+                          <div className="w-4 h-4 rounded-full bg-[#6C8E69]"></div> // Inner dot for selected
+                        )}
+                      </div>
+
+                      <span className="text-black select-none">
+                        {option.label}
+                      </span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+              <div className="flex justify-center gap-3 mt-[30px]">
+                <Link
+                  href="#"
+                  className="btn btn-lg btn-secondary font-the-bold"
+                >
+                  Go BAck
+                </Link>
+                <Link href="#" className="btn btn-lg btn-primary font-the-bold">
+                  Confirm
+                </Link>
+              </div>
+            </div>
+            <div className="flex flex-col mt-10">
+              <div className="inline text-center">
+                <Link href="#" className="btn btn-lg btn-primary font-the-bold">
+                  Book a free consultation
+                </Link>
+                <p className="mt-8">
+                  “Book a free consultation” or “See matching program + funding
+                  roadmap”.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PRICE-SECTION */}
       <section className="price-section">
         <div className="price-wrapper py-120">
@@ -1321,7 +1452,15 @@ export default function Home() {
       </section>
 
       {/* CONTACT-SECTION */}
-      <section className="contact-section">
+      <section className="contact-section relative">
+        <Image
+          src={"/images/flower.png"}
+          width={86}
+          height={86}
+          alt="flower"
+          unoptimized={true}
+          className="absolute left-auto right-0 top-[50%] transform -translate-y-50%"
+        />
         <div className="contact-section-wrapper py-120">
           <div className="container mx-auto p-70 bg-white rounded-[16px]">
             <div className="flex gap-5">

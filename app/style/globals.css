@@ -119,6 +119,10 @@ h6 {
   padding: 0 120px;
 }
 
+.p-60{
+  padding: 0 260px;
+}
+
 .process-box-padding {
   padding: 44px 70px;
 }
@@ -187,7 +191,7 @@ h6 {
 }
 
 .btn-lg {
-  padding: 14px 90px;
+  padding: 14px 70px;
   font-size: 14px;
 }
 
