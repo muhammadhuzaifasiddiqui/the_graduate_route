@@ -1189,6 +1189,282 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FAQS-SECTION */}
+      <section className="faqs-section relative">
+        <Image
+          src={"/images/Shape-shape.png"}
+          width={86}
+          height={86}
+          alt="Shape-shape"
+          unoptimized={true}
+          className="absolute left-0 right-auto"
+        />
+        <div className="faqs-wrapper">
+          <div className="container px-120 mx-auto">
+            <div className="flex flex-col items-center gap-3">
+              <div className="flex items-center gap-1.5">
+                <Image
+                  src={"/images/Ellipse.png"}
+                  width={9}
+                  height={9}
+                  alt="Ellipse"
+                  unoptimized={true}
+                  className=""
+                />
+                <p className="font-semibold">FAQS</p>
+              </div>
+              <h3 className="text-center uppercase justify-center font-the-bold">
+                Frequently <span className="text-brown">asked </span>questions
+              </h3>
+            </div>
+
+            <div className="flex flex-col mt-50 gap-5">
+              <div className="faq-drawer p-24 rounded-[12px] hover:bg-[#6C8E69]! group transition-colors duration-300">
+                <input
+                  className="faq-drawer__trigger"
+                  id="faq-drawer"
+                  type="checkbox"
+                />
+                <label
+                  className="faq-drawer__title fs-18 font-the-bold group-hover:text-white! transition-colors duration-300"
+                  htmlFor="faq-drawer"
+                >
+                  Q: Can you help with US applications / non-UK?{" "}
+                </label>
+                <div className="faq-drawer__content-wrapper">
+                  <div className="faq-drawer__content">
+                    <p className="mt-5 group-hover:text-white transition-colors duration-300">
+                      Our A+ talent goes through a no-joke vetting process. Only
+                      the top 1% make it through. Once we’ve got three
+                      rockstars, we’ll line up interviews so you can pick your
+                      fave—easy peasy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="faq-drawer p-24 rounded-[12px] hover:bg-[#6C8E69]! group transition-colors duration-300">
+                <input
+                  className="faq-drawer__trigger"
+                  id="faq-drawer-2"
+                  type="checkbox"
+                />
+                <label
+                  className="faq-drawer__title fs-18 font-the-bold group-hover:text-white! transition-colors duration-300"
+                  htmlFor="faq-drawer-2"
+                >
+                  Q: Can you help with US applications / non-UK?
+                </label>
+                <div className="faq-drawer__content-wrapper">
+                  <div className="faq-drawer__content">
+                    <p className="mt-5 group-hover:text-white transition-colors duration-300">
+                      Our A+ talent goes through a no-joke vetting process. Only
+                      the top 1% make it through. Once we’ve got three
+                      rockstars, we’ll line up interviews so you can pick your
+                      fave—easy peasy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="faq-drawer p-24 rounded-[12px] hover:bg-[#6C8E69]! group transition-colors duration-300">
+                <input
+                  className="faq-drawer__trigger"
+                  id="faq-drawer-3"
+                  type="checkbox"
+                />
+                <label
+                  className="faq-drawer__title fs-18 font-the-bold group-hover:text-white! transition-colors duration-300"
+                  htmlFor="faq-drawer-3"
+                >
+                  Q: What’s your refund or guarantee policy?
+                </label>
+                <div className="faq-drawer__content-wrapper">
+                  <div className="faq-drawer__content">
+                    <p className="mt-5 group-hover:text-white transition-colors duration-300">
+                      Our A+ talent goes through a no-joke vetting process. Only
+                      the top 1% make it through. Once we’ve got three
+                      rockstars, we’ll line up interviews so you can pick your
+                      fave—easy peasy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="faq-drawer p-24 rounded-[12px] hover:bg-[#6C8E69]! group transition-colors duration-300">
+                <input
+                  className="faq-drawer__trigger"
+                  id="faq-drawer-4"
+                  type="checkbox"
+                />
+                <label
+                  className="faq-drawer__title fs-18 font-the-bold group-hover:text-white! transition-colors duration-300"
+                  htmlFor="faq-drawer-4"
+                >
+                  Q: How soon should I start?
+                </label>
+                <div className="faq-drawer__content-wrapper">
+                  <div className="faq-drawer__content">
+                    <p className="mt-5 group-hover:text-white transition-colors duration-300">
+                      Our A+ talent goes through a no-joke vetting process. Only
+                      the top 1% make it through. Once we’ve got three
+                      rockstars, we’ll line up interviews so you can pick your
+                      fave—easy peasy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT-SECTION */}
+      <section className="contact-section">
+        <div className="contact-section-wrapper py-120">
+          <div className="container mx-auto p-70 bg-white rounded-[16px]">
+            <div className="flex gap-5">
+              <div className="flex flex-col w-[55%]">
+                <h2 className="font-the-bold text-black">
+                  Ready to Launch Your Global Grad Journey?
+                </h2>
+                <div className="flex gap-3 mt-[40px] relative">
+                  <Link
+                    href="#"
+                    className="btn btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold"
+                  >
+                    Take the Quiz Now
+                  </Link>
+                  <Link href="#" className="btn btn-transparent font-semibold">
+                    Schedule a Free Call”
+                  </Link>
+                </div>
+                <p className="fs-12 mt-4 text-black">
+                  (Optional small print: “Spots are limited. 2026 intake
+                  applications open now.”)
+                </p>
+              </div>
+              <div className="flex flex-col w-[45%]">
+                <form className="">
+                  <div className="flex flex-col gap-5">
+                    {/* Username */}
+                    <div className="flex flex-col">
+                      <label
+                        htmlFor="username"
+                        className="block text-black font-medium"
+                      >
+                        Full name
+                        <span className="mt-[-10px] text-[#FB2C36] text-[20px] leading-0">
+                          *
+                        </span>
+                      </label>
+                      <input
+                        id="username"
+                        type="text"
+                        name="username"
+                        placeholder="John Smith"
+                        className="block mt-2.5 fs-14 w-full placeholder-[#000] bg-[#F5F5F5] p-[15px] rounded-[8px] focus:outline-none"
+                      />
+                    </div>
+                    {/* Email */}
+                    <div className="flex flex-col">
+                      <label
+                        htmlFor="email"
+                        className="block text-black font-medium"
+                      >
+                        Email
+                        <span className="mt-[-10px] text-[#FB2C36] text-[20px] leading-0">
+                          *
+                        </span>
+                      </label>
+                      <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        autoComplete="email"
+                        placeholder="john.smith@gmail.com"
+                        className="block mt-2.5 fs-14 bg-[#F5F5F5] placeholder-[#000] text-black p-[15px] rounded-[8px] focus:outline-none"
+                      />
+                    </div>
+
+                    {/* Cover Photo */}
+                    <div className="flex flex-col">
+                      <label
+                        htmlFor="cover-photo"
+                        className="block text-black font-medium"
+                      >
+                        Upload your CV
+                        <span className="mt-[-10px] text-[#FB2C36] text-[20px] leading-0">
+                          *
+                        </span>
+                      </label>
+                      <div className="mt-2.5 flex justify-center rounded-[8px] bg-[#F5F5F5] text-black border border-dashed border-[#D4D4D4] p-[46px]">
+                        <div className="flex flex-col items-center justify-center text-center">
+                          <Image
+                            src={"/images/upload.png"}
+                            width={86}
+                            height={86}
+                            alt="upload"
+                            unoptimized={true}
+                            className=""
+                          />
+                          <div className="mt-4 flex">
+                            <label
+                              htmlFor="file-upload"
+                              className="relative cursor-pointer rounded-md"
+                            >
+                              <span className="font-helvetica-now fs-14">
+                                Upload your CV
+                              </span>
+                              <input
+                                id="file-upload"
+                                type="file"
+                                name="file-upload"
+                                className="sr-only"
+                              />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Quiry */}
+                    <div className="flex flex-col">
+                      <label
+                        htmlFor="about"
+                        className="block text-black font-medium"
+                      >
+                        Your Quiry
+                        <span className="mt-[-10px] text-[#FB2C36] text-[20px] leading-0">
+                          *
+                        </span>
+                      </label>
+                      <textarea
+                        id="about"
+                        name="about"
+                        rows="3"
+                        placeholder="How can we assist you?"
+                        className="block w-full fs-14 mt-2.5 bg-[#F5F5F5] placeholder-[#000] p-[15px] rounded-[8px] focus:outline-none"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  {/* BUTTONS */}
+                  <div className="mt-6 flex">
+                    <Link
+                      href="#"
+                      className="btn btn-md btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold"
+                    >
+                      SUBMIT
+                    </Link>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

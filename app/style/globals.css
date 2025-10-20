@@ -100,7 +100,11 @@ h6 {
 }
 
 .fs-14 {
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.fs-18 {
+  font-size: 19px;
 }
 
 .fs-19 {
@@ -108,8 +112,11 @@ h6 {
 }
 
 .py-120 {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
+}
+
+.px-120 {
+  padding: 0 120px;
 }
 
 .process-box-padding {
@@ -120,8 +127,16 @@ h6 {
   padding: 30px 24px;
 }
 
-.blog-box-padding{
+.blog-box-padding {
   padding: 16px 16px 20px 16px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.p-70 {
+  padding: 70px;
 }
 
 .p-46 {
@@ -200,8 +215,8 @@ h6 {
 }
 
 .btn-transparent {
-  border: 1px solid #000;
   color: #000;
+  border: 1px solid #000;
 }
 
 .form-control {
@@ -256,15 +271,63 @@ h6 {
 /* WHAT-WE-DO-SECTION */
 /* PROCESS-SECTION */
 /* blog-section */
-.blog-section .imaege-wrapper{
- width: 100%; 
+.blog-section .imaege-wrapper {
+  width: 100%;
 }
 
-/* packages-section */
-/* marquee-section */
-/* book-now-section */
-/* contact-section */
-/* footer-section */
+/* FAQS-SECTION */
+.faq-drawer {
+  background-color: #fff !important;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.faq-drawer__content-wrapper {
+  line-height: 1.4em;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.25s ease-in-out;
+}
+
+.faq-drawer__title {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+  transition: all 0.25s ease-out;
+}
+
+.faq-drawer__title::after {
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  content: " ";
+  display: inline-block;
+  float: right;
+  height: 10px;
+  left: 2px;
+  position: relative;
+  right: 20px;
+  top: 2px;
+  transform: rotate(135deg);
+  transition: 0.35s ease-in-out;
+  vertical-align: top;
+  width: 10px;
+}
+
+/* OPTIONAL HOVER STATE */
+.faq-drawer__trigger:checked
+  + .faq-drawer__title
+  + .faq-drawer__content-wrapper {
+  max-height: 350px;
+}
+
+.faq-drawer__trigger:checked + .faq-drawer__title::after {
+  transform: rotate(-45deg);
+  transition: 0.25s ease-in-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
 
 @media screen and (min-width: 1279.97px) {
 }
