@@ -4,6 +4,10 @@ import Navbar from "../components/layout/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export default function Home() {
   const [selectedOption, setSelectedOption] = useState("option1"); // Default selected
@@ -22,6 +26,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+
       {/* HERO-SECTION */}
       <section className="hero-section relative">
         <Image
@@ -137,6 +142,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* STATISTICS-SECTION */}
       <section className="statistics-section relative">
         <Image
@@ -192,6 +198,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* WHAT-WE-DO-SECTION */}
       <section className="what-we-do-section">
         <div className="what-we-do-wrapper">
@@ -295,6 +302,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* PROCESS-SECTION */}
       <section className="process-section">
         <div className="process-wrapper py-120 relative">
@@ -320,9 +328,9 @@ export default function Home() {
                   />
                   <p className="font-semibold">PROCESS</p>
                 </div>
-                <h3 className="text-center justify-center font-the-bold">
+                <h2 className="text-center justify-center font-the-bold">
                   HOW IT <span className="text-brown">WORKS</span>
-                </h3>
+                </h2>
               </div>
               <div className="grid grid-cols-3 gap-5 mt-10">
                 <div className="bg-primary p-25 rounded-[20px]">
@@ -436,6 +444,359 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* TESTIMONIAL-SECTION */}
+      <section className="testimonial-section">
+        <div className="testimonial-wrapper">
+          <div className="container mx-auto">
+            <div className="flex items-center gap-1.5 mb-3">
+              <Image
+                src={"/images/Ellipse.png"}
+                width={9}
+                height={9}
+                alt="Ellipse"
+                unoptimized={true}
+                className=""
+              />
+              <p className="font-semibold">SUCCESS STORIES</p>
+            </div>
+            <div className="flex relative">
+              <div className="w-[40%]">
+                <h2 className="font-the-bold uppercase">
+                  Client <span className="text-brown">Experiences</span> – What
+                  People Are
+                  <span className="text-brown"> Saying</span>
+                </h2>
+              </div>
+              <Image
+                src={"/images/Shape.png"}
+                width={48}
+                height={48}
+                alt="Ellipse"
+                unoptimized={true}
+                className="absolute left-[60%] top-[-50px]"
+              />
+              <div className="flex gap-2.5 absolute right-0 bottom-0">
+                <div className="bg-white px-[26px] py-[22px] rounded-[100px]">
+                  <Image
+                    src={"/images/slide-left.png"}
+                    width={8}
+                    height={16}
+                    alt="slide-left"
+                    unoptimized={true}
+                    className=""
+                  />
+                </div>
+                <div className="bg-white px-[26px] py-[22px] rounded-[100px]">
+                  <Image
+                    src={"/images/slide-right.png"}
+                    width={8}
+                    height={16}
+                    alt="slide-right"
+                    unoptimized={true}
+                    className=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* testimoial-cards */}
+            <div className="testimonial-section w-full overflow-hidden px-20">
+              <Swiper
+                spaceBetween={24}
+                slidesPerView={4}
+                centeredSlides={true}
+                pagination={{
+                  el: ".custom-pagination",
+                  clickable: true,
+                  renderBullet: (index, className) => {
+                    return `<span class="${className} custom-bullet"></span>`;
+                  },
+                }}
+                breakpoints={{
+                  1024: { slidesPerView: 3, centeredSlides: true },
+                  768: { slidesPerView: 2, centeredSlides: true },
+                  576: { slidesPerView: 1, centeredSlides: true },
+                }}
+              >
+                <SwiperSlide>
+                  <div className="flex flex-col mt-12.5 p-25 bg-white rounded-[18px]">
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/testimonial-clara.png"}
+                        width={52}
+                        height={52}
+                        alt="testimonial-clara"
+                        unoptimized={true}
+                        className=""
+                      />
+                    </div>
+                    <div>
+                      <p className="line-clamp-8 fs-18 font-semibold mt-7">
+                        "Thank you for educating me and my Spotify colleague
+                        today. You were amazing. We area pretty engaged
+                        community but I have rarely seen such a positive
+                        response to a lecture. I don't know if you saw the
+                        internal comments but there were lots of them. "
+                      </p>
+                    </div>
+                    <div className="flex justify-between items-center mt-15">
+                      <div className="flex flex-col">
+                        <p className="font-the-bold">Gabriella</p>
+                        <p className="fs-14 text-[#737373] mt-1">Spotify</p>
+                      </div>
+                      <div className="image-wrapper">
+                        <Image
+                          src={"/images/quotation.png"}
+                          width={36}
+                          height={36}
+                          alt="quotation"
+                          unoptimized={true}
+                          className=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex flex-col mt-12.5 p-25 bg-white rounded-[18px]">
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/testimonial-james.png"}
+                        width={52}
+                        height={52}
+                        alt="testimonial-james"
+                        unoptimized={true}
+                        className=""
+                      />
+                    </div>
+                    <div>
+                      <p className="line-clamp-8 fs-18 font-semibold mt-7">
+                        "Thank you for educating me and my Spotify colleague
+                        today. You were amazing. We area pretty engaged
+                        community but I have rarely seen such a positive
+                        response to a lecture. I don't know if you saw the
+                        internal comments but there were lots of them. "
+                      </p>
+                    </div>
+                    <div className="flex justify-between items-center mt-15">
+                      <div className="flex flex-col">
+                        <p className="font-the-bold">Gabriella</p>
+                        <p className="fs-14 text-[#737373] mt-1">Spotify</p>
+                      </div>
+                      <div className="image-wrapper">
+                        <Image
+                          src={"/images/quotation.png"}
+                          width={36}
+                          height={36}
+                          alt="quotation"
+                          unoptimized={true}
+                          className=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex flex-col mt-12.5 p-25 bg-white rounded-[18px]">
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/testimonial-jessi.png"}
+                        width={52}
+                        height={52}
+                        alt="testimonial-jessi"
+                        unoptimized={true}
+                        className=""
+                      />
+                    </div>
+                    <div>
+                      <p className="line-clamp-8 fs-18 font-semibold mt-7">
+                        "Thank you for educating me and my Spotify colleague
+                        today. You were amazing. We area pretty engaged
+                        community but I have rarely seen such a positive
+                        response to a lecture. I don't know if you saw the
+                        internal comments but there were lots of them. "
+                      </p>
+                    </div>
+                    <div className="flex justify-between items-center mt-15">
+                      <div className="flex flex-col">
+                        <p className="font-the-bold">Gabriella</p>
+                        <p className="fs-14 text-[#737373] mt-1">Spotify</p>
+                      </div>
+                      <div className="image-wrapper">
+                        <Image
+                          src={"/images/quotation.png"}
+                          width={36}
+                          height={36}
+                          alt="quotation"
+                          unoptimized={true}
+                          className=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex flex-col mt-12.5 p-25 bg-white rounded-[18px]">
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/testimonial-clara.png"}
+                        width={52}
+                        height={52}
+                        alt="testimonial-clara"
+                        unoptimized={true}
+                        className=""
+                      />
+                    </div>
+                    <div>
+                      <p className="line-clamp-8 fs-18 font-semibold mt-7">
+                        "Thank you for educating me and my Spotify colleague
+                        today. You were amazing. We area pretty engaged
+                        community but I have rarely seen such a positive
+                        response to a lecture. I don't know if you saw the
+                        internal comments but there were lots of them. "
+                      </p>
+                    </div>
+                    <div className="flex justify-between items-center mt-15">
+                      <div className="flex flex-col">
+                        <p className="font-the-bold">Gabriella</p>
+                        <p className="fs-14 text-[#737373] mt-1">Spotify</p>
+                      </div>
+                      <div className="image-wrapper">
+                        <Image
+                          src={"/images/quotation.png"}
+                          width={36}
+                          height={36}
+                          alt="quotation"
+                          unoptimized={true}
+                          className=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex flex-col mt-12.5 p-25 bg-white rounded-[18px]">
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/testimonial-james.png"}
+                        width={52}
+                        height={52}
+                        alt="testimonial-james"
+                        unoptimized={true}
+                        className=""
+                      />
+                    </div>
+                    <div>
+                      <p className="line-clamp-8 fs-18 font-semibold mt-7">
+                        "Thank you for educating me and my Spotify colleague
+                        today. You were amazing. We area pretty engaged
+                        community but I have rarely seen such a positive
+                        response to a lecture. I don't know if you saw the
+                        internal comments but there were lots of them. "
+                      </p>
+                    </div>
+                    <div className="flex justify-between items-center mt-15">
+                      <div className="flex flex-col">
+                        <p className="font-the-bold">Gabriella</p>
+                        <p className="fs-14 text-[#737373] mt-1">Spotify</p>
+                      </div>
+                      <div className="image-wrapper">
+                        <Image
+                          src={"/images/quotation.png"}
+                          width={36}
+                          height={36}
+                          alt="quotation"
+                          unoptimized={true}
+                          className=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex flex-col mt-12.5 p-25 bg-white rounded-[18px]">
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/testimonial-jessi.png"}
+                        width={52}
+                        height={52}
+                        alt="testimonial-jessi"
+                        unoptimized={true}
+                        className=""
+                      />
+                    </div>
+                    <div>
+                      <p className="line-clamp-8 fs-18 font-semibold mt-7">
+                        "Thank you for educating me and my Spotify colleague
+                        today. You were amazing. We area pretty engaged
+                        community but I have rarely seen such a positive
+                        response to a lecture. I don't know if you saw the
+                        internal comments but there were lots of them. "
+                      </p>
+                    </div>
+                    <div className="flex justify-between items-center mt-15">
+                      <div className="flex flex-col">
+                        <p className="font-the-bold">Gabriella</p>
+                        <p className="fs-14 text-[#737373] mt-1">Spotify</p>
+                      </div>
+                      <div className="image-wrapper">
+                        <Image
+                          src={"/images/quotation.png"}
+                          width={36}
+                          height={36}
+                          alt="quotation"
+                          unoptimized={true}
+                          className=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+              <div className="custom-pagination flex justify-center gap-3 mt-0 sm:mt-2"></div>
+
+              <style jsx global>{`
+                .custom-bullet {
+                }
+                .swiper-pagination-bullet-active.custom-bullet {
+                  background-color: #0085ff; /* Burgundy / Primary Color */
+                  width: 40px !important;
+                }
+              `}</style>
+            </div>
+            {/* testimoial-cards */}
+          </div>
+        </div>
+      </section>
+
+      {/* INSTAGRAM-SECTION */}
+      {/* <section className="instagram-section relative">
+        <Image
+          src={"/images/top-Ellipse.png"}
+          width={125}
+          height={124}
+          alt="excel"
+          unoptimized={true}
+          className="w-full! absolute top-0 border-2 border-amber-600"
+        />
+        <div className="instagram-wrapper py-120 z-10 relative">
+          <div className="flex flex-col">
+            <h2 className="text-center justify-center font-the-bold">
+              INSTAGRAM <span className="text-brown">FEED</span>
+            </h2>
+          </div>
+        </div>
+        <Image
+          src={"/images/bottom-Ellipse.png"}
+          width={125}
+          height={124}
+          alt="excel"
+          unoptimized={true}
+          className="w-full! absolute bottom-0 border-2 border-amber-600"
+        />
+      </section> */}
+
       {/* BLOG-SECTION */}
       <section className="blog-section relative">
         <Image
@@ -446,7 +807,7 @@ export default function Home() {
           unoptimized={true}
           className="absolute right-0 top-[-55px]"
         />
-        <div className="blog-wrapper">
+        <div className="blog-wrapper pt-120">
           <div className="container mx-auto">
             <div className="flex flex-col items-center gap-3">
               <div className="flex items-center gap-1.5">
@@ -460,9 +821,9 @@ export default function Home() {
                 />
                 <p className="font-semibold">BLOGS</p>
               </div>
-              <h3 className="text-center justify-center font-the-bold">
+              <h2 className="text-center justify-center font-the-bold">
                 OUR <span className="text-brown">BLOGS</span>
-              </h3>
+              </h2>
             </div>
             <div className="grid grid-cols-3 gap-5 mt-10">
               <div className="bg-white blog-box-padding rounded-[20px]">
@@ -570,7 +931,7 @@ export default function Home() {
           unoptimized={true}
           className="absolute left-auto right-0 top-[15%] transform -translate-y-15%"
         />
-        <div className="take-the-quiz-wrapper py-120">
+        <div className="take-the-quiz-wrapper pt-120">
           <div className="container px-120 mx-auto">
             <div className="flex flex-col items-center gap-3">
               <div className="flex items-center gap-1.5">
@@ -584,10 +945,10 @@ export default function Home() {
                 />
                 <p className="font-semibold uppercase">Take the Quiz</p>
               </div>
-              <h3 className="text-center justify-center font-the-bold">
+              <h2 className="text-center justify-center font-the-bold">
                 What’s Your Ideal <span className="text-brown">Graduate</span>{" "}
                 Route?
-              </h3>
+              </h2>
               <p className="p-60 text-center">
                 Answer 5 quick questions so we can pinpoint which route &
                 support package fits you best — and show how to amplify your
@@ -665,7 +1026,7 @@ export default function Home() {
                 <Link href="#" className="btn btn-lg btn-primary font-the-bold">
                   Book a free consultation
                 </Link>
-                <p className="mt-8">
+                <p className="mt-8 px-121 text-black">
                   “Book a free consultation” or “See matching program + funding
                   roadmap”.
                 </p>
@@ -699,9 +1060,9 @@ export default function Home() {
                 />
                 <p className="font-semibold">PACKAGES</p>
               </div>
-              <h3 className="text-center justify-center font-the-bold">
+              <h2 className="text-center justify-center font-the-bold">
                 PRICING <span className="text-brown">PLANS</span>
-              </h3>
+              </h2>
             </div>
             <div className="grid grid-cols-3 gap-5 mt-12.5">
               <div className="bg-white price-box price-box-padding rounded-[16px] hover:bg-[#6C8E69] group transition duration-300 ease-in-out">
@@ -1345,9 +1706,9 @@ export default function Home() {
                 />
                 <p className="font-semibold">FAQS</p>
               </div>
-              <h3 className="text-center uppercase justify-center font-the-bold">
+              <h2 className="text-center uppercase justify-center font-the-bold">
                 Frequently <span className="text-brown">asked </span>questions
-              </h3>
+              </h2>
             </div>
 
             <div className="flex flex-col mt-50 gap-5">

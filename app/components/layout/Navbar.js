@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scroll, setScrolled] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
- 
+
   useEffect(() => {
     const navbar = document.querySelector(".navbar");
 
@@ -32,10 +32,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav
-        className="navbar absolute top-[17px] w-full z-10"
-        id="navbar"
-      >
+      <nav className="navbar absolute top-[17px] w-full z-10" id="navbar">
         <div className="w-full container mx-auto relative">
           <div className="bg-navbar flex justify-between items-center rounded-[30px]">
             <div className="logo-wrapper cursor-pointer">

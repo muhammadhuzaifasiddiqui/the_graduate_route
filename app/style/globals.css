@@ -111,6 +111,10 @@ h6 {
   font-size: 19px;
 }
 
+.pt-120{
+  padding-top: 120px;
+}
+
 .py-120 {
   padding: 120px 0;
 }
