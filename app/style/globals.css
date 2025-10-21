@@ -103,6 +103,10 @@ h6 {
   font-size: 14px;
 }
 
+.fs-16 {
+  font-size: 16px;
+}
+
 .fs-18 {
   font-size: 19px;
 }
@@ -111,7 +115,7 @@ h6 {
   font-size: 19px;
 }
 
-.pt-120{
+.pt-120 {
   padding-top: 120px;
 }
 
@@ -123,7 +127,7 @@ h6 {
   padding: 0 120px;
 }
 
-.p-60{
+.p-60 {
   padding: 0 260px;
 }
 
@@ -196,7 +200,7 @@ h6 {
 
 .btn-lg {
   padding: 14px 70px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .btn-primary {
@@ -309,7 +313,7 @@ h6 {
   border-width: 1px 1px 0 0;
   content: " ";
   display: inline-block;
-  /* float: right; */
+  float: right;
   height: 10px;
   left: 2px;
   position: relative;
@@ -343,29 +347,602 @@ input[type="checkbox"] {
 /* ------------ */
 
 @media screen and (max-width: 1399.97px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 1199.97px) {
-  /* body {
-  } */
+  body {
+    font-size: 14px;
+  }
+  .px-fixed-20 {
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 46px;
+  }
+  /* 44 */
+  h2 {
+    font-size: 38px;
+  }
+  /* 32 */
+  h3 {
+    font-size: 32px;
+  }
+  /* 28 */
+  h4 {
+    font-size: 25px;
+  }
+  /* 20 */
+  h5 {
+    font-size: 19px;
+  }
+  /* 18 */
+  h6 {
+    font-size: 17px;
+  }
+
+  .fs-16 {
+    font-size: 16px;
+  }
+
+  .fs-18 {
+    font-size: 19px;
+  }
+
+  .fs-19 {
+    font-size: 18px;
+  }
+
+  .pt-120 {
+    padding-top: 90px;
+  }
+
+  .py-120 {
+    padding: 90px 0;
+  }
+
+  .px-120 {
+    padding: 0px 0px;
+  }
+
+  .p-260 {
+    padding: 120px;
+  }
+  /* 44 70 */
+  .process-box-padding {
+    padding: 30px 44px;
+  }
+  /* 30 24 */
+  .price-box-padding {
+    padding: 30px 22px;
+  }
+  /* 16 16 20 16 */
+  .blog-box-padding {
+    padding: 16px 16px 20px 16px;
+  }
+
+  .mt-50 {
+    margin-top: 42px;
+  }
+
+  .p-70 {
+    padding: 56px;
+  }
+  /* all 46 */
+  .p-46 {
+    padding: 40px;
+  }
+
+  .p-25 {
+    padding: 20px;
+  }
+
+  .p-24 {
+    padding: 21px;
+  }
+
+  .p-20 {
+    padding: 14px 18px;
+  }
+
+  .p-18 {
+    padding: 18px;
+  }
+
+  .p-16 {
+    padding: 13px 15px;
+  }
+
+  .btn-md {
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  /* 14 70 */
+  .btn-lg {
+    padding: 12px 50px;
+    font-size: 15px;
+  }  
 }
 
 @media screen and (max-width: 1023.97px) {
-  /* body {
-  } */
+  body {
+    font-size: 15px;
+  }
+  .px-fixed-20 {
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 46px;
+  }
+  /* 44 */
+  h2 {
+    font-size: 38px;
+  }
+  /* 32 */
+  h3 {
+    font-size: 32px;
+  }
+  /* 28 */
+  h4 {
+    font-size: 25px;
+  }
+  /* 20 */
+  h5 {
+    font-size: 19px;
+  }
+  /* 18 */
+  h6 {
+    font-size: 17px;
+  }
+
+  .fs-16 {
+    font-size: 16px;
+  }
+
+  .fs-18 {
+    font-size: 19px;
+  }
+
+  .fs-19 {
+    font-size: 18px;
+  }
+
+  .pt-120 {
+    padding-top: 90px;
+  }
+
+  .py-120 {
+    padding: 90px 0;
+  }
+
+  .px-120 {
+    padding: 0px 0px;
+  }
+
+  .p-260 {
+    padding: 120px;
+  }
+  /* 44 70 */
+  .process-box-padding {
+    padding: 30px 44px;
+  }
+  /* 30 24 */
+  .price-box-padding {
+    padding: 30px 22px;
+  }
+  /* 16 16 20 16 */
+  .blog-box-padding {
+    padding: 16px 16px 20px 16px;
+  }
+
+  .mt-50 {
+    margin-top: 42px;
+  }
+
+  .p-70 {
+    padding: 56px;
+  }
+  /* all 46 */
+  .p-46 {
+    padding: 40px;
+  }
+
+  .p-25 {
+    padding: 20px;
+  }
+
+  .p-24 {
+    padding: 21px;
+  }
+
+  .p-20 {
+    padding: 14px 18px;
+  }
+
+  .p-18 {
+    padding: 18px;
+  }
+
+  .p-16 {
+    padding: 13px 15px;
+  }
+
+  .btn-md {
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  /* 14 70 */
+  .btn-lg {
+    padding: 12px 50px;
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 767.97px) {
-  /* body {
-  } */
+  body {
+    font-size: 15px;
+  }
+  .px-fixed-20 {
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 46px;
+  }
+  /* 44 */
+  h2 {
+    font-size: 38px;
+  }
+  /* 32 */
+  h3 {
+    font-size: 32px;
+  }
+  /* 28 */
+  h4 {
+    font-size: 25px;
+  }
+  /* 20 */
+  h5 {
+    font-size: 19px;
+  }
+  /* 18 */
+  h6 {
+    font-size: 17px;
+  }
+
+  .fs-16 {
+    font-size: 16px;
+  }
+
+  .fs-18 {
+    font-size: 19px;
+  }
+
+  .fs-19 {
+    font-size: 18px;
+  }
+
+  .pt-120 {
+    padding-top: 90px;
+  }
+
+  .py-120 {
+    padding: 90px 0;
+  }
+
+  .px-120 {
+    padding: 0px 0px;
+  }
+
+  .p-260 {
+    padding: 120px;
+  }
+  /* 44 70 */
+  .process-box-padding {
+    padding: 30px 44px;
+  }
+  /* 30 24 */
+  .price-box-padding {
+    padding: 30px 22px;
+  }
+  /* 16 16 20 16 */
+  .blog-box-padding {
+    padding: 16px 16px 20px 16px;
+  }
+
+  .mt-50 {
+    margin-top: 42px;
+  }
+
+  .p-70 {
+    padding: 56px;
+  }
+  /* all 46 */
+  .p-46 {
+    padding: 40px;
+  }
+
+  .p-25 {
+    padding: 20px;
+  }
+
+  .p-24 {
+    padding: 21px;
+  }
+
+  .p-20 {
+    padding: 14px 18px;
+  }
+
+  .p-18 {
+    padding: 18px;
+  }
+
+  .p-16 {
+    padding: 13px 15px;
+  }
+
+  .btn-md {
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  /* 14 70 */
+  .btn-lg {
+    padding: 12px 50px;
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 575.97) {
-  /* body {
-  } */
+  body {
+    font-size: 15px;
+  }
+  .px-fixed-20 {
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 46px;
+  }
+  /* 44 */
+  h2 {
+    font-size: 36px;
+  }
+  /* 32 */
+  h3 {
+    font-size: 32px;
+  }
+  /* 28 */
+  h4 {
+    font-size: 24px;
+  }
+  /* 20 */
+  h5 {
+    font-size: 19px;
+  }
+  /* 18 */
+  h6 {
+    font-size: 17px;
+  }
+
+  .fs-16 {
+    font-size: 16px;
+  }
+
+  .fs-18 {
+    font-size: 19px;
+  }
+
+  .fs-19 {
+    font-size: 17px;
+  }
+
+  .pt-120 {
+    padding-top: 75px;
+  }
+
+  .py-120 {
+    padding: 75px 0;
+  }
+
+  .px-120 {
+    padding: 0px 0px;
+  }
+
+  .p-260 {
+    padding: 60px;
+  }
+  /* 44 70 */
+  .process-box-padding {
+    padding: 24px 32px;
+  }
+  /* 30 24 */
+  .price-box-padding {
+    padding: 30px 22px;
+  }
+  /* 16 16 20 16 */
+  .blog-box-padding {
+    padding: 16px 16px 20px 16px;
+  }
+
+  .mt-50 {
+    margin-top: 36px;
+  }
+
+  .p-70 {
+    padding: 44px;
+  }
+  /* all 46 */
+  .p-46 {
+    padding: 40px 28px;
+  }
+
+  .p-25 {
+    padding: 22px;
+  }
+
+  .p-24 {
+    padding: 22px;
+  }
+
+  .p-20 {
+    padding: 14px 18px;
+  }
+
+  .p-18 {
+    padding: 18px;
+  }
+
+  .p-16 {
+    padding: 13px 15px;
+  }
+
+  .btn-md {
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  /* 14 70 */
+  .btn-lg {
+    padding: 12px 50px;
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 399.97) {
-  /* body {
-  } */
+  body {
+    font-size: 14px;
+  }
+  .px-fixed-20 {
+    padding: 0 20px;
+  }
+  /* 50 */
+  h1 {
+    font-size: 45px;
+  }
+  /* 44 */
+  h2 {
+    font-size: 32px;
+  }
+  /* 32 */
+  h3 {
+    font-size: 32px;
+  }
+  /* 28 */
+  h4 {
+    font-size: 22px;
+  }
+  /* 20 */
+  h5 {
+    font-size: 18px;
+  }
+  /* 18 */
+  h6 {
+    font-size: 16px;
+  }
+
+  .fs-16 {
+    font-size: 16px;
+  }
+
+  .fs-18 {
+    font-size: 19px;
+  }
+
+  .fs-19 {
+    font-size: 16px;
+  }
+
+  .pt-120 {
+    padding-top: 60px;
+  }
+
+  .py-120 {
+    padding: 60px 0;
+  }
+
+  .px-120 {
+    padding: 0px 0px;
+  }
+
+  .p-260 {
+    padding: 0px 0px;
+  }
+  /* 44 70 */
+  .process-box-padding {
+    padding: 20px 20px;
+  }
+  /* 30 24 */
+  .price-box-padding {
+    padding: 30px 20px;
+  }
+  /* 16 16 20 16 */
+  .blog-box-padding {
+    padding: 16px 16px 20px 16px;
+  }
+
+  .mt-50 {
+    margin-top: 30px;
+  }
+
+  .p-70 {
+    padding: 30px;
+  }
+  /* all 46 */
+  .p-46 {
+    padding: 30px 20px;
+  }
+
+  .p-25 {
+    padding: 20px;
+  }
+
+  .p-24 {
+    padding: 20px;
+  }
+
+  .p-20 {
+    padding: 10px 16px;
+  }
+
+  .p-18 {
+    padding: 18px;
+  }
+
+  .p-15 {
+    padding: 15px;
+  }
+
+  .p-16 {
+    padding: 12px 14px;
+  }
+
+  .btn {
+    padding: 14px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 6px;
+  }
+  /* padding: 16px;
+    font-size: 16px;
+    border-radius: 100px; */
+  .btn-sm {
+    padding: 16px;
+    font-size: 14px;
+    border-radius: 100px;
+  }
+
+  .btn-md {
+    padding: 12px 27px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .btn-lg {
+    padding: 14px 70px;
+    font-size: 16px;
+  }
 }

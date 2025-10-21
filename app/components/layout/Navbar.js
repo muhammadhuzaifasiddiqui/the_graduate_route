@@ -34,7 +34,7 @@ const Navbar = () => {
     <>
       <nav className="navbar absolute top-[17px] w-full z-10" id="navbar">
         <div className="w-full container mx-auto relative">
-          <div className="bg-navbar flex justify-between items-center rounded-[30px]">
+          <div className="bg-navbar px-fixed-20 flex justify-between items-center rounded-[30px]">
             <div className="logo-wrapper cursor-pointer">
               <Image
                 src={"/images/graduate-rout-logo.svg"}
@@ -70,6 +70,11 @@ const Navbar = () => {
             </div>
 
             <div className="lg:hidden flex items-center">
+              <div className="lg:hidden flex mr-[18px]">
+                <a href="#" className="btn btn-green btn-md font-segoeUi">
+                  Contact Us
+                </a>
+              </div>
               <button
                 onClick={toggleMenu}
                 className="nav-toggle-btn rounded-md transition"
@@ -77,7 +82,7 @@ const Navbar = () => {
               >
                 <Image
                   src={
-                    "https://api.bioflexaesthetics.com/wp-content/uploads/2025/05/menu.svg"
+                    "/images/hamburger.png"
                   }
                   width={24}
                   height={25}
@@ -108,9 +113,9 @@ const Navbar = () => {
                 height: isOpen ? "auto" : 0,
               }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden absolute mt-2 left-0 right-0 z-10 overflow-hidden px-3 md:px-3.5 lg:px-5"
+              className="lg:hidden px-fixed-20 w-full container mx-auto absolute mt-4 left-0 right-0 z-10 overflow-hidden"
             >
-              <ul className="flex flex-col items-start px-[20px] py-[10px] overflow-hidden bg-[#f4ede4f6] font-normal rounded-[12px]">
+              <ul className="flex flex-col items-start px-[20px] py-[10px] overflow-hidden bg-[#ffff] font-normal rounded-[12px]">
                 <li className="px-[6px] py-[10px]">
                   <Link
                     href={"/"}

@@ -28,7 +28,7 @@ export default function Home() {
       <Navbar />
 
       {/* HERO-SECTION */}
-      <section className="hero-section relative">
+      {/* <section className="hero-section relative">
         <Image
           src={"/images/H3.png"}
           width={645}
@@ -141,10 +141,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* STATISTICS-SECTION */}
-      <section className="statistics-section relative">
+      {/* <section className="statistics-section relative">
         <Image
           src={"/images/edged-Shape.png"}
           width={645}
@@ -197,10 +197,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* WHAT-WE-DO-SECTION */}
-      <section className="what-we-do-section">
+      {/* <section className="what-we-do-section">
         <div className="what-we-do-wrapper">
           <div className="container mx-auto">
             <div className="flex items-center gap-1.5">
@@ -301,10 +301,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* PROCESS-SECTION */}
-      <section className="process-section">
+      {/* <section className="process-section">
         <div className="process-wrapper py-120 relative">
           <Image
             src={"/images/excel.png"}
@@ -443,10 +443,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* TESTIMONIAL-SECTION */}
-      <section className="testimonial-section">
+      {/* <section className="testimonial-section">
         <div className="testimonial-wrapper">
           <div className="container mx-auto">
             <div className="flex items-center gap-1.5 mb-3">
@@ -500,8 +500,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* testimoial-cards */}
-            <div className="testimonial-section w-full overflow-hidden px-20">
+            <div className="testimonial-section w-full overflow-hidden">
               <Swiper
                 spaceBetween={24}
                 slidesPerView={4}
@@ -760,15 +759,14 @@ export default function Home() {
                 .custom-bullet {
                 }
                 .swiper-pagination-bullet-active.custom-bullet {
-                  background-color: #0085ff; /* Burgundy / Primary Color */
+                  background-color: #0085ff;
                   width: 40px !important;
                 }
               `}</style>
             </div>
-            {/* testimoial-cards */}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* INSTAGRAM-SECTION */}
       {/* <section className="instagram-section relative">
@@ -798,7 +796,7 @@ export default function Home() {
       </section> */}
 
       {/* BLOG-SECTION */}
-      <section className="blog-section relative">
+      {/* <section className="blog-section relative">
         <Image
           src={"/images/flower.png"}
           width={114}
@@ -919,10 +917,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* TAKE-THE-QUIZ-SECTION */}
-      <section className="take-the-quiz-section relative">
+      {/* <section className="take-the-quiz-section relative">
         <Image
           src={"/images/sharp-shape.png"}
           width={114}
@@ -949,7 +947,7 @@ export default function Home() {
                 What’s Your Ideal <span className="text-brown">Graduate</span>{" "}
                 Route?
               </h2>
-              <p className="p-60 text-center">
+              <p className="p-260 text-center">
                 Answer 5 quick questions so we can pinpoint which route &
                 support package fits you best — and show how to amplify your
                 chances for admission and funding.
@@ -971,34 +969,33 @@ export default function Home() {
               transition-all duration-200 ease-in-out
               ${
                 selectedOption === option.id
-                  ? "border-transparent bg-[#F1F5F9]" // Styles for selected option
-                  : "border-1 border-[#D4D4D8] bg-white" // Styles for unselected
+                  ? "border-transparent bg-[#F1F5F9]" 
+                  : "border-1 border-[#D4D4D8] bg-white" 
               }
             `}
                     >
                       <input
                         type="radio"
                         id={option.id}
-                        name="form-option" // All radios in a group must have the same name
+                        name="form-option" 
                         value={option.id}
                         checked={selectedOption === option.id}
                         onChange={handleOptionChange}
-                        className="hidden" // Hide the default radio button
+                        className="hidden" 
                       />
 
-                      {/* Custom Radio Indicator */}
                       <div
                         className={`
                 w-4 h-4 rounded-full border-1 flex items-center justify-center mr-3
                 ${
                   selectedOption === option.id
-                    ? "border-[#6C8E69] bg-[#6C8E69] " // Border when selected, background for the inner dot
-                    : "border-[#000000] bg-white" // Border when unselected
+                    ? "border-[#6C8E69] bg-[#6C8E69] " 
+                    : "border-[#000000] bg-white" 
                 }
               `}
                       >
                         {selectedOption === option.id && (
-                          <div className="w-4 h-4 rounded-full bg-[#6C8E69]"></div> // Inner dot for selected
+                          <div className="w-4 h-4 rounded-full bg-[#6C8E69]"></div> 
                         )}
                       </div>
 
@@ -1034,10 +1031,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* PRICE-SECTION */}
-      <section className="price-section">
+      {/* <section className="price-section">
         <div className="price-wrapper py-120">
           <div className="container mx-auto relative">
             <Image
@@ -1071,11 +1068,9 @@ export default function Home() {
                     Basic
                   </span>
                 </div>
-                {/* Text color remains black (already black in the default state) */}
                 <p className="fs-18 text-black group-hover:text-white leading-[145%] mt-7.5">
                   Get 100 headshots with 10 unique backdrops and outfits.
                 </p>
-                {/* HR color changes to white with 50% opacity on hover */}
                 <hr className="mt-5 opacity-[0.4] group-hover:opacity-[0.5] group-hover:border-white" />
                 <div className="flex flex-col gap-3 py-5">
                   <div className="flex items-center gap-3 group-hover:text-white!">
@@ -1090,14 +1085,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
-                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
-                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
-                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round" 
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          stroke="currentColor" 
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1109,7 +1104,7 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* Text color remains black */}
+                  
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       2 hours turnaround time
                     </h5>
@@ -1126,14 +1121,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
-                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
-                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
-                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                          stroke="currentColor" 
+                          strokeWidth="2"
+                          strokeLinecap="round" 
+                          strokeLinejoin="round" 
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          stroke="currentColor" 
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1145,7 +1140,7 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* Text color remains black */}
+               
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       100 headshots
                     </h5>
@@ -1162,14 +1157,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
-                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
-                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
-                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round" 
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          stroke="currentColor" 
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1181,7 +1176,7 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* Text color remains black */}
+                    
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       Choice of 10 backdrops
                     </h5>
@@ -1198,14 +1193,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
-                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
-                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
-                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                          stroke="currentColor" 
+                          strokeWidth="2"
+                          strokeLinecap="round" 
+                          strokeLinejoin="round" 
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          stroke="currentColor" 
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1217,7 +1212,7 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* Text color remains black */}
+              
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       Choice of 10 outfits
                     </h5>
@@ -1234,14 +1229,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
-                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
-                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
-                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                          stroke="currentColor" 
+                          strokeWidth="2"
+                          strokeLinecap="round" 
+                          strokeLinejoin="round" 
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          stroke="currentColor" 
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1253,12 +1248,12 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* Text color remains black */}
+     
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       10 edit credits
                     </h5>
                   </div>
-                  {/* Button style changes on hover of the parent div */}
+                 
                   <Link
                     href="#"
                     className="btn btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
@@ -1275,11 +1270,9 @@ export default function Home() {
                     Professional
                   </span>
                 </div>
-                {/* Text color remains black (already black in the default state) */}
                 <p className="fs-18 text-black group-hover:text-white leading-[145%] mt-7.5">
                   Get 100 headshots with 10 unique backdrops and outfits.
                 </p>
-                {/* HR color changes to white with 50% opacity on hover */}
                 <hr className="mt-5 opacity-[0.4] group-hover:opacity-[0.5] group-hover:border-white" />
                 <div className="flex flex-col gap-3 py-5">
                   <div className="flex items-center gap-3 group-hover:text-white!">
@@ -1294,14 +1287,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
-                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
-                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
-                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round" 
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          stroke="currentColor" 
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1313,7 +1306,6 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* Text color remains black */}
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       2 hours turnaround time
                     </h5>
@@ -1330,14 +1322,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
-                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
-                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
-                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1349,7 +1341,6 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* Text color remains black */}
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       100 headshots
                     </h5>
@@ -1366,14 +1357,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
-                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
-                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
-                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          stroke="currentColor" 
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1385,7 +1376,6 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* Text color remains black */}
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       Choice of 10 backdrops
                     </h5>
@@ -1402,14 +1392,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
-                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
-                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
-                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                          stroke="currentColor" 
+                          strokeWidth="2"
+                          strokeLinecap="round" 
+                          strokeLinejoin="round" 
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          stroke="currentColor" 
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1421,7 +1411,6 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* Text color remains black */}
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       Choice of 10 outfits
                     </h5>
@@ -1438,14 +1427,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
-                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
-                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
-                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1457,12 +1446,10 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* Text color remains black */}
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       10 edit credits
                     </h5>
                   </div>
-                  {/* Button style changes on hover of the parent div */}
                   <Link
                     href="#"
                     className="btn btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
@@ -1479,11 +1466,9 @@ export default function Home() {
                     Executive
                   </span>
                 </div>
-                {/* Text color remains black (already black in the default state) */}
                 <p className="fs-18 text-black group-hover:text-white leading-[145%] mt-7.5">
                   Get 100 headshots with 10 unique backdrops and outfits.
                 </p>
-                {/* HR color changes to white with 50% opacity on hover */}
                 <hr className="mt-5 opacity-[0.4] group-hover:opacity-[0.5] group-hover:border-white" />
                 <div className="flex flex-col gap-3 py-5">
                   <div className="flex items-center gap-3 group-hover:text-white!">
@@ -1498,14 +1483,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
-                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
-                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
-                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1517,7 +1502,6 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* Text color remains black */}
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       2 hours turnaround time
                     </h5>
@@ -1534,14 +1518,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
-                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
-                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
-                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1553,7 +1537,6 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* Text color remains black */}
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       100 headshots
                     </h5>
@@ -1570,14 +1553,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
-                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
-                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
-                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          stroke="currentColor" 
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1589,7 +1572,6 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* Text color remains black */}
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       Choice of 10 backdrops
                     </h5>
@@ -1606,14 +1588,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
-                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
-                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
-                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                          stroke="currentColor"
+                          strokeWidth="2" 
+                          strokeLinecap="round"
+                          strokeLinejoin="round" 
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1625,7 +1607,6 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* Text color remains black */}
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       Choice of 10 outfits
                     </h5>
@@ -1642,14 +1623,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
-                          strokeWidth="2" /* Converted stroke-width to strokeWidth */
-                          strokeLinecap="round" /* Converted stroke-linecap to strokeLinecap */
-                          strokeLinejoin="round" /* Converted stroke-linejoin to strokeLinejoin */
+                          stroke="currentColor" 
+                          strokeWidth="2"
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" /* Replace with {color} or currentColor for dynamic styling */
+                          stroke="currentColor" 
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1661,12 +1642,11 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    {/* Text color remains black */}
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       10 edit credits
                     </h5>
                   </div>
-                  {/* Button style changes on hover of the parent div */}
+                  
                   <Link
                     href="#"
                     className="btn btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
@@ -1680,10 +1660,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQS-SECTION */}
-      <section className="faqs-section relative">
+      {/* <section className="faqs-section relative">
         <Image
           src={"/images/Shape-shape.png"}
           width={86}
@@ -1810,10 +1790,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CONTACT-SECTION */}
-      <section className="contact-section relative">
+      {/* <section className="contact-section relative">
         <Image
           src={"/images/flower.png"}
           width={86}
@@ -1848,7 +1828,6 @@ export default function Home() {
               <div className="flex flex-col w-[45%]">
                 <form className="">
                   <div className="flex flex-col gap-5">
-                    {/* Username */}
                     <div className="flex flex-col">
                       <label
                         htmlFor="username"
@@ -1867,7 +1846,6 @@ export default function Home() {
                         className="block mt-2.5 fs-14 w-full placeholder-[#000] bg-[#F5F5F5] p-[15px] rounded-[8px] focus:outline-none"
                       />
                     </div>
-                    {/* Email */}
                     <div className="flex flex-col">
                       <label
                         htmlFor="email"
@@ -1888,7 +1866,6 @@ export default function Home() {
                       />
                     </div>
 
-                    {/* Cover Photo */}
                     <div className="flex flex-col">
                       <label
                         htmlFor="cover-photo"
@@ -1929,7 +1906,6 @@ export default function Home() {
                       </div>
                     </div>
 
-                    {/* Quiry */}
                     <div className="flex flex-col">
                       <label
                         htmlFor="about"
@@ -1950,7 +1926,6 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {/* BUTTONS */}
                   <div className="mt-6 flex">
                     <Link
                       href="#"
@@ -1964,7 +1939,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
