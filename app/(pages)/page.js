@@ -28,19 +28,19 @@ export default function Home() {
       <Navbar />
 
       {/* HERO-SECTION */}
-      {/* <section className="hero-section relative">
+      <section className="hero-section relative">
         <Image
           src={"/images/H3.png"}
           width={645}
           height={610}
           alt="H3"
           unoptimized={true}
-          className="w-full h-auto absolute right-0 top-[200px]"
+          className="absolute right-0 top-[200px]"
         />
         <div className="hero-wrapper">
           <div className="container mx-auto">
-            <div className="flex items-center pt-[100px] gap-5">
-              <div className="w-[50%]">
+            <div className="flex items-center px-fixed-20  gap-5">
+              <div className="w-1/2">
                 <div className="relative">
                   <Image
                     src={"/images/Group.png"}
@@ -114,18 +114,16 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="w-[50%] relative">
-                <div className="image-wrapper ml-auto mr-0">
-                  <Image
-                    src={"/images/hero.png"}
-                    width={645}
-                    height={610}
-                    alt="hero"
-                    unoptimized={true}
-                    className="w-full h-auto"
-                  />
-                </div>
-                <div className="absolute p-16 bg-white rounded-[13px] bottom-[35px] left-[110px]">
+              <div className="w-1/2 relative">
+                <Image
+                  src={"/images/hero.png"}
+                  width={645}
+                  height={610}
+                  alt="hero"
+                  unoptimized={true}
+                  className="w-auto! ml-auto mr-0"
+                />
+                <div className="users absolute p-16">
                   <p className="fs-19 font-the-bold">Get ready to join</p>
                   <p className="">60k+ Users</p>
                   <Image
@@ -134,17 +132,17 @@ export default function Home() {
                     height={44}
                     alt="users"
                     unoptimized={true}
-                    className="w-full h-auto mt-4"
+                    className="mt-4"
                   />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* STATISTICS-SECTION */}
-      {/* <section className="statistics-section relative">
+      <section className="statistics-section relative">
         <Image
           src={"/images/edged-Shape.png"}
           width={645}
@@ -159,7 +157,7 @@ export default function Home() {
               <h3 className="font-the-bold text-center">
                 Our <span className="text-brown">Statistics</span>
               </h3>
-              <div className="flex justify-between gap-15 mt-[44px]">
+              <div className="flex justify-between gap-1 mt-[44px]">
                 <div className="flex flex-col items-center">
                   <h4 className="font-the-bold">
                     6.4 million<span className="text-brown">+</span> USD
@@ -197,10 +195,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* WHAT-WE-DO-SECTION */}
-      {/* <section className="what-we-do-section">
+      <section className="what-we-do-section">
         <div className="what-we-do-wrapper">
           <div className="container mx-auto">
             <div className="flex items-center gap-1.5">
@@ -219,7 +217,7 @@ export default function Home() {
               <span className="text-brown">Do</span>
             </h2>
             <div className="flex items-center gap-5">
-              <div className="flex flex-col gap-5 w-[50%] pr-5 mt-[50px]">
+              <div className="flex flex-col xl:gap-5 lg:gap-4 md:gap-3 gap-2 w-1/2 pr-5 mt-50">
                 <div className="flex items-center bg-white rounded-[16px] p-20 gap-4">
                   <Image
                     src={"/images/ellipse-circle.png"}
@@ -288,7 +286,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="w-[50%]">
+              <div className="w-1/2">
                 <Image
                   src={"/images/what-we-do.png"}
                   width={600}
@@ -301,10 +299,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* PROCESS-SECTION */}
-      {/* <section className="process-section">
+      <section className="process-section">
         <div className="process-wrapper py-120 relative">
           <Image
             src={"/images/excel.png"}
@@ -332,7 +330,7 @@ export default function Home() {
                   HOW IT <span className="text-brown">WORKS</span>
                 </h2>
               </div>
-              <div className="grid grid-cols-3 gap-5 mt-10">
+              <div className="grid grid-cols-3 xl:gap-5 lg:gap-4 md:gap-3 gap-2 xl:mt-10 lg:mt-8 md:mt-6 mt-4">
                 <div className="bg-primary p-25 rounded-[20px]">
                   <div className="bg-white rounded-[13px] p-18 inline-block">
                     <Image
@@ -344,10 +342,10 @@ export default function Home() {
                       className=""
                     />
                   </div>
-                  <h5 className="font-the-bold mt-6">
+                  <h5 className="font-the-bold xl:mt-6 lg:mt-5 md:mt-4 mt-3">
                     Discovery & Profile Assessment
                   </h5>
-                  <p className="font-semibold leading-[187%] mt-4 uppercase">
+                  <p className="font-semibold leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
                     We evaluate your background, goals, strengths & gaps.
                   </p>
                 </div>
@@ -362,10 +360,10 @@ export default function Home() {
                       className=""
                     />
                   </div>
-                  <h5 className="font-the-bold mt-6">
+                  <h5 className="font-the-bold xl:mt-6 lg:mt-5 md:mt-4 mt-3">
                     Discovery & Profile Assessment
                   </h5>
-                  <p className="font-semibold leading-[187%] mt-4 uppercase">
+                  <p className="font-semibold leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
                     We evaluate your background, goals, strengths & gaps.
                   </p>
                 </div>
@@ -380,10 +378,10 @@ export default function Home() {
                       className=""
                     />
                   </div>
-                  <h5 className="font-the-bold mt-6">
+                  <h5 className="font-the-bold xl:mt-6 lg:mt-5 md:mt-4 mt-3">
                     Strategic Planning & Roadmap
                   </h5>
-                  <p className="font-semibold leading-[187%] mt-4 uppercase">
+                  <p className="font-semibold leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
                     Together we design a timeline choice of programs,
                     application components.
                   </p>
@@ -399,10 +397,10 @@ export default function Home() {
                       className=""
                     />
                   </div>
-                  <h5 className="font-the-bold mt-6">
+                  <h5 className="font-the-bold xl:mt-6 lg:mt-5 md:mt-4 mt-3">
                     Interview & Scholarship Prep
                   </h5>
-                  <p className="font-semibold leading-[187%] mt-4 uppercase">
+                  <p className="font-semibold leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
                     Mock interviews, funding pitch coaching, mindset support.
                   </p>
                 </div>
@@ -417,8 +415,10 @@ export default function Home() {
                       className=""
                     />
                   </div>
-                  <h5 className="font-the-bold mt-6">Decision & Next Steps</h5>
-                  <p className="font-semibold leading-[187%] mt-4 uppercase">
+                  <h5 className="font-the-bold xl:mt-6 lg:mt-5 md:mt-4 mt-3">
+                    Decision & Next Steps
+                  </h5>
+                  <p className="font-semibold leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
                     You accept an offer, we help with visa, transitions, and
                     visionary next steps.
                   </p>
@@ -443,10 +443,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* TESTIMONIAL-SECTION */}
-      {/* <section className="testimonial-section">
+      <section className="testimonial-section">
         <div className="testimonial-wrapper">
           <div className="container mx-auto">
             <div className="flex items-center gap-1.5 mb-3">
@@ -477,7 +477,7 @@ export default function Home() {
                 className="absolute left-[60%] top-[-50px]"
               />
               <div className="flex gap-2.5 absolute right-0 bottom-0">
-                <div className="bg-white px-[26px] py-[22px] rounded-[100px]">
+                <div className="bg-white slide-btn rounded-[100px]">
                   <Image
                     src={"/images/slide-left.png"}
                     width={8}
@@ -487,7 +487,7 @@ export default function Home() {
                     className=""
                   />
                 </div>
-                <div className="bg-white px-[26px] py-[22px] rounded-[100px]">
+                <div className="bg-white slide-btn rounded-[100px]">
                   <Image
                     src={"/images/slide-right.png"}
                     width={8}
@@ -502,7 +502,7 @@ export default function Home() {
 
             <div className="testimonial-section w-full overflow-hidden">
               <Swiper
-                spaceBetween={24}
+                spaceBetween={12}
                 slidesPerView={4}
                 centeredSlides={true}
                 pagination={{
@@ -513,13 +513,35 @@ export default function Home() {
                   },
                 }}
                 breakpoints={{
-                  1024: { slidesPerView: 3, centeredSlides: true },
-                  768: { slidesPerView: 2, centeredSlides: true },
-                  576: { slidesPerView: 1, centeredSlides: true },
+                  1400: {
+                    slidesPerView: 3,
+                    centeredSlides: true,
+                    spaceBetween: 20,
+                  },
+                  1200: {
+                    slidesPerView: 3,
+                    centeredSlides: true,
+                    spaceBetween: 16,
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                    centeredSlides: true,
+                    spaceBetween: 16,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    centeredSlides: true,
+                    spaceBetween: 12,
+                  },
+                  576: {
+                    slidesPerView: 1,
+                    centeredSlides: true,
+                    spaceBetween: 12,
+                  },
                 }}
               >
                 <SwiperSlide>
-                  <div className="flex flex-col mt-12.5 p-25 bg-white rounded-[18px]">
+                  <div className="flex flex-col xl:mt-12.5 lg:mt-9 md:mt-7 mt-5 p-25 bg-white rounded-[18px]">
                     <div className="image-wrapper">
                       <Image
                         src={"/images/testimonial-clara.png"}
@@ -539,7 +561,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center mt-15">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-11 md:mt-9 mt-7">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -558,7 +580,7 @@ export default function Home() {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="flex flex-col mt-12.5 p-25 bg-white rounded-[18px]">
+                  <div className="flex flex-col xl:mt-12.5 lg:mt-9 md:mt-7 mt-5 p-25 bg-white rounded-[18px]">
                     <div className="image-wrapper">
                       <Image
                         src={"/images/testimonial-james.png"}
@@ -578,7 +600,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center mt-15">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-11 md:mt-9 mt-7">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -597,7 +619,7 @@ export default function Home() {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="flex flex-col mt-12.5 p-25 bg-white rounded-[18px]">
+                  <div className="flex flex-col xl:mt-12.5 lg:mt-9 md:mt-7 mt-5 p-25 bg-white rounded-[18px]">
                     <div className="image-wrapper">
                       <Image
                         src={"/images/testimonial-jessi.png"}
@@ -609,7 +631,7 @@ export default function Home() {
                       />
                     </div>
                     <div>
-                      <p className="line-clamp-8 fs-18 font-semibold mt-7">
+                      <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 md:mt-5 mt-4">
                         "Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
@@ -617,7 +639,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center mt-15">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-11 md:mt-9 mt-7">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -636,7 +658,7 @@ export default function Home() {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="flex flex-col mt-12.5 p-25 bg-white rounded-[18px]">
+                  <div className="flex flex-col xl:mt-12.5 lg:mt-9 md:mt-7 mt-5 p-25 bg-white rounded-[18px]">
                     <div className="image-wrapper">
                       <Image
                         src={"/images/testimonial-clara.png"}
@@ -648,7 +670,7 @@ export default function Home() {
                       />
                     </div>
                     <div>
-                      <p className="line-clamp-8 fs-18 font-semibold mt-7">
+                      <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 md:mt-5 mt-4">
                         "Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
@@ -656,7 +678,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center mt-15">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-11 md:mt-9 mt-7">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -675,7 +697,7 @@ export default function Home() {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="flex flex-col mt-12.5 p-25 bg-white rounded-[18px]">
+                  <div className="flex flex-col xl:mt-12.5 lg:mt-9 md:mt-7 mt-5 p-25 bg-white rounded-[18px]">
                     <div className="image-wrapper">
                       <Image
                         src={"/images/testimonial-james.png"}
@@ -687,7 +709,7 @@ export default function Home() {
                       />
                     </div>
                     <div>
-                      <p className="line-clamp-8 fs-18 font-semibold mt-7">
+                      <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 md:mt-5 mt-4">
                         "Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
@@ -695,7 +717,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center mt-15">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-11 md:mt-9 mt-7">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -714,7 +736,7 @@ export default function Home() {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="flex flex-col mt-12.5 p-25 bg-white rounded-[18px]">
+                  <div className="flex flex-col xl:mt-12.5 lg:mt-9 md:mt-7 mt-5 p-25 bg-white rounded-[18px]">
                     <div className="image-wrapper">
                       <Image
                         src={"/images/testimonial-jessi.png"}
@@ -726,7 +748,7 @@ export default function Home() {
                       />
                     </div>
                     <div>
-                      <p className="line-clamp-8 fs-18 font-semibold mt-7">
+                      <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 md:mt-5 mt-4">
                         "Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
@@ -734,7 +756,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center mt-15">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-11 md:mt-9 mt-7">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -766,7 +788,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* INSTAGRAM-SECTION */}
       {/* <section className="instagram-section relative">
@@ -796,7 +818,7 @@ export default function Home() {
       </section> */}
 
       {/* BLOG-SECTION */}
-      {/* <section className="blog-section relative">
+      <section className="blog-section relative">
         <Image
           src={"/images/flower.png"}
           width={114}
@@ -823,7 +845,7 @@ export default function Home() {
                 OUR <span className="text-brown">BLOGS</span>
               </h2>
             </div>
-            <div className="grid grid-cols-3 gap-5 mt-10">
+            <div className="grid grid-cols-3 xl:gap-5 lg:gap-4 md:gap-3 gap-2 xl:mt-10 lg:mt-8 md:mt-6 mt-4">
               <div className="bg-white blog-box-padding rounded-[20px]">
                 <div className="imaege-wrapper">
                   <Image
@@ -835,14 +857,14 @@ export default function Home() {
                     className="w-full!"
                   />
                 </div>
-                <h5 className="mt-5 font-the-bold leading-[140%]">
+                <h5 className="xl:mt-5 lg:mt-4 mt-3 font-the-bold leading-[140%]">
                   Lorem ipsum dolor amet consectetur adipiscing justo sit amet
                 </h5>
                 <p className="mt-1 leading-[131%]">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <div className="flex gap-2 mt-5 items-center">
+                <div className="flex gap-2 xl:mt-5 lg:mt-4 mt-3 items-center">
                   <Image
                     src={"/images/blog.png"}
                     width={21}
@@ -865,14 +887,14 @@ export default function Home() {
                     className="w-full!"
                   />
                 </div>
-                <h5 className="mt-5 font-the-bold leading-[140%]">
+                <h5 className="xl:mt-5 lg:mt-4 mt-3 font-the-bold leading-[140%]">
                   Lorem ipsum dolor amet consectetur adipiscing justo sit amet
                 </h5>
                 <p className="mt-1 leading-[131%]">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <div className="flex gap-2 mt-5 items-center">
+                <div className="flex gap-2 xl:mt-5 lg:mt-4 mt-3 items-center">
                   <Image
                     src={"/images/blog.png"}
                     width={21}
@@ -895,14 +917,14 @@ export default function Home() {
                     className="w-full!"
                   />
                 </div>
-                <h5 className="mt-5 font-the-bold leading-[140%]">
+                <h5 className="xl:mt-5 lg:mt-4 mt-3 font-the-bold leading-[140%]">
                   Lorem ipsum dolor amet consectetur adipiscing justo sit amet
                 </h5>
                 <p className="mt-1 leading-[131%]">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-                <div className="flex gap-2 mt-5 items-center">
+                <div className="flex gap-2 xl:mt-5 lg:mt-4 mt-3 items-center">
                   <Image
                     src={"/images/blog.png"}
                     width={21}
@@ -917,10 +939,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* TAKE-THE-QUIZ-SECTION */}
-      {/* <section className="take-the-quiz-section relative">
+      <section className="take-the-quiz-section relative">
         <Image
           src={"/images/sharp-shape.png"}
           width={114}
@@ -931,7 +953,7 @@ export default function Home() {
         />
         <div className="take-the-quiz-wrapper pt-120">
           <div className="container px-120 mx-auto">
-            <div className="flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center xl:gap-3 gap-2">
               <div className="flex items-center gap-1.5">
                 <Image
                   src={"/images/Ellipse.png"}
@@ -958,7 +980,7 @@ export default function Home() {
                 Q. What region do you plan to study in? (UK / US / Europe / Asia
                 / Other)
               </h5>
-              <div className="flex items-center justify-center mt-[26px]">
+              <div className="flex items-center justify-center xl:mt-6.5 lg:mt-5 md:mt-4 mt-3">
                 <div className="flex flex-col w-full gap-3">
                   {options.map((option) => (
                     <label
@@ -1006,7 +1028,7 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-              <div className="flex justify-center gap-3 mt-[30px]">
+              <div className="flex justify-center gap-3 xl:mt-7.5 lg:mt-6 md:mt-5 mt-4">
                 <Link
                   href="#"
                   className="btn btn-lg btn-secondary font-the-bold"
@@ -1018,12 +1040,12 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="flex flex-col mt-10">
+            <div className="flex flex-col xl:mt-10 lg:mt-8 md:mt-6 mt-4">
               <div className="inline text-center">
                 <Link href="#" className="btn btn-lg btn-primary font-the-bold">
                   Book a free consultation
                 </Link>
-                <p className="mt-8 px-121 text-black">
+                <p className="mt-8 px-120 text-black">
                   “Book a free consultation” or “See matching program + funding
                   roadmap”.
                 </p>
@@ -1031,10 +1053,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* PRICE-SECTION */}
-      {/* <section className="price-section">
+      <section className="price-section">
         <div className="price-wrapper py-120">
           <div className="container mx-auto relative">
             <Image
@@ -1061,7 +1083,7 @@ export default function Home() {
                 PRICING <span className="text-brown">PLANS</span>
               </h2>
             </div>
-            <div className="grid grid-cols-3 gap-5 mt-12.5">
+            <div className="grid grid-cols-3 xl:gap-5 lg:gap-4 md:gap-3 gap-2 xl:mt-12.5 lg:mt-9 md:mt-7 mt-5">
               <div className="bg-white price-box price-box-padding rounded-[16px] hover:bg-[#6C8E69] group transition duration-300 ease-in-out">
                 <div className="inline-block bg-dark-green rounded-[70px] px-[23px] py-[6px] group-hover:bg-white!">
                   <span className="font-segoeUi font-semibold text-white group-hover:text-black">
@@ -1660,10 +1682,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* FAQS-SECTION */}
-      {/* <section className="faqs-section relative">
+      <section className="faqs-section relative">
         <Image
           src={"/images/Shape-shape.png"}
           width={86}
@@ -1691,7 +1713,7 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="flex flex-col mt-50 gap-5">
+            <div className="flex flex-col mt-50 xl:gap-5 lg:gap-4 md:gap-3 gap-2">
               <div className="faq-drawer p-24 rounded-[12px] hover:bg-[#6C8E69]! group transition-colors duration-300">
                 <input
                   className="faq-drawer__trigger"
@@ -1790,7 +1812,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* CONTACT-SECTION */}
       {/* <section className="contact-section relative">
@@ -1804,7 +1826,7 @@ export default function Home() {
         />
         <div className="contact-section-wrapper py-120">
           <div className="container mx-auto p-70 bg-white rounded-[16px]">
-            <div className="flex gap-5">
+            <div className="flex xl:gap-5 lg:gap-4 md:gap-3 gap-2">
               <div className="flex flex-col w-[55%]">
                 <h2 className="font-the-bold text-black">
                   Ready to Launch Your Global Grad Journey?
@@ -1827,7 +1849,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col w-[45%]">
                 <form className="">
-                  <div className="flex flex-col gap-5">
+                  <div className="flex flex-col xl:gap-5 lg:gap-4 md:gap-3 gap-2">
                     <div className="flex flex-col">
                       <label
                         htmlFor="username"
