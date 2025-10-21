@@ -498,7 +498,7 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 1199.97px) {
   body {
-    font-size: 15px;
+    font-size: 14px;
   }
   .px-fixed-20 {
     padding: 0 20px;
@@ -508,7 +508,7 @@ input[type="checkbox"] {
   }
   /* 44 */
   h2 {
-    font-size: 42px;
+    font-size: 38px;
   }
   /* 32 */
   h3 {
@@ -516,11 +516,11 @@ input[type="checkbox"] {
   }
   /* 28 */
   h4 {
-    font-size: 27px;
+    font-size: 22px;
   }
   /* 20 */
   h5 {
-    font-size: 19px;
+    font-size: 17px;
   }
   /* 18 */
   h6 {
@@ -532,7 +532,7 @@ input[type="checkbox"] {
   }
 
   .fs-18 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .fs-19 {
@@ -552,15 +552,16 @@ input[type="checkbox"] {
   }
 
   .p-260 {
-    padding: 220px;
+    padding: 0 180px;
   }
+
   /* 44 70 */
   .process-box-padding {
-    padding: 40px 58px;
+    padding: 30px 48px;
   }
   /* 30 24 */
   .price-box-padding {
-    padding: 30px 23px;
+    padding: 30px 20px;
   }
   /* 16 16 20 16 */
   .blog-box-padding {
@@ -568,27 +569,27 @@ input[type="checkbox"] {
   }
 
   .mt-50 {
-    margin-top: 46px;
+    margin-top: 40px;
   }
 
   .p-70 {
-    padding: 64px;
+    padding: 44px;
   }
   /* all 46 */
   .p-46 {
-    padding: 44px;
+    padding: 35px 20px;
   }
 
   .p-25 {
-    padding: 24px;
+    padding: 20px;
   }
 
   .p-24 {
-    padding: 23px;
+    padding: 20px;
   }
 
   .p-20 {
-    padding: 16px 18px;
+    padding: 14px 16px;
   }
 
   .p-18 {
@@ -597,6 +598,10 @@ input[type="checkbox"] {
 
   .p-16 {
     padding: 14px 16px;
+  }
+
+  .btn {
+    font-size: 13px;
   }
 
   .btn-md {

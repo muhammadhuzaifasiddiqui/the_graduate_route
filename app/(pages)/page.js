@@ -149,7 +149,7 @@ export default function Home() {
           height={610}
           alt="edged-Shape"
           unoptimized={true}
-          className="absolute right-0 xl:top-[55px] lg:top-[40px] top-[35px]"
+          className="absolute right-0 xl:top-[55px] lg:top-[30px] top-[25px]"
         />
         <div className="statistics-wrapper py-120">
           <div className="container mx-auto px-fixed-20">
@@ -157,10 +157,10 @@ export default function Home() {
               <h3 className="font-the-bold text-center">
                 Our <span className="text-brown">Statistics</span>
               </h3>
-              <div className="flex justify-between gap-1 mt-[44px]">
+              <div className="flex justify-between gap-1 xl:mt-11 lg:mt-9.5 md:mt-7.5">
                 <div className="flex flex-col items-center">
                   <h4 className="font-the-bold">
-                    6.4 million<span className="text-brown">+</span> USD
+                    6.4 million<span className="text-brown"> +</span> USD
                   </h4>
                   <p className="mt-2 text-center font-medium">
                     Securing fully funded scholarships across five countries
@@ -168,7 +168,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col items-center">
                   <h4 className="font-the-bold">
-                    900<span className="text-brown">+</span> clients
+                    900<span className="text-brown"> +</span> clients
                   </h4>
                   <p className="mt-2 text-center font-medium">
                     One-on-one mentoring with personalized strategy and success
@@ -176,7 +176,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col items-center">
                   <h4 className="font-the-bold">
-                    175<span className="text-brown">+</span> Scholarships
+                    175<span className="text-brown"> +</span> Scholarships
                   </h4>
                   <p className="mt-2 text-center font-medium">
                     From Chevening to DAAD and Erasmus — our results speak for
@@ -185,7 +185,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col items-center">
                   <h4 className="font-the-bold">
-                    98<span className="text-brown">%</span> Satisfaction
+                    98<span className="text-brown"> %</span> Satisfaction
                   </h4>
                   <p className="mt-2 text-center font-medium">
                     Strategic, personalized impact trusted by 98% clients
@@ -200,7 +200,7 @@ export default function Home() {
       {/* WHAT-WE-DO-SECTION */}
       <section className="what-we-do-section">
         <div className="what-we-do-wrapper">
-          <div className="container mx-auto">
+          <div className="container mx-auto px-fixed-20">
             <div className="flex items-center gap-1.5">
               <Image
                 src={"/images/Ellipse.png"}
@@ -310,9 +310,9 @@ export default function Home() {
             height={124}
             alt="excel"
             unoptimized={true}
-            className="absolute left-0 top-[60px]"
+            className="absolute left-0 xl:top-[80px] lg:top-[40px] top-[30px]"
           />
-          <div className="container mx-auto ">
+          <div className="container mx-auto px-fixed-20">
             <div className="bg-white process-box-padding rounded-[20px]">
               <div className="flex flex-col items-center gap-3">
                 <div className="flex items-center gap-1.5">
@@ -424,7 +424,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="bg-dark-green p-46 rounded-[20px]">
-                  <div className="flex flex-col gap-3 mt-[40px]">
+                  <div className="flex flex-col gap-3 xl:mt-10 lg:mt-8.5 md:mt-7.5 mt-7">
                     <Link
                       href="#"
                       className="btn btn-primary font-the-bold text-center"
@@ -448,7 +448,7 @@ export default function Home() {
       {/* TESTIMONIAL-SECTION */}
       <section className="testimonial-section">
         <div className="testimonial-wrapper">
-          <div className="container mx-auto">
+          <div className="container mx-auto px-fixed-20">
             <div className="flex items-center gap-1.5 mb-3">
               <Image
                 src={"/images/Ellipse.png"}
@@ -474,7 +474,7 @@ export default function Home() {
                 height={48}
                 alt="Ellipse"
                 unoptimized={true}
-                className="absolute left-[60%] top-[-50px]"
+                className="absolute xl:left-[60%] lg:left-[70%] left-[80%] top-[-50px]"
               />
               <div className="flex gap-2.5 absolute right-0 bottom-0">
                 <div className="bg-white slide-btn rounded-[100px]">
@@ -600,7 +600,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center xl:mt-15 lg:mt-11 md:mt-9 mt-7">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-9 mt-7">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -639,7 +639,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center xl:mt-15 lg:mt-11 md:mt-9 mt-7">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-9 mt-7">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -678,7 +678,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center xl:mt-15 lg:mt-11 md:mt-9 mt-7">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-9 mt-7">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -717,7 +717,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center xl:mt-15 lg:mt-11 md:mt-9 mt-7">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-9 mt-7">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -756,7 +756,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center xl:mt-15 lg:mt-11 md:mt-9 mt-7">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-9 mt-7">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -825,10 +825,10 @@ export default function Home() {
           height={120}
           alt="flower"
           unoptimized={true}
-          className="absolute right-0 top-[-55px]"
+          className="absolute right-0 xl:top-[-55px] lg:top-[80px] top-[100px]"
         />
         <div className="blog-wrapper pt-120">
-          <div className="container mx-auto">
+          <div className="container mx-auto px-fixed-20">
             <div className="flex flex-col items-center gap-3">
               <div className="flex items-center gap-1.5">
                 <Image
@@ -857,7 +857,7 @@ export default function Home() {
                     className="w-full!"
                   />
                 </div>
-                <h5 className="xl:mt-5 lg:mt-4 mt-3 font-the-bold leading-[140%]">
+                <h5 className="xl:mt-5 mt-3 font-the-bold leading-[140%]">
                   Lorem ipsum dolor amet consectetur adipiscing justo sit amet
                 </h5>
                 <p className="mt-1 leading-[131%]">
@@ -887,7 +887,7 @@ export default function Home() {
                     className="w-full!"
                   />
                 </div>
-                <h5 className="xl:mt-5 lg:mt-4 mt-3 font-the-bold leading-[140%]">
+                <h5 className="xl:mt-5 mt-3 font-the-bold leading-[140%]">
                   Lorem ipsum dolor amet consectetur adipiscing justo sit amet
                 </h5>
                 <p className="mt-1 leading-[131%]">
@@ -917,7 +917,7 @@ export default function Home() {
                     className="w-full!"
                   />
                 </div>
-                <h5 className="xl:mt-5 lg:mt-4 mt-3 font-the-bold leading-[140%]">
+                <h5 className="xl:mt-5 mt-3 font-the-bold leading-[140%]">
                   Lorem ipsum dolor amet consectetur adipiscing justo sit amet
                 </h5>
                 <p className="mt-1 leading-[131%]">
@@ -951,7 +951,7 @@ export default function Home() {
           unoptimized={true}
           className="absolute left-auto right-0 top-[15%] transform -translate-y-15%"
         />
-        <div className="take-the-quiz-wrapper pt-120">
+        <div className="take-the-quiz-wrapper pt-120 px-fixed-20 ">
           <div className="container px-120 mx-auto">
             <div className="flex flex-col items-center xl:gap-3 gap-2">
               <div className="flex items-center gap-1.5">
@@ -1058,14 +1058,14 @@ export default function Home() {
       {/* PRICE-SECTION */}
       <section className="price-section">
         <div className="price-wrapper py-120">
-          <div className="container mx-auto relative">
+          <div className="container mx-auto px-fixed-20 relative">
             <Image
               src={"/images/Vector-box.png"}
               width={86}
               height={86}
               alt="Vector-box"
               unoptimized={true}
-              className="absolute left-[75px] top-[-86px]"
+              className="absolute left-[75px] xl:top-[-86px] top-[-16px]"
             />
             <div className="flex flex-col items-center gap-3">
               <div className="flex items-center gap-1.5">
@@ -1694,7 +1694,7 @@ export default function Home() {
           unoptimized={true}
           className="absolute left-0 right-auto"
         />
-        <div className="faqs-wrapper">
+        <div className="faqs-wrapper px-fixed-20">
           <div className="container px-120 mx-auto">
             <div className="flex flex-col items-center gap-3">
               <div className="flex items-center gap-1.5">
@@ -1815,14 +1815,14 @@ export default function Home() {
       </section>
 
       {/* CONTACT-SECTION */}
-      <section className="contact-section relative">
+      <section className="contact-section px-fixed-20 relative">
         <Image
           src={"/images/flower.png"}
           width={86}
           height={86}
           alt="flower"
           unoptimized={true}
-          className="absolute left-auto right-0 top-[50%] transform -translate-y-50%"
+          className="absolute left-auto right-0 xl:top-[50%] top-[5%] transform xl:-translate-y-50% -translate-y-5%"
         />
         <div className="contact-section-wrapper py-120">
           <div className="container mx-auto p-70 bg-white rounded-[16px]">
