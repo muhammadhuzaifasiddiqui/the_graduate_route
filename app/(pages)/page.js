@@ -35,7 +35,7 @@ export default function Home() {
           height={610}
           alt="H3"
           unoptimized={true}
-          className="absolute right-0 top-[200px]"
+          className="absolute right-0 xl:top-[200px] lg:top-[120px] top-[100px]"
         />
         <div className="hero-wrapper">
           <div className="container mx-auto">
@@ -51,9 +51,9 @@ export default function Home() {
                     className="absolute top-0 right-0"
                   />
                   <h1 className="font-the-bold font-bold">
-                    <span className="text-brown">Unlock</span>
+                    <span className="text-brown">Unlock </span>
                     Full Funding for
-                    <span className="text-brown">Global Masters</span>
+                    <span className="text-brown"> Global Masters</span>
                   </h1>
                 </div>
                 <h6 className="fs-18 font-semibold mt-[15px] leading-[166%]">
@@ -61,7 +61,7 @@ export default function Home() {
                   scholarships and admission to world-class graduate schools —
                   then return home to build impact.
                 </h6>
-                <div className="flex gap-3 mt-[40px] relative">
+                <div className="flex gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-5 relative">
                   <Image
                     src={"/images/arrow-vector.png"}
                     width={60}
@@ -77,7 +77,7 @@ export default function Home() {
                     Book a Strategy Call
                   </Link>
                 </div>
-                <p className="font-the-bold font-semibold text-dark-black mt-[50px] leading-[175%]">
+                <p className="font-the-bold font-semibold text-dark-black xl:mt-12.5 lg:mt-11 mt-10 leading-[175%]">
                   Trusted By Trustpliot
                 </p>
                 <div className="mt-[10px]">
@@ -99,10 +99,10 @@ export default function Home() {
                     unoptimized={true}
                     className="absolute bottom-[-35px] right-[40px]"
                   />
-                  <p className="font-the-bold font-semibold text-dark-black mt-[24px] leading-[175%]">
+                  <p className="font-the-bold font-semibold text-dark-black xl:mt-6 lg:mt-5 mt-4 leading-[175%]">
                     Over 7,000 S-Start Customer Reviews
                   </p>
-                  <div className="mt-[10px]">
+                  <div className="mt-2.5">
                     <Image
                       src={"/images/black-stars.png"}
                       width={100}
@@ -149,10 +149,10 @@ export default function Home() {
           height={610}
           alt="edged-Shape"
           unoptimized={true}
-          className="w-full h-auto absolute right-0 top-[55px]"
+          className="absolute right-0 xl:top-[55px] lg:top-[40px] top-[35px]"
         />
         <div className="statistics-wrapper py-120">
-          <div className="container mx-auto">
+          <div className="container mx-auto px-fixed-20">
             <div className="bg-white p-46 rounded-[20px]">
               <h3 className="font-the-bold text-center">
                 Our <span className="text-brown">Statistics</span>
@@ -991,19 +991,19 @@ export default function Home() {
               transition-all duration-200 ease-in-out
               ${
                 selectedOption === option.id
-                  ? "border-transparent bg-[#F1F5F9]" 
-                  : "border-1 border-[#D4D4D8] bg-white" 
+                  ? "border-transparent bg-[#F1F5F9]"
+                  : "border-1 border-[#D4D4D8] bg-white"
               }
             `}
                     >
                       <input
                         type="radio"
                         id={option.id}
-                        name="form-option" 
+                        name="form-option"
                         value={option.id}
                         checked={selectedOption === option.id}
                         onChange={handleOptionChange}
-                        className="hidden" 
+                        className="hidden"
                       />
 
                       <div
@@ -1011,13 +1011,13 @@ export default function Home() {
                 w-4 h-4 rounded-full border-1 flex items-center justify-center mr-3
                 ${
                   selectedOption === option.id
-                    ? "border-[#6C8E69] bg-[#6C8E69] " 
-                    : "border-[#000000] bg-white" 
+                    ? "border-[#6C8E69] bg-[#6C8E69] "
+                    : "border-[#000000] bg-white"
                 }
               `}
                       >
                         {selectedOption === option.id && (
-                          <div className="w-4 h-4 rounded-full bg-[#6C8E69]"></div> 
+                          <div className="w-4 h-4 rounded-full bg-[#6C8E69]"></div>
                         )}
                       </div>
 
@@ -1107,14 +1107,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" 
-                          strokeWidth="2" 
-                          strokeLinecap="round" 
-                          strokeLinejoin="round" 
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" 
+                          stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1126,7 +1126,7 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                  
+
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       2 hours turnaround time
                     </h5>
@@ -1143,14 +1143,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" 
+                          stroke="currentColor"
                           strokeWidth="2"
-                          strokeLinecap="round" 
-                          strokeLinejoin="round" 
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" 
+                          stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1162,7 +1162,7 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-               
+
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       100 headshots
                     </h5>
@@ -1179,14 +1179,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" 
-                          strokeWidth="2" 
-                          strokeLinecap="round" 
-                          strokeLinejoin="round" 
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" 
+                          stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1198,7 +1198,7 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-                    
+
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       Choice of 10 backdrops
                     </h5>
@@ -1215,14 +1215,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" 
+                          stroke="currentColor"
                           strokeWidth="2"
-                          strokeLinecap="round" 
-                          strokeLinejoin="round" 
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" 
+                          stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1234,7 +1234,7 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-              
+
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       Choice of 10 outfits
                     </h5>
@@ -1251,14 +1251,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" 
+                          stroke="currentColor"
                           strokeWidth="2"
-                          strokeLinecap="round" 
-                          strokeLinejoin="round" 
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" 
+                          stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1270,12 +1270,12 @@ export default function Home() {
                         </clipPath>
                       </defs>
                     </svg>
-     
+
                     <h5 className="leading-[160%] text-black group-hover:text-white">
                       10 edit credits
                     </h5>
                   </div>
-                 
+
                   <Link
                     href="#"
                     className="btn btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
@@ -1312,11 +1312,11 @@ export default function Home() {
                           stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
-                          strokeLinejoin="round" 
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" 
+                          stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1344,9 +1344,9 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" 
-                          strokeWidth="2" 
-                          strokeLinecap="round" 
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
                           strokeLinejoin="round"
                         />
                         <path
@@ -1379,14 +1379,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" 
-                          strokeWidth="2" 
-                          strokeLinecap="round" 
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
                           strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" 
+                          stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1414,14 +1414,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" 
+                          stroke="currentColor"
                           strokeWidth="2"
-                          strokeLinecap="round" 
-                          strokeLinejoin="round" 
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" 
+                          stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1449,8 +1449,8 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" 
-                          strokeWidth="2" 
+                          stroke="currentColor"
+                          strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         />
@@ -1540,9 +1540,9 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" 
-                          strokeWidth="2" 
-                          strokeLinecap="round" 
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
                           strokeLinejoin="round"
                         />
                         <path
@@ -1575,14 +1575,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" 
-                          strokeWidth="2" 
-                          strokeLinecap="round" 
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
                           strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" 
+                          stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1611,9 +1611,9 @@ export default function Home() {
                         <path
                           d="M7 12L12 17L22 7"
                           stroke="currentColor"
-                          strokeWidth="2" 
+                          strokeWidth="2"
                           strokeLinecap="round"
-                          strokeLinejoin="round" 
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
@@ -1645,14 +1645,14 @@ export default function Home() {
                       <g clipPath="url(#clip0_22_4943)">
                         <path
                           d="M7 12L12 17L22 7"
-                          stroke="currentColor" 
+                          stroke="currentColor"
                           strokeWidth="2"
-                          strokeLinecap="round" 
+                          strokeLinecap="round"
                           strokeLinejoin="round"
                         />
                         <path
                           d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor" 
+                          stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -1668,7 +1668,7 @@ export default function Home() {
                       10 edit credits
                     </h5>
                   </div>
-                  
+
                   <Link
                     href="#"
                     className="btn btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
@@ -1713,7 +1713,7 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="flex flex-col mt-50 xl:gap-5 lg:gap-4 md:gap-3 gap-2">
+            <div className="flex flex-col mt-50 xl:gap-5 lg:gap-4 gap-3">
               <div className="faq-drawer p-24 rounded-[12px] hover:bg-[#6C8E69]! group transition-colors duration-300">
                 <input
                   className="faq-drawer__trigger"
@@ -1815,7 +1815,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT-SECTION */}
-      {/* <section className="contact-section relative">
+      <section className="contact-section relative">
         <Image
           src={"/images/flower.png"}
           width={86}
@@ -1831,7 +1831,7 @@ export default function Home() {
                 <h2 className="font-the-bold text-black">
                   Ready to Launch Your Global Grad Journey?
                 </h2>
-                <div className="flex gap-3 mt-[40px] relative">
+                <div className="flex gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-5 relative">
                   <Link
                     href="#"
                     className="btn btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold"
@@ -1849,7 +1849,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col w-[45%]">
                 <form className="">
-                  <div className="flex flex-col xl:gap-5 lg:gap-4 md:gap-3 gap-2">
+                  <div className="flex flex-col xl:gap-5 lg:gap-4 gap-3">
                     <div className="flex flex-col">
                       <label
                         htmlFor="username"
@@ -1947,8 +1947,7 @@ export default function Home() {
                       ></textarea>
                     </div>
                   </div>
-
-                  <div className="mt-6 flex">
+                  <div className="xl:mt-6 lg:mt-5 mt-4 flex">
                     <Link
                       href="#"
                       className="btn btn-md btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold"
@@ -1961,7 +1960,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
     </>
   );
 }

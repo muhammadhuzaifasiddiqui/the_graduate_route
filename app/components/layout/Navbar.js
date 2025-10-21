@@ -46,19 +46,19 @@ const Navbar = () => {
               />
             </div>
             <div className="lg:flex hidden navbar-menu items-center justify-center gap-6">
-              <a className="fs-14 font-segoeUi text-black" href="#navbar">
+              <a className="fs-14 font-segoeUi leading-[100%] text-black" href="#navbar">
                 Home
               </a>
-              <a className="fs-14 font-segoeUi text-black" href="#ourmission">
+              <a className="fs-14 font-segoeUi leading-[100%] text-black" href="#ourmission">
                 Our Mission
               </a>
-              <a className="fs-14 font-segoeUi text-black" href="#process">
+              <a className="fs-14 font-segoeUi leading-[100%] text-black" href="#process">
                 How it Works
               </a>
-              <a className="fs-14 font-segoeUi text-black" href="#testimonials">
+              <a className="fs-14 font-segoeUi leading-[100%] text-black" href="#testimonials">
                 Testimonials
               </a>
-              <a className="fs-14 font-segoeUi text-black" href="#faqs">
+              <a className="fs-14 font-segoeUi leading-[100%] text-black" href="#faqs">
                 FAQS
               </a>
             </div>
