@@ -35,12 +35,12 @@ export default function Home() {
           height={610}
           alt="H3"
           unoptimized={true}
-          className="absolute right-0 xl:top-[200px] lg:top-[120px] top-[100px]"
+          className="absolute right-0 xl:top-[200px] lg:top-[120px] top-[550px]"
         />
         <div className="hero-wrapper">
           <div className="container mx-auto">
-            <div className="flex items-center px-fixed-20  gap-5">
-              <div className="w-1/2">
+            <div className="flex flex-col lg:flex-row items-center px-fixed-20  gap-5">
+              <div className="w-full lg:w-1/2">
                 <div className="relative">
                   <Image
                     src={"/images/Group.png"}
@@ -61,14 +61,14 @@ export default function Home() {
                   scholarships and admission to world-class graduate schools —
                   then return home to build impact.
                 </h6>
-                <div className="flex gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-5 relative">
+                <div className="flex flex-col md:flex-row text-center gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-5 relative">
                   <Image
                     src={"/images/arrow-vector.png"}
                     width={60}
                     height={60}
                     alt="arrow-vector"
                     unoptimized={true}
-                    className="absolute right-0 top-[-20px]"
+                    className="absolute right-0 lg:top-[-20px] top-[-65px]"
                   />
                   <Link href="#" className="btn btn-primary font-the-bold">
                     Take the Quiz → Find Your Path
@@ -97,7 +97,7 @@ export default function Home() {
                     height={55}
                     alt="plus Group"
                     unoptimized={true}
-                    className="absolute bottom-[-35px] right-[40px]"
+                    className="absolute lg:bottom-[-35px] bottom-[50] right-[40px]"
                   />
                   <p className="font-the-bold font-semibold text-dark-black xl:mt-6 lg:mt-5 mt-4 leading-[175%]">
                     Over 7,000 S-Start Customer Reviews
@@ -114,14 +114,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="w-1/2 relative">
+              <div className="w-full lg:w-1/2 relative">
                 <Image
                   src={"/images/hero.png"}
                   width={645}
                   height={610}
                   alt="hero"
                   unoptimized={true}
-                  className="w-auto! ml-auto mr-0"
+                  className="w-auto! lg:ml-auto lg:mr-0 mx-auto"
                 />
                 <div className="users absolute p-16">
                   <p className="fs-19 font-the-bold">Get ready to join</p>
@@ -132,7 +132,7 @@ export default function Home() {
                     height={44}
                     alt="users"
                     unoptimized={true}
-                    className="mt-4"
+                    className="mt-2 md:mt-4"
                   />
                 </div>
               </div>
@@ -149,7 +149,7 @@ export default function Home() {
           height={610}
           alt="edged-Shape"
           unoptimized={true}
-          className="absolute right-0 xl:top-[55px] lg:top-[30px] top-[25px]"
+          className="absolute -z-10 right-0 xl:top-[55px] lg:top-[30px] md:top-[10px] top-[5]"
         />
         <div className="statistics-wrapper py-120">
           <div className="container mx-auto px-fixed-20">
@@ -157,37 +157,37 @@ export default function Home() {
               <h3 className="font-the-bold text-center">
                 Our <span className="text-brown">Statistics</span>
               </h3>
-              <div className="flex justify-between gap-1 xl:mt-11 lg:mt-9.5 md:mt-7.5">
+              <div className="grid grid-flow-row lg:grid-flow-col grid-cols-2 lg:grid-cols-4 justify-center lg:justify-between gap-5 md:gap-3 lg:gap-1 xl:mt-11 lg:mt-9.5 mt-7.5">
                 <div className="flex flex-col items-center">
-                  <h4 className="font-the-bold">
-                    6.4 million<span className="text-brown"> +</span> USD
+                  <h4 className="font-the-bold text-center">
+                    6.4 million<span className="text-brown">+</span> USD
                   </h4>
-                  <p className="mt-2 text-center font-medium">
+                  <p className="mt-2 text-center font-medium line-clamp-3">
                     Securing fully funded scholarships across five countries
                   </p>
                 </div>
                 <div className="flex flex-col items-center">
-                  <h4 className="font-the-bold">
+                  <h4 className="font-the-bold text-center">
                     900<span className="text-brown"> +</span> clients
                   </h4>
-                  <p className="mt-2 text-center font-medium">
+                  <p className="mt-2 text-center font-medium line-clamp-3">
                     One-on-one mentoring with personalized strategy and success
                   </p>
                 </div>
                 <div className="flex flex-col items-center">
-                  <h4 className="font-the-bold">
+                  <h4 className="font-the-bold text-center">
                     175<span className="text-brown"> +</span> Scholarships
                   </h4>
-                  <p className="mt-2 text-center font-medium">
+                  <p className="mt-2 text-center font-medium line-clamp-3">
                     From Chevening to DAAD and Erasmus — our results speak for
                     themselves.
                   </p>
                 </div>
                 <div className="flex flex-col items-center">
-                  <h4 className="font-the-bold">
+                  <h4 className="font-the-bold text-center">
                     98<span className="text-brown"> %</span> Satisfaction
                   </h4>
-                  <p className="mt-2 text-center font-medium">
+                  <p className="mt-2 text-center font-medium line-clamp-3">
                     Strategic, personalized impact trusted by 98% clients
                   </p>
                 </div>
@@ -216,8 +216,8 @@ export default function Home() {
               What We <span className="text-brown mt-3">Help</span> You{" "}
               <span className="text-brown">Do</span>
             </h2>
-            <div className="flex items-center gap-5">
-              <div className="flex flex-col xl:gap-5 lg:gap-4 md:gap-3 gap-2 w-1/2 pr-5 mt-50">
+            <div className="flex flex-col lg:flex-row items-center gap-7.5 lg:gap-5 mt-50">
+              <div className="flex flex-col xl:gap-5 lg:gap-4 gap-3 w-full lg:w-1/2 pr-5">
                 <div className="flex items-center bg-white rounded-[16px] p-20 gap-4">
                   <Image
                     src={"/images/ellipse-circle.png"}
@@ -286,7 +286,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="w-1/2">
+              <div className="w-full lg:w-1/2">
                 <Image
                   src={"/images/what-we-do.png"}
                   width={600}
@@ -310,11 +310,11 @@ export default function Home() {
             height={124}
             alt="excel"
             unoptimized={true}
-            className="absolute left-0 xl:top-[80px] lg:top-[40px] top-[30px]"
+            className="absolute -z-10 left-0 xl:top-[80px] lg:top-[40px] top-[10px]"
           />
           <div className="container mx-auto px-fixed-20">
             <div className="bg-white process-box-padding rounded-[20px]">
-              <div className="flex flex-col items-center gap-3">
+              <div className="flex flex-col items-center gap-2 lg:gap-3">
                 <div className="flex items-center gap-1.5">
                   <Image
                     src={"/images/Ellipse.png"}
@@ -330,7 +330,7 @@ export default function Home() {
                   HOW IT <span className="text-brown">WORKS</span>
                 </h2>
               </div>
-              <div className="grid grid-cols-3 xl:gap-5 lg:gap-4 md:gap-3 gap-2 xl:mt-10 lg:mt-8 md:mt-6 mt-4">
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-5 lg:gap-4 gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-4">
                 <div className="bg-primary p-25 rounded-[20px]">
                   <div className="bg-white rounded-[13px] p-18 inline-block">
                     <Image
@@ -461,7 +461,7 @@ export default function Home() {
               <p className="font-semibold">SUCCESS STORIES</p>
             </div>
             <div className="flex relative">
-              <div className="w-[40%]">
+              <div className="w-[75%] md:w-[60%] lg:w-[40%]">
                 <h2 className="font-the-bold uppercase">
                   Client <span className="text-brown">Experiences</span> – What
                   People Are
@@ -513,31 +513,43 @@ export default function Home() {
                   },
                 }}
                 breakpoints={{
-                  1400: {
+                  1399.97: {
                     slidesPerView: 3,
                     centeredSlides: true,
                     spaceBetween: 20,
                   },
-                  1200: {
+                  1199.97: {
                     slidesPerView: 3,
                     centeredSlides: true,
                     spaceBetween: 16,
                   },
-                  1024: {
+                  1023.97: {
                     slidesPerView: 3,
                     centeredSlides: true,
                     spaceBetween: 16,
                   },
-                  768: {
+                  767.97: {
                     slidesPerView: 2,
                     centeredSlides: true,
                     spaceBetween: 12,
                   },
-                  576: {
+                  575.97: {
                     slidesPerView: 1,
                     centeredSlides: true,
                     spaceBetween: 12,
                   },
+                  399.97
+                  : {
+                    slidesPerView: 1,
+                    centeredSlides: true,
+                    spaceBetween: 12,
+                  },         
+                  319.97
+                  : {
+                    slidesPerView: 1,
+                    centeredSlides: true,
+                    spaceBetween: 12,
+                  },                            
                 }}
               >
                 <SwiperSlide>
@@ -553,7 +565,7 @@ export default function Home() {
                       />
                     </div>
                     <div>
-                      <p className="line-clamp-8 fs-18 font-semibold mt-7">
+                      <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
                         "Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
@@ -561,7 +573,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center xl:mt-15 lg:mt-11 md:mt-9 mt-7">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -592,7 +604,7 @@ export default function Home() {
                       />
                     </div>
                     <div>
-                      <p className="line-clamp-8 fs-18 font-semibold mt-7">
+                      <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
                         "Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
@@ -600,7 +612,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-9 mt-7">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -631,7 +643,7 @@ export default function Home() {
                       />
                     </div>
                     <div>
-                      <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 md:mt-5 mt-4">
+                      <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
                         "Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
@@ -639,7 +651,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-9 mt-7">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -670,7 +682,7 @@ export default function Home() {
                       />
                     </div>
                     <div>
-                      <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 md:mt-5 mt-4">
+                      <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
                         "Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
@@ -678,7 +690,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-9 mt-7">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -709,7 +721,7 @@ export default function Home() {
                       />
                     </div>
                     <div>
-                      <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 md:mt-5 mt-4">
+                      <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
                         "Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
@@ -717,7 +729,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-9 mt-7">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -748,7 +760,7 @@ export default function Home() {
                       />
                     </div>
                     <div>
-                      <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 md:mt-5 mt-4">
+                      <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
                         "Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
@@ -756,7 +768,7 @@ export default function Home() {
                         internal comments but there were lots of them. "
                       </p>
                     </div>
-                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-9 mt-7">
+                    <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
                       <div className="flex flex-col">
                         <p className="font-the-bold">Gabriella</p>
                         <p className="fs-14 text-[#737373] mt-1">Spotify</p>
@@ -825,7 +837,7 @@ export default function Home() {
           height={120}
           alt="flower"
           unoptimized={true}
-          className="absolute right-0 xl:top-[-55px] lg:top-[80px] top-[100px]"
+          className="absolute -z-10 right-0 xl:top-[-55px] lg:top-[80px] top-[100px]"
         />
         <div className="blog-wrapper pt-120">
           <div className="container mx-auto px-fixed-20">
@@ -845,7 +857,7 @@ export default function Home() {
                 OUR <span className="text-brown">BLOGS</span>
               </h2>
             </div>
-            <div className="grid grid-cols-3 xl:gap-5 lg:gap-4 md:gap-3 gap-2 xl:mt-10 lg:mt-8 md:mt-6 mt-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-5 lg:gap-4 gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-4">
               <div className="bg-white blog-box-padding rounded-[20px]">
                 <div className="imaege-wrapper">
                   <Image
@@ -949,7 +961,7 @@ export default function Home() {
           height={120}
           alt="sharp-shape"
           unoptimized={true}
-          className="absolute left-auto right-0 top-[15%] transform -translate-y-15%"
+          className="absolute -z-10 left-auto right-0 lg:top-[15%] top-[18%] transform lg:-translate-y-15% -translate-y-18%"
         />
         <div className="take-the-quiz-wrapper pt-120 px-fixed-20 ">
           <div className="container px-120 mx-auto">
@@ -1065,7 +1077,7 @@ export default function Home() {
               height={86}
               alt="Vector-box"
               unoptimized={true}
-              className="absolute left-[75px] xl:top-[-86px] top-[-16px]"
+              className="absolute left-[20] sm:left-[30px] lg:left-[75px] top-[5] sm:top-[20] lg:top-[-16px] xl:top-[-86px]"
             />
             <div className="flex flex-col items-center gap-3">
               <div className="flex items-center gap-1.5">
@@ -1083,7 +1095,7 @@ export default function Home() {
                 PRICING <span className="text-brown">PLANS</span>
               </h2>
             </div>
-            <div className="grid grid-cols-3 xl:gap-5 lg:gap-4 md:gap-3 gap-2 xl:mt-12.5 lg:mt-9 md:mt-7 mt-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-5 lg:gap-4 gap-3 xl:mt-12.5 lg:mt-9 md:mt-7 mt-5">
               <div className="bg-white price-box price-box-padding rounded-[16px] hover:bg-[#6C8E69] group transition duration-300 ease-in-out">
                 <div className="inline-block bg-dark-green rounded-[70px] px-[23px] py-[6px] group-hover:bg-white!">
                   <span className="font-segoeUi font-semibold text-white group-hover:text-black">
@@ -1094,7 +1106,7 @@ export default function Home() {
                   Get 100 headshots with 10 unique backdrops and outfits.
                 </p>
                 <hr className="mt-5 opacity-[0.4] group-hover:opacity-[0.5] group-hover:border-white" />
-                <div className="flex flex-col gap-3 py-5">
+                <div className="flex flex-col gap-3 py-3 md:py-5">
                   <div className="flex items-center gap-3 group-hover:text-white!">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1692,7 +1704,7 @@ export default function Home() {
           height={86}
           alt="Shape-shape"
           unoptimized={true}
-          className="absolute left-0 right-auto"
+          className="absolute -z-10 left-0 right-auto top-[30px] lg:top-[0px]"
         />
         <div className="faqs-wrapper px-fixed-20">
           <div className="container px-120 mx-auto">
@@ -1822,16 +1834,16 @@ export default function Home() {
           height={86}
           alt="flower"
           unoptimized={true}
-          className="absolute left-auto right-0 xl:top-[50%] top-[5%] transform xl:-translate-y-50% -translate-y-5%"
+          className="absolute -z-10 left-auto right-0 xl:top-[50%] top-[2%] transform xl:-translate-y-50% -translate-y-[2%]"
         />
         <div className="contact-section-wrapper py-120">
           <div className="container mx-auto p-70 bg-white rounded-[16px]">
-            <div className="flex xl:gap-5 lg:gap-4 md:gap-3 gap-2">
-              <div className="flex flex-col w-[55%]">
+            <div className="flex flex-col md:flex-row xl:gap-5 lg:gap-4 md:gap-3 gap-7.5">
+              <div className="flex flex-col w-full md:w-[55%]">
                 <h2 className="font-the-bold text-black">
                   Ready to Launch Your Global Grad Journey?
                 </h2>
-                <div className="flex gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-5 relative">
+                <div className="flex flex-col text-center md:flex-row gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-5 relative">
                   <Link
                     href="#"
                     className="btn btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold"
@@ -1847,7 +1859,7 @@ export default function Home() {
                   applications open now.”)
                 </p>
               </div>
-              <div className="flex flex-col w-[45%]">
+              <div className="flex flex-col w-full md:w-[45%]">
                 <form className="">
                   <div className="flex flex-col xl:gap-5 lg:gap-4 gap-3">
                     <div className="flex flex-col">
