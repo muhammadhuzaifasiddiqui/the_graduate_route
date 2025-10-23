@@ -42,7 +42,7 @@ const Navbar = () => {
                 height={23}
                 alt="logo"
                 unoptimized={true}
-                className="w-full! h-full! object-contain"
+                className=""
               />
             </div>
             <div className="lg:flex hidden navbar-menu items-center justify-center gap-6">

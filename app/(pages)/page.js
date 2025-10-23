@@ -538,18 +538,16 @@ export default function Home() {
                     centeredSlides: true,
                     spaceBetween: 12,
                   },
-                  399.97
-                  : {
+                  399.97: {
                     slidesPerView: 1,
                     centeredSlides: true,
                     spaceBetween: 12,
-                  },         
-                  319.97
-                  : {
+                  },
+                  319.97: {
                     slidesPerView: 1,
                     centeredSlides: true,
                     spaceBetween: 12,
-                  },                            
+                  },
                 }}
               >
                 <SwiperSlide>
@@ -566,9 +564,9 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
-                        &quot;Thank you for educating me and my Spotify colleague
-                        today. You were amazing. We area pretty engaged
-                        community but I have rarely seen such a positive
+                        &quot;Thank you for educating me and my Spotify
+                        colleague today. You were amazing. We area pretty
+                        engaged community but I have rarely seen such a positive
                         response to a lecture. I don&apos;t know if you saw the
                         internal comments but there were lots of them. &quot;
                       </p>
@@ -605,9 +603,9 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
-                        &quot;Thank you for educating me and my Spotify colleague
-                        today. You were amazing. We area pretty engaged
-                        community but I have rarely seen such a positive
+                        &quot;Thank you for educating me and my Spotify
+                        colleague today. You were amazing. We area pretty
+                        engaged community but I have rarely seen such a positive
                         response to a lecture. I don&apos;t know if you saw the
                         internal comments but there were lots of them. &quot;
                       </p>
@@ -644,9 +642,9 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
-                        &quot;Thank you for educating me and my Spotify colleague
-                        today. You were amazing. We area pretty engaged
-                        community but I have rarely seen such a positive
+                        &quot;Thank you for educating me and my Spotify
+                        colleague today. You were amazing. We area pretty
+                        engaged community but I have rarely seen such a positive
                         response to a lecture. I don&apos;t know if you saw the
                         internal comments but there were lots of them. &quot;
                       </p>
@@ -683,9 +681,9 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
-                        &quot;Thank you for educating me and my Spotify colleague
-                        today. You were amazing. We area pretty engaged
-                        community but I have rarely seen such a positive
+                        &quot;Thank you for educating me and my Spotify
+                        colleague today. You were amazing. We area pretty
+                        engaged community but I have rarely seen such a positive
                         response to a lecture. I don&apos;t know if you saw the
                         internal comments but there were lots of them. &quot;
                       </p>
@@ -722,9 +720,9 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
-                        &quot;Thank you for educating me and my Spotify colleague
-                        today. You were amazing. We area pretty engaged
-                        community but I have rarely seen such a positive
+                        &quot;Thank you for educating me and my Spotify
+                        colleague today. You were amazing. We area pretty
+                        engaged community but I have rarely seen such a positive
                         response to a lecture. I don&apos;t know if you saw the
                         internal comments but there were lots of them. &quot;
                       </p>
@@ -761,9 +759,9 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
-                        &quot;Thank you for educating me and my Spotify colleague
-                        today. You were amazing. We area pretty engaged
-                        community but I have rarely seen such a positive
+                        &quot;Thank you for educating me and my Spotify
+                        colleague today. You were amazing. We area pretty
+                        engaged community but I have rarely seen such a positive
                         response to a lecture. I don&apos;t know if you saw the
                         internal comments but there were lots of them. &quot;
                       </p>
@@ -1058,8 +1056,8 @@ export default function Home() {
                   Book a free consultation
                 </Link>
                 <p className="mt-8 px-120 text-black">
-                  &quot;Book a free consultation&quot; or &quot;See matching program + funding
-                  roadmap&quot;.
+                  &quot;Book a free consultation&quot; or &quot;See matching
+                  program + funding roadmap&quot;.
                 </p>
               </div>
             </div>
@@ -1741,10 +1739,10 @@ export default function Home() {
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
                     <p className="mt-5 group-hover:text-white transition-colors duration-300">
-                      Our A Plus talent goes through a no joke vetting process. Only
-                      the top 1 percent make it through. Once we have got three
-                      rockstars, we will line up interviews so you can pick your
-                      fave—easy peasy.
+                      Our A Plus talent goes through a no joke vetting process.
+                      Only the top 1 percent make it through. Once we have got
+                      three rockstars, we will line up interviews so you can
+                      pick your fave—easy peasy.
                     </p>
                   </div>
                 </div>
@@ -1765,10 +1763,10 @@ export default function Home() {
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
                     <p className="mt-5 group-hover:text-white transition-colors duration-300">
-                      Our A Plus talent goes through a no joke vetting process. Only
-                      the top 1 percent make it through. Once we have got three
-                      rockstars, we will line up interviews so you can pick your
-                      fave—easy peasy.
+                      Our A Plus talent goes through a no joke vetting process.
+                      Only the top 1 percent make it through. Once we have got
+                      three rockstars, we will line up interviews so you can
+                      pick your fave—easy peasy.
                     </p>
                   </div>
                 </div>
@@ -1789,10 +1787,10 @@ export default function Home() {
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
                     <p className="mt-5 group-hover:text-white transition-colors duration-300">
-                      Our A Plus talent goes through a no joke vetting process. Only
-                      the top 1 percent make it through. Once we have got three
-                      rockstars, we will line up interviews so you can pick your
-                      fave—easy peasy.
+                      Our A Plus talent goes through a no joke vetting process.
+                      Only the top 1 percent make it through. Once we have got
+                      three rockstars, we will line up interviews so you can
+                      pick your fave—easy peasy.
                     </p>
                   </div>
                 </div>
@@ -1813,10 +1811,10 @@ export default function Home() {
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
                     <p className="mt-5 group-hover:text-white transition-colors duration-300">
-                      Our A Plus talent goes through a no joke vetting process. Only
-                      the top 1 percent make it through. Once we have got three
-                      rockstars, we will line up interviews so you can pick your
-                      fave—easy peasy.
+                      Our A Plus talent goes through a no joke vetting process.
+                      Only the top 1 percent make it through. Once we have got
+                      three rockstars, we will line up interviews so you can
+                      pick your fave—easy peasy.
                     </p>
                   </div>
                 </div>
@@ -1973,6 +1971,148 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FOOTER-SECTION */}
+      <footer className="footer-section">
+        <div className="footer-wrapper px-fixed-20">
+          <div className="container mx-auto">
+            <div className="flex flex-col lg:flex-row gap-12 lg:gap-3 px-70">
+              <div className="flex w-full lg:w-[30%]">
+                <div className="flex flex-col w-[90%] xl:w-[80%]">
+                  <div className="logo-wrapper cursor-pointer">
+                    <Image
+                      src={"/images/graduate-rout-logo.svg"}
+                      width={151}
+                      height={23}
+                      alt="logo"
+                      unoptimized={true}
+                      className=""
+                    />
+                  </div>
+                  <p className="font-medium text-light-gray mt-8">
+                    Design amazing digital experiences that create more happy in
+                    the world.
+                  </p>
+                </div>
+              </div>
+              <div className="flex w-full lg:w-[70%]">
+                <div className="grid justify-between grid-cols-2 sm:grid-cols-5 gap-8 sm:gap-3 auto-cols-max w-full">
+                  <div className="flex flex-col gap-3">
+                    <p className="font-bold pb-1 text-white">Product</p>
+                    <p className=" text-white">Overview</p>
+                    <p className=" text-white">Features</p>
+                    <p className=" text-white">Solutions</p>
+                    <p className=" text-white">Tutorials</p>
+                    <p className=" text-white">Pricing</p>
+                    <p className=" text-white">Releases</p>
+                  </div>
+                  <div className="flex flex-col gap-3">
+                    <p className="font-bold pb-1 text-white">Product</p>
+                    <p className=" text-white">About us</p>
+                    <p className=" text-white">Careers</p>
+                    <p className=" text-white">Press</p>
+                    <p className=" text-white">News</p>
+                    <p className=" text-white">Media kit</p>
+                    <p className=" text-white">Contact</p>
+                  </div>
+                  <div className="flex flex-col gap-3">
+                    <p className="font-bold pb-1 text-white">Product</p>
+                    <p className=" text-white">Blogs</p>
+                    <p className=" text-white">Newsletter</p>
+                    <p className=" text-white">Events</p>
+                    <p className=" text-white">Help Center</p>
+                    <p className=" text-white">Tutorials</p>
+                    <p className=" text-white">Support</p>
+                  </div>
+                  <div className="flex flex-col gap-3">
+                    <p className="font-bold pb-1 text-white">Product</p>
+                    <p className=" text-white">Twitter</p>
+                    <p className=" text-white">LinkedIn</p>
+                    <p className=" text-white">FaceBook</p>
+                    <p className=" text-white">GitHub</p>
+                    <p className=" text-white">AngelList</p>
+                    <p className=" text-white">Dribble</p>
+                  </div>
+                  <div className="flex flex-col gap-3">
+                    <p className="font-bold pb-1 text-white">Product</p>
+                    <p className=" text-white">Terms</p>
+                    <p className=" text-white">Privacy</p>
+                    <p className=" text-white">Cookies</p>
+                    <p className=" text-white">Licenses</p>
+                    <p className=" text-white">Settings</p>
+                    <p className=" text-white">Contact</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <div className="bottom-footer-wrapper px-fixed-20">
+            <div className="container mx-auto">
+              <div className="flex px-70">
+                <div className="flex flex-col lg:flex-row gap-6  lg:gap-5 items-center justify-between w-full py-48">
+                  <div>
+                    <p className="text-white">
+                      © 2077 Untitled UI. All rights reserved.
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-between gap-6">
+                    <Image
+                      src={"/images/twitter.png"}
+                      width={24}
+                      height={24}
+                      alt="twitter"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <Image
+                      src={"/images/linkedin.png"}
+                      width={24}
+                      height={24}
+                      alt="linkedin"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <Image
+                      src={"/images/facebook.png"}
+                      width={24}
+                      height={24}
+                      alt="facebook"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <Image
+                      src={"/images/github.png"}
+                      width={24}
+                      height={24}
+                      alt="github"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <Image
+                      src={"/images/angellist.png"}
+                      width={24}
+                      height={24}
+                      alt="angellist"
+                      unoptimized={true}
+                      className=""
+                    />
+                    <Image
+                      src={"/images/dribble.png"}
+                      width={24}
+                      height={24}
+                      alt="dribble"
+                      unoptimized={true}
+                      className=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
