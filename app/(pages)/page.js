@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../components/layout/Navbar";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -23,6 +23,16 @@ export default function Home() {
     setSelectedOption(event.target.value);
   };
 
+  const swiperRef = useRef(null);
+
+  const handlePrev = () => {
+    swiperRef.current?.slidePrev();
+  };
+
+  const handleNext = () => {
+    swiperRef.current?.slideNext();
+  };
+
   return (
     <>
       <Navbar />
@@ -31,11 +41,11 @@ export default function Home() {
       <section className="hero-section relative">
         <Image
           src={"/images/H3.png"}
-          width={645}
-          height={610}
+          width={69}
+          height={69}
           alt="H3"
           unoptimized={true}
-          className="absolute right-0 xl:top-[200px] lg:top-[120px] top-[550px]"
+          className="absolute right-0 xl:top-[200px] lg:top-[120px] sm:top-[550px] top-[600px] w-[68px]! lg:w-[75px]!"
         />
         <div className="hero-wrapper">
           <div className="container mx-auto">
@@ -50,17 +60,17 @@ export default function Home() {
                     unoptimized={true}
                     className="absolute top-0 right-0"
                   />
-                  <h1 className="font-the-bold font-bold">
-                    <span className="text-brown">Unlock</span>
+                  <h1 className="font-the-bold font-bold leading-[100%]">
+                    <span className="text-brown">Unlock </span>
                     Full Funding for
                     <span className="text-brown"> Global Masters</span>
                   </h1>
                 </div>
-                <h6 className="fs-18 font-semibold mt-[15px] leading-[166%]">
+                <p className="fs-18 font-semibold mt-[15px] leading-[166%]">
                   At The Graduate Route, we guide future leaders to secure
                   scholarships and admission to world-class graduate schools —
                   then return home to build impact.
-                </h6>
+                </p>
                 <div className="flex flex-col md:flex-row text-center gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-5 relative">
                   <Image
                     src={"/images/arrow-vector.png"}
@@ -68,19 +78,32 @@ export default function Home() {
                     height={60}
                     alt="arrow-vector"
                     unoptimized={true}
-                    className="absolute right-0 lg:top-[-20px] top-[-65px]"
+                    className="absolute right-0 lg:top-[-20px] top-[-65px] -z-10"
                   />
-                  <Link href="#" className="btn btn-primary font-the-bold">
-                    Take the Quiz → Find Your Path
-                  </Link>
-                  <Link href="#" className="btn btn-secondary font-the-bold">
-                    Book a Strategy Call
-                  </Link>
+                  <div className="flex group">
+                    <Link
+                      href="#"
+                      className="btn btn-primary w-full! font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+                    group-hover:hover:translate-y-[2px]!"
+                    >
+                      Take the Quiz → Find Your Path
+                    </Link>
+                  </div>
+
+                  <div className="flex group">
+                    <Link
+                      href="#"
+                      className="btn btn-secondary w-full! font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E] group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
+                    group-hover:hover:translate-y-[2px]"
+                    >
+                      Book a Strategy Call
+                    </Link>
+                  </div>
                 </div>
                 <p className="font-the-bold font-semibold text-dark-black xl:mt-12.5 lg:mt-11 mt-10 leading-[175%]">
                   Trusted By Trustpliot
                 </p>
-                <div className="mt-[10px]">
+                <div className="mt-[10px] cursor-pointer">
                   <Image
                     src={"/images/green-stars.png"}
                     width={99}
@@ -102,7 +125,7 @@ export default function Home() {
                   <p className="font-the-bold font-semibold text-dark-black xl:mt-6 lg:mt-5 mt-4 leading-[175%]">
                     Over 7,000 S-Start Customer Reviews
                   </p>
-                  <div className="mt-2.5">
+                  <div className="mt-2.5 cursor-pointer">
                     <Image
                       src={"/images/black-stars.png"}
                       width={100}
@@ -145,16 +168,16 @@ export default function Home() {
       <section className="statistics-section relative">
         <Image
           src={"/images/edged-Shape.png"}
-          width={645}
-          height={610}
+          width={85}
+          height={85}
           alt="edged-Shape"
           unoptimized={true}
-          className="absolute -z-10 right-0 xl:top-[55px] lg:top-[30px] md:top-[10px] top-[5]"
+          className="absolute -z-10 right-0 xl:top-[55px] lg:top-[30px] md:top-[10px] top-[5] w-[85px]! lg:w-[100px]!"
         />
         <div className="statistics-wrapper py-120">
           <div className="container mx-auto px-fixed-20">
             <div className="bg-white p-46 rounded-[20px]">
-              <h3 className="font-the-bold text-center">
+              <h3 className="font-the-bold text-center leading-[100%]">
                 Our <span className="text-brown">Statistics</span>
               </h3>
               <div className="grid grid-flow-row lg:grid-flow-col grid-cols-2 lg:grid-cols-4 justify-center lg:justify-between gap-5 md:gap-3 lg:gap-1 xl:mt-11 lg:mt-9.5 mt-7.5">
@@ -212,7 +235,7 @@ export default function Home() {
               />
               <p className="font-semibold">WHAT WE DO</p>
             </div>
-            <h2 className="font-the-bold">
+            <h2 className="font-the-bold leading-[100%]">
               What We <span className="text-brown mt-3">Help</span> You{" "}
               <span className="text-brown">Do</span>
             </h2>
@@ -310,7 +333,7 @@ export default function Home() {
             height={124}
             alt="excel"
             unoptimized={true}
-            className="absolute -z-10 left-0 xl:top-[80px] lg:top-[40px] top-[10px]"
+            className="absolute -z-10 left-0 xl:top-[80px] lg:top-[40px] top-[10px] w-[75px]! lg:w-[100px]!"
           />
           <div className="container mx-auto px-fixed-20">
             <div className="bg-white process-box-padding rounded-[20px]">
@@ -326,7 +349,7 @@ export default function Home() {
                   />
                   <p className="font-semibold">PROCESS</p>
                 </div>
-                <h2 className="text-center justify-center font-the-bold">
+                <h2 className="text-center justify-center font-the-bold leading-[100%]">
                   HOW IT <span className="text-brown">WORKS</span>
                 </h2>
               </div>
@@ -424,19 +447,25 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="bg-dark-green p-46 rounded-[20px]">
-                  <div className="flex flex-col gap-3 xl:mt-10 lg:mt-8.5 md:mt-7.5 mt-7">
-                    <Link
-                      href="#"
-                      className="btn btn-primary font-the-bold text-center"
-                    >
-                      Take the Quiz → Find Your Path
-                    </Link>
-                    <Link
-                      href="#"
-                      className="btn btn-tertiary font-semibold text-center"
-                    >
-                      Book a Free consult
-                    </Link>
+                  <div className="flex flex-col text-center gap-3 lg:mt-8.5 md:mt-9 sm:mt-5.5 mt-1.5">
+                    <div className="flex group">
+                      <Link
+                        href="#"
+                        className="btn btn-primary w-full! font-the-bold text-center group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+                    group-hover:hover:translate-y-[2px]!"
+                      >
+                        Take the Quiz → Find Your Path
+                      </Link>
+                    </div>
+                    <div className="flex group">
+                      <Link
+                        href="#"
+                        className="btn btn-tertiary  w-full! font-semibold text-center group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+                    group-hover:hover:translate-y-[2px]!"
+                      >
+                        Book a Free consult
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -449,6 +478,7 @@ export default function Home() {
       <section className="testimonial-section">
         <div className="testimonial-wrapper">
           <div className="container mx-auto px-fixed-20">
+            {/* Title and Header Area */}
             <div className="flex items-center gap-1.5 mb-3">
               <Image
                 src={"/images/Ellipse.png"}
@@ -460,9 +490,11 @@ export default function Home() {
               />
               <p className="font-semibold">SUCCESS STORIES</p>
             </div>
+
+            {/* Header and Custom Navigation Buttons Container */}
             <div className="flex relative">
               <div className="w-[75%] md:w-[60%] lg:w-[40%]">
-                <h2 className="font-the-bold uppercase">
+                <h2 className="font-the-bold uppercase leading-[100%]">
                   Client <span className="text-brown">Experiences</span> – What
                   People Are
                   <span className="text-brown"> Saying</span>
@@ -474,10 +506,15 @@ export default function Home() {
                 height={48}
                 alt="Ellipse"
                 unoptimized={true}
-                className="absolute xl:left-[60%] lg:left-[70%] left-[80%] top-[-50px]"
+                className="absolute xl:left-[60%] lg:left-[70%] left-[80%] top-[-50px] w-[40px]! lg:w-[60px]!"
               />
-              <div className="flex gap-2.5 absolute right-0 bottom-0">
-                <div className="bg-white slide-btn rounded-[100px]">
+
+              {/* Navigation Buttons - Added z-10 and cursor-pointer */}
+              <div className="flex gap-2.5 absolute right-0 bottom-0 z-10">
+                <div
+                  onClick={handlePrev}
+                  className="bg-white slide-btn rounded-[100px] cursor-pointer"
+                >
                   <Image
                     src={"/images/slide-left.png"}
                     width={8}
@@ -487,7 +524,10 @@ export default function Home() {
                     className=""
                   />
                 </div>
-                <div className="bg-white slide-btn rounded-[100px]">
+                <div
+                  onClick={handleNext}
+                  className="bg-white slide-btn rounded-[100px] cursor-pointer"
+                >
                   <Image
                     src={"/images/slide-right.png"}
                     width={8}
@@ -500,18 +540,17 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="testimonial-section w-full overflow-hidden">
+            {/* Swiper Slider */}
+            <div className="testimonial-slider-wrapper w-full overflow-hidden">
               <Swiper
+                // 3. Use onSwiper to save the instance to the ref
+                onSwiper={(swiper) => {
+                  swiperRef.current = swiper;
+                }}
+                // 4. Include the modules being used
                 spaceBetween={12}
                 slidesPerView={4}
                 centeredSlides={true}
-                pagination={{
-                  el: ".custom-pagination",
-                  clickable: true,
-                  renderBullet: (index, className) => {
-                    return `<span class="${className} custom-bullet"></span>`;
-                  },
-                }}
                 breakpoints={{
                   1399.97: {
                     slidesPerView: 3,
@@ -550,6 +589,7 @@ export default function Home() {
                   },
                 }}
               >
+                {/* Swiper Slides */}
                 <SwiperSlide>
                   <div className="flex flex-col xl:mt-12.5 lg:mt-9 md:mt-7 mt-5 p-25 bg-white rounded-[18px]">
                     <div className="image-wrapper">
@@ -785,16 +825,6 @@ export default function Home() {
                   </div>
                 </SwiperSlide>
               </Swiper>
-              <div className="custom-pagination flex justify-center gap-3 mt-0 sm:mt-2"></div>
-
-              <style jsx global>{`
-                .custom-bullet {
-                }
-                .swiper-pagination-bullet-active.custom-bullet {
-                  background-color: #0085ff;
-                  width: 40px !important;
-                }
-              `}</style>
             </div>
           </div>
         </div>
@@ -835,7 +865,7 @@ export default function Home() {
           height={120}
           alt="flower"
           unoptimized={true}
-          className="absolute -z-10 right-0 xl:top-[-55px] lg:top-[80px] top-[100px]"
+          className="absolute -z-10 right-0 xl:top-[-55px] lg:top-[80px] top-[100px] w-[45px]! lg:w-[60px]!"
         />
         <div className="blog-wrapper pt-120">
           <div className="container mx-auto px-fixed-20">
@@ -851,12 +881,48 @@ export default function Home() {
                 />
                 <p className="font-semibold">BLOGS</p>
               </div>
-              <h2 className="text-center justify-center font-the-bold">
+              <h2 className="text-center justify-center font-the-bold leading-[100%]">
                 OUR <span className="text-brown">BLOGS</span>
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-5 lg:gap-4 gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-4">
-              <div className="bg-white blog-box-padding rounded-[20px]">
+              <Link
+                href=""
+                className="bg-white blog-box-padding rounded-[20px]"
+              >
+                <div className="imaege-wrapper">
+                  <Image
+                    src={"/images/Rectangle.png"}
+                    width={375}
+                    height={246}
+                    alt="Rectangle"
+                    unoptimized={true}
+                    className="w-full!"
+                  />
+                </div>
+                <h5 className="xl:mt-5 mt-3 font-the-bold leading-[140%]">
+                  Lorem ipsum dolor amet consectetur adipiscing justo sit amet
+                </h5>
+                <p className="mt-1 leading-[131%]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <div className="flex items-center! gap-2 xl:mt-5 lg:mt-4 mt-3">
+                  <Image
+                    src={"/images/blog.png"}
+                    width={21}
+                    height={21}
+                    alt="blog"
+                    unoptimized={true}
+                    className=""
+                  />
+                  <p className="font-medium">15 Sep, 2023</p>
+                </div>
+              </Link>
+              <Link
+                href=""
+                className="bg-white blog-box-padding rounded-[20px]"
+              >
                 <div className="imaege-wrapper">
                   <Image
                     src={"/images/Rectangle.png"}
@@ -885,8 +951,11 @@ export default function Home() {
                   />
                   <p className="font-medium">15 Sep, 2023</p>
                 </div>
-              </div>
-              <div className="bg-white blog-box-padding rounded-[20px]">
+              </Link>
+              <Link
+                href=""
+                className="bg-white blog-box-padding rounded-[20px]"
+              >
                 <div className="imaege-wrapper">
                   <Image
                     src={"/images/Rectangle.png"}
@@ -915,37 +984,7 @@ export default function Home() {
                   />
                   <p className="font-medium">15 Sep, 2023</p>
                 </div>
-              </div>
-              <div className="bg-white blog-box-padding rounded-[20px]">
-                <div className="imaege-wrapper">
-                  <Image
-                    src={"/images/Rectangle.png"}
-                    width={375}
-                    height={246}
-                    alt="Rectangle"
-                    unoptimized={true}
-                    className="w-full!"
-                  />
-                </div>
-                <h5 className="xl:mt-5 mt-3 font-the-bold leading-[140%]">
-                  Lorem ipsum dolor amet consectetur adipiscing justo sit amet
-                </h5>
-                <p className="mt-1 leading-[131%]">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <div className="flex gap-2 xl:mt-5 lg:mt-4 mt-3 items-center">
-                  <Image
-                    src={"/images/blog.png"}
-                    width={21}
-                    height={21}
-                    alt="blog"
-                    unoptimized={true}
-                    className=""
-                  />
-                  <p className="font-medium">15 Sep, 2023</p>
-                </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -959,7 +998,7 @@ export default function Home() {
           height={120}
           alt="sharp-shape"
           unoptimized={true}
-          className="absolute -z-10 left-auto right-0 lg:top-[15%] top-[18%] transform lg:-translate-y-15% -translate-y-18%"
+          className="absolute -z-10 left-auto right-0 lg:top-[15%] top-[18%] transform lg:-translate-y-15% -translate-y-18% w-[90px]! lg:w-[110px]!"
         />
         <div className="take-the-quiz-wrapper pt-120 px-fixed-20 ">
           <div className="container px-120 mx-auto">
@@ -975,7 +1014,7 @@ export default function Home() {
                 />
                 <p className="font-semibold uppercase">Take the Quiz</p>
               </div>
-              <h2 className="text-center justify-center font-the-bold">
+              <h2 className="text-center justify-center font-the-bold leading-[100%]">
                 What’s Your Ideal <span className="text-brown">Graduate</span>{" "}
                 Route?
               </h2>
@@ -1039,23 +1078,38 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex justify-center gap-3 xl:mt-7.5 lg:mt-6 md:mt-5 mt-4">
-                <Link
-                  href="#"
-                  className="btn btn-lg btn-secondary font-the-bold"
-                >
-                  Go BAck
-                </Link>
-                <Link href="#" className="btn btn-lg btn-primary font-the-bold">
-                  Confirm
-                </Link>
+                <div className="flex group">
+                  <Link
+                    href="#"
+                    className="btn btn-lg btn-secondary font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+                    group-hover:hover:translate-y-[2px]!"
+                  >
+                    Go BAck
+                  </Link>
+                </div>
+                <div className="flex group">
+                  <Link
+                    href="#"
+                    className="btn btn-lg btn-primary font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+                    group-hover:hover:translate-y-[2px]!"
+                  >
+                    Confirm
+                  </Link>
+                </div>
               </div>
             </div>
-            <div className="flex flex-col xl:mt-10 lg:mt-8 md:mt-6 mt-4">
-              <div className="inline text-center">
-                <Link href="#" className="btn btn-lg btn-primary font-the-bold">
-                  Book a free consultation
-                </Link>
-                <p className="mt-8 px-120 text-black">
+            <div className="flex flex-col items-center w-full mt-10">
+              <div className="inline text-center w-[80%] md:w-[60%] lg:w-[40%]">
+                <div className="flex justify-center group">
+                  <Link
+                    href="#"
+                    className="btn w-full! btn-lg btn-primary font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+                    group-hover:hover:translate-y-[2px]!"
+                  >
+                    Book a free consultation
+                  </Link>
+                </div>
+                <p className="mt-8 text-black">
                   &quot;Book a free consultation&quot; or &quot;See matching
                   program + funding roadmap&quot;.
                 </p>
@@ -1075,7 +1129,7 @@ export default function Home() {
               height={86}
               alt="Vector-box"
               unoptimized={true}
-              className="absolute left-[20] sm:left-[30px] lg:left-[75px] top-[5] sm:top-[20] lg:top-[-16px] xl:top-[-86px]"
+              className="absolute left-[20] sm:left-[30px] lg:left-[75px] top-[5] sm:top-[20] lg:top-[-16px] xl:top-[-86px] -z-10 w-[45px]! lg:w-[66px]!"
             />
             <div className="flex flex-col items-center gap-3">
               <div className="flex items-center gap-1.5">
@@ -1089,7 +1143,7 @@ export default function Home() {
                 />
                 <p className="font-semibold">PACKAGES</p>
               </div>
-              <h2 className="text-center justify-center font-the-bold">
+              <h2 className="text-center justify-center font-the-bold leading-[100%]">
                 PRICING <span className="text-brown">PLANS</span>
               </h2>
             </div>
@@ -1104,187 +1158,198 @@ export default function Home() {
                   Get 100 headshots with 10 unique backdrops and outfits.
                 </p>
                 <hr className="mt-5 opacity-[0.4] group-hover:opacity-[0.5] group-hover:border-white" />
-                <div className="flex flex-col gap-3 py-3 md:py-5">
-                  <div className="flex items-center gap-3 group-hover:text-white!">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="transition duration-150"
-                    >
-                      <g clipPath="url(#clip0_22_4943)">
-                        <path
-                          d="M7 12L12 17L22 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22_4943">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
+                <div className="flex flex-col gap-3 pt-3 md:pt-5">
+                  <ul className="flex flex-col gap-3 pb-2">
+                    {/* List Item 1 */}
+                    <li className="flex items-center gap-3 group-hover:text-white!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="transition duration-150"
+                      >
+                        <g clipPath="url(#clip0_22_4943)">
+                          <path
+                            d="M7 12L12 17L22 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M2 12L7 17M12 12L17 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_22_4943">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
 
-                    <h5 className="leading-[160%] text-black group-hover:text-white">
-                      2 hours turnaround time
-                    </h5>
-                  </div>
-                  <div className="flex items-center gap-3 group-hover:text-white!">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="transition duration-150"
-                    >
-                      <g clipPath="url(#clip0_22_4943)">
-                        <path
-                          d="M7 12L12 17L22 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22_4943">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
+                      <h5 className="leading-[160%] text-black group-hover:text-white">
+                        2 hours turnaround time
+                      </h5>
+                    </li>
 
-                    <h5 className="leading-[160%] text-black group-hover:text-white">
-                      100 headshots
-                    </h5>
-                  </div>
-                  <div className="flex items-center gap-3 group-hover:text-white!">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="transition duration-150"
-                    >
-                      <g clipPath="url(#clip0_22_4943)">
-                        <path
-                          d="M7 12L12 17L22 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22_4943">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
+                    {/* List Item 2 */}
+                    <li className="flex items-center gap-3 group-hover:text-white!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="transition duration-150"
+                      >
+                        <g clipPath="url(#clip0_22_4943)">
+                          <path
+                            d="M7 12L12 17L22 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M2 12L7 17M12 12L17 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_22_4943">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
 
-                    <h5 className="leading-[160%] text-black group-hover:text-white">
-                      Choice of 10 backdrops
-                    </h5>
-                  </div>
-                  <div className="flex items-center gap-3 group-hover:text-white!">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="transition duration-150"
-                    >
-                      <g clipPath="url(#clip0_22_4943)">
-                        <path
-                          d="M7 12L12 17L22 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22_4943">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
+                      <h5 className="leading-[160%] text-black group-hover:text-white">
+                        100 headshots
+                      </h5>
+                    </li>
 
-                    <h5 className="leading-[160%] text-black group-hover:text-white">
-                      Choice of 10 outfits
-                    </h5>
-                  </div>
-                  <div className="flex items-center gap-3 group-hover:text-white!">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="transition duration-150"
-                    >
-                      <g clipPath="url(#clip0_22_4943)">
-                        <path
-                          d="M7 12L12 17L22 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22_4943">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
+                    {/* List Item 3 */}
+                    <li className="flex items-center gap-3 group-hover:text-white!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="transition duration-150"
+                      >
+                        <g clipPath="url(#clip0_22_4943)">
+                          <path
+                            d="M7 12L12 17L22 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M2 12L7 17M12 12L17 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_22_4943">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
 
-                    <h5 className="leading-[160%] text-black group-hover:text-white">
-                      10 edit credits
-                    </h5>
-                  </div>
+                      <h5 className="leading-[160%] text-black group-hover:text-white">
+                        Choice of 10 backdrops
+                      </h5>
+                    </li>
+
+                    {/* List Item 4 */}
+                    <li className="flex items-center gap-3 group-hover:text-white!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="transition duration-150"
+                      >
+                        <g clipPath="url(#clip0_22_4943)">
+                          <path
+                            d="M7 12L12 17L22 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M2 12L7 17M12 12L17 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_22_4943">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <h5 className="leading-[160%] text-black group-hover:text-white">
+                        Choice of 10 outfits
+                      </h5>
+                    </li>
+
+                    {/* List Item 5 */}
+                    <li className="flex items-center gap-3 group-hover:text-white!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="transition duration-150"
+                      >
+                        <g clipPath="url(#clip0_22_4943)">
+                          <path
+                            d="M7 12L12 17L22 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M2 12L7 17M12 12L17 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_22_4943">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <h5 className="leading-[160%] text-black group-hover:text-white">
+                        10 edit credits
+                      </h5>
+                    </li>
+                  </ul>
 
                   <Link
                     href="#"
@@ -1306,182 +1371,199 @@ export default function Home() {
                   Get 100 headshots with 10 unique backdrops and outfits.
                 </p>
                 <hr className="mt-5 opacity-[0.4] group-hover:opacity-[0.5] group-hover:border-white" />
-                <div className="flex flex-col gap-3 py-5">
-                  <div className="flex items-center gap-3 group-hover:text-white!">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="transition duration-150"
-                    >
-                      <g clipPath="url(#clip0_22_4943)">
-                        <path
-                          d="M7 12L12 17L22 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22_4943">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <h5 className="leading-[160%] text-black group-hover:text-white">
-                      2 hours turnaround time
-                    </h5>
-                  </div>
-                  <div className="flex items-center gap-3 group-hover:text-white!">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="transition duration-150"
-                    >
-                      <g clipPath="url(#clip0_22_4943)">
-                        <path
-                          d="M7 12L12 17L22 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22_4943">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <h5 className="leading-[160%] text-black group-hover:text-white">
-                      100 headshots
-                    </h5>
-                  </div>
-                  <div className="flex items-center gap-3 group-hover:text-white!">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="transition duration-150"
-                    >
-                      <g clipPath="url(#clip0_22_4943)">
-                        <path
-                          d="M7 12L12 17L22 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22_4943">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <h5 className="leading-[160%] text-black group-hover:text-white">
-                      Choice of 10 backdrops
-                    </h5>
-                  </div>
-                  <div className="flex items-center gap-3 group-hover:text-white!">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="transition duration-150"
-                    >
-                      <g clipPath="url(#clip0_22_4943)">
-                        <path
-                          d="M7 12L12 17L22 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22_4943">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <h5 className="leading-[160%] text-black group-hover:text-white">
-                      Choice of 10 outfits
-                    </h5>
-                  </div>
-                  <div className="flex items-center gap-3 group-hover:text-white!">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="transition duration-150"
-                    >
-                      <g clipPath="url(#clip0_22_4943)">
-                        <path
-                          d="M7 12L12 17L22 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22_4943">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <h5 className="leading-[160%] text-black group-hover:text-white">
-                      10 edit credits
-                    </h5>
-                  </div>
+                <div className="flex flex-col gap-3 pt-3 md:pt-5">
+                  <ul className="flex flex-col gap-3 pb-2">
+                    {/* List Item 1 */}
+                    <li className="flex items-center gap-3 group-hover:text-white!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="transition duration-150"
+                      >
+                        <g clipPath="url(#clip0_22_4943)">
+                          <path
+                            d="M7 12L12 17L22 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M2 12L7 17M12 12L17 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_22_4943">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <h5 className="leading-[160%] text-black group-hover:text-white">
+                        2 hours turnaround time
+                      </h5>
+                    </li>
+
+                    {/* List Item 2 */}
+                    <li className="flex items-center gap-3 group-hover:text-white!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="transition duration-150"
+                      >
+                        <g clipPath="url(#clip0_22_4943)">
+                          <path
+                            d="M7 12L12 17L22 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M2 12L7 17M12 12L17 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_22_4943">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <h5 className="leading-[160%] text-black group-hover:text-white">
+                        100 headshots
+                      </h5>
+                    </li>
+
+                    {/* List Item 3 */}
+                    <li className="flex items-center gap-3 group-hover:text-white!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="transition duration-150"
+                      >
+                        <g clipPath="url(#clip0_22_4943)">
+                          <path
+                            d="M7 12L12 17L22 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M2 12L7 17M12 12L17 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_22_4943">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <h5 className="leading-[160%] text-black group-hover:text-white">
+                        Choice of 10 backdrops
+                      </h5>
+                    </li>
+
+                    {/* List Item 4 */}
+                    <li className="flex items-center gap-3 group-hover:text-white!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="transition duration-150"
+                      >
+                        <g clipPath="url(#clip0_22_4943)">
+                          <path
+                            d="M7 12L12 17L22 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M2 12L7 17M12 12L17 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_22_4943">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <h5 className="leading-[160%] text-black group-hover:text-white">
+                        Choice of 10 outfits
+                      </h5>
+                    </li>
+
+                    {/* List Item 5 */}
+                    <li className="flex items-center gap-3 group-hover:text-white!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="transition duration-150"
+                      >
+                        <g clipPath="url(#clip0_22_4943)">
+                          <path
+                            d="M7 12L12 17L22 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M2 12L7 17M12 12L17 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_22_4943">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <h5 className="leading-[160%] text-black group-hover:text-white">
+                        10 edit credits
+                      </h5>
+                    </li>
+                  </ul>
+
                   <Link
                     href="#"
                     className="btn btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
@@ -1502,182 +1584,198 @@ export default function Home() {
                   Get 100 headshots with 10 unique backdrops and outfits.
                 </p>
                 <hr className="mt-5 opacity-[0.4] group-hover:opacity-[0.5] group-hover:border-white" />
-                <div className="flex flex-col gap-3 py-5">
-                  <div className="flex items-center gap-3 group-hover:text-white!">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="transition duration-150"
-                    >
-                      <g clipPath="url(#clip0_22_4943)">
-                        <path
-                          d="M7 12L12 17L22 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22_4943">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <h5 className="leading-[160%] text-black group-hover:text-white">
-                      2 hours turnaround time
-                    </h5>
-                  </div>
-                  <div className="flex items-center gap-3 group-hover:text-white!">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="transition duration-150"
-                    >
-                      <g clipPath="url(#clip0_22_4943)">
-                        <path
-                          d="M7 12L12 17L22 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22_4943">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <h5 className="leading-[160%] text-black group-hover:text-white">
-                      100 headshots
-                    </h5>
-                  </div>
-                  <div className="flex items-center gap-3 group-hover:text-white!">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="transition duration-150"
-                    >
-                      <g clipPath="url(#clip0_22_4943)">
-                        <path
-                          d="M7 12L12 17L22 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22_4943">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <h5 className="leading-[160%] text-black group-hover:text-white">
-                      Choice of 10 backdrops
-                    </h5>
-                  </div>
-                  <div className="flex items-center gap-3 group-hover:text-white!">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="transition duration-150"
-                    >
-                      <g clipPath="url(#clip0_22_4943)">
-                        <path
-                          d="M7 12L12 17L22 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22_4943">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <h5 className="leading-[160%] text-black group-hover:text-white">
-                      Choice of 10 outfits
-                    </h5>
-                  </div>
-                  <div className="flex items-center gap-3 group-hover:text-white!">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="transition duration-150"
-                    >
-                      <g clipPath="url(#clip0_22_4943)">
-                        <path
-                          d="M7 12L12 17L22 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M2 12L7 17M12 12L17 7"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_22_4943">
-                          <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <h5 className="leading-[160%] text-black group-hover:text-white">
-                      10 edit credits
-                    </h5>
-                  </div>
+                <div className="flex flex-col gap-3 pt-3 md:pt-5">
+                  <ul className="flex flex-col gap-3 pb-2">
+                    {/* List Item 1 */}
+                    <li className="flex items-center gap-3 group-hover:text-white!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="transition duration-150"
+                      >
+                        <g clipPath="url(#clip0_22_4943)">
+                          <path
+                            d="M7 12L12 17L22 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M2 12L7 17M12 12L17 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_22_4943">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <h5 className="leading-[160%] text-black group-hover:text-white">
+                        2 hours turnaround time
+                      </h5>
+                    </li>
+
+                    {/* List Item 2 */}
+                    <li className="flex items-center gap-3 group-hover:text-white!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="transition duration-150"
+                      >
+                        <g clipPath="url(#clip0_22_4943)">
+                          <path
+                            d="M7 12L12 17L22 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M2 12L7 17M12 12L17 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_22_4943">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <h5 className="leading-[160%] text-black group-hover:text-white">
+                        100 headshots
+                      </h5>
+                    </li>
+
+                    {/* List Item 3 */}
+                    <li className="flex items-center gap-3 group-hover:text-white!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="transition duration-150"
+                      >
+                        <g clipPath="url(#clip0_22_4943)">
+                          <path
+                            d="M7 12L12 17L22 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M2 12L7 17M12 12L17 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_22_4943">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <h5 className="leading-[160%] text-black group-hover:text-white">
+                        Choice of 10 backdrops
+                      </h5>
+                    </li>
+
+                    {/* List Item 4 */}
+                    <li className="flex items-center gap-3 group-hover:text-white!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="transition duration-150"
+                      >
+                        <g clipPath="url(#clip0_22_4943)">
+                          <path
+                            d="M7 12L12 17L22 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M2 12L7 17M12 12L17 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_22_4943">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <h5 className="leading-[160%] text-black group-hover:text-white">
+                        Choice of 10 outfits
+                      </h5>
+                    </li>
+
+                    {/* List Item 5 */}
+                    <li className="flex items-center gap-3 group-hover:text-white!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        className="transition duration-150"
+                      >
+                        <g clipPath="url(#clip0_22_4943)">
+                          <path
+                            d="M7 12L12 17L22 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M2 12L7 17M12 12L17 7"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_22_4943">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <h5 className="leading-[160%] text-black group-hover:text-white">
+                        10 edit credits
+                      </h5>
+                    </li>
+                  </ul>
 
                   <Link
                     href="#"
@@ -1702,7 +1800,7 @@ export default function Home() {
           height={86}
           alt="Shape-shape"
           unoptimized={true}
-          className="absolute -z-10 left-0 right-auto top-[30px] lg:top-[0px]"
+          className="absolute -z-10 left-0 right-auto top-[30px] lg:top-[0px] w-[50px]! lg:w-[66px]!"
         />
         <div className="faqs-wrapper px-fixed-20">
           <div className="container px-120 mx-auto">
@@ -1718,27 +1816,30 @@ export default function Home() {
                 />
                 <p className="font-semibold">FAQS</p>
               </div>
-              <h2 className="text-center uppercase justify-center font-the-bold">
+              <h2 className="text-center uppercase justify-center font-the-bold leading-[100%]">
                 Frequently <span className="text-brown">asked </span>questions
               </h2>
             </div>
 
             <div className="flex flex-col mt-50 xl:gap-5 lg:gap-4 gap-3">
-              <div className="faq-drawer p-24 rounded-[12px] hover:bg-[#6C8E69]! group transition-colors duration-300">
+              {/* FAQ Item 1 */}
+              <div className="faq-drawer p-24 rounded-[12px] group transition-colors duration-300">
                 <input
-                  className="faq-drawer__trigger"
-                  id="faq-drawer"
+                  // 1. Add 'peer' class and 'hidden' (optional, but good practice)
+                  className="faq-drawer__trigger peer hidden"
+                  id="faq-drawer-1" // IMPORTANT: Use unique IDs for each input
                   type="checkbox"
                 />
                 <label
-                  className="faq-drawer__title fs-18 font-the-bold group-hover:text-white! transition-colors duration-300"
-                  htmlFor="faq-drawer"
+                  // 2. Remove 'group-hover:' and replace with 'peer-checked:'
+                  className="faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300"
+                  htmlFor="faq-drawer-1"
                 >
                   Q: Can you help with US applications / non-UK?{" "}
                 </label>
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p className="mt-5 group-hover:text-white transition-colors duration-300">
+                    <p className="mt-5 peer-checked:text-white transition-colors duration-300">
                       Our A Plus talent goes through a no joke vetting process.
                       Only the top 1 percent make it through. Once we have got
                       three rockstars, we will line up interviews so you can
@@ -1748,21 +1849,22 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="faq-drawer p-24 rounded-[12px] hover:bg-[#6C8E69]! group transition-colors duration-300">
+              {/* FAQ Item 2 */}
+              <div className="faq-drawer p-24 rounded-[12px] group transition-colors duration-300">
                 <input
-                  className="faq-drawer__trigger"
+                  className="faq-drawer__trigger peer hidden"
                   id="faq-drawer-2"
                   type="checkbox"
                 />
                 <label
-                  className="faq-drawer__title fs-18 font-the-bold group-hover:text-white! transition-colors duration-300"
+                  className="faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300"
                   htmlFor="faq-drawer-2"
                 >
                   Q: Can you help with US applications / non-UK?
                 </label>
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p className="mt-5 group-hover:text-white transition-colors duration-300">
+                    <p className="mt-5 peer-checked:text-white transition-colors duration-300">
                       Our A Plus talent goes through a no joke vetting process.
                       Only the top 1 percent make it through. Once we have got
                       three rockstars, we will line up interviews so you can
@@ -1772,21 +1874,22 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="faq-drawer p-24 rounded-[12px] hover:bg-[#6C8E69]! group transition-colors duration-300">
+              {/* FAQ Item 3 */}
+              <div className="faq-drawer p-24 rounded-[12px] group transition-colors duration-300">
                 <input
-                  className="faq-drawer__trigger"
+                  className="faq-drawer__trigger peer hidden"
                   id="faq-drawer-3"
                   type="checkbox"
                 />
                 <label
-                  className="faq-drawer__title fs-18 font-the-bold group-hover:text-white! transition-colors duration-300"
+                  className="faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300"
                   htmlFor="faq-drawer-3"
                 >
                   Q: What’s your refund or guarantee policy?
                 </label>
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p className="mt-5 group-hover:text-white transition-colors duration-300">
+                    <p className="mt-5 peer-checked:text-white transition-colors duration-300">
                       Our A Plus talent goes through a no joke vetting process.
                       Only the top 1 percent make it through. Once we have got
                       three rockstars, we will line up interviews so you can
@@ -1796,21 +1899,22 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="faq-drawer p-24 rounded-[12px] hover:bg-[#6C8E69]! group transition-colors duration-300">
+              {/* FAQ Item 4 */}
+              <div className="faq-drawer p-24 rounded-[12px] group transition-colors duration-300">
                 <input
-                  className="faq-drawer__trigger"
+                  className="faq-drawer__trigger peer hidden"
                   id="faq-drawer-4"
                   type="checkbox"
                 />
                 <label
-                  className="faq-drawer__title fs-18 font-the-bold group-hover:text-white! transition-colors duration-300"
+                  className="faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300"
                   htmlFor="faq-drawer-4"
                 >
                   Q: How soon should I start?
                 </label>
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p className="mt-5 group-hover:text-white transition-colors duration-300">
+                    <p className="mt-5 peer-checked:text-white transition-colors duration-300">
                       Our A Plus talent goes through a no joke vetting process.
                       Only the top 1 percent make it through. Once we have got
                       three rockstars, we will line up interviews so you can
@@ -1832,25 +1936,35 @@ export default function Home() {
           height={86}
           alt="flower"
           unoptimized={true}
-          className="absolute -z-10 left-auto right-0 xl:top-[50%] top-[2%] transform xl:-translate-y-50% -translate-y-[2%]"
+          className="absolute -z-10 left-auto right-0 xl:top-[50%] top-[2%] transform xl:-translate-y-50% -translate-y-[2%] w-[45px]! lg:w-[60px]!"
         />
         <div className="contact-section-wrapper py-120">
           <div className="container mx-auto p-70 bg-white rounded-[16px]">
             <div className="flex flex-col md:flex-row xl:gap-5 lg:gap-4 md:gap-3 gap-7.5">
               <div className="flex flex-col w-full md:w-[55%]">
-                <h2 className="font-the-bold text-black">
+                <h2 className="font-the-bold text-black leading-[100%]">
                   Ready to Launch Your Global Grad Journey?
                 </h2>
-                <div className="flex flex-col text-center md:flex-row gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-5 relative">
-                  <Link
-                    href="#"
-                    className="btn btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold"
-                  >
-                    Take the Quiz Now
-                  </Link>
-                  <Link href="#" className="btn btn-transparent font-semibold">
-                    Schedule a Free Call
-                  </Link>
+                <div className="flex flex-col md:flex-row text-center gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-5 relative">
+                  <div className="flex group w-full sm:w-auto">
+                    <Link
+                      href="#"
+                      className="btn btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! w-full
+            group-hover:hover:translate-y-[2px]!"
+                    >
+                      Take the Quiz Now
+                    </Link>
+                  </div>
+
+                  <div className="flex group w-full sm:w-auto">
+                    <Link
+                      href="#"
+                      className="btn btn-transparent font-semibold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! w-full
+            group-hover:hover:translate-y-[2px]!"
+                    >
+                      Schedule a Free Call
+                    </Link>
+                  </div>
                 </div>
                 <p className="fs-12 mt-4 text-black">
                   (Optional small print: &quot;Spots are limited. 2026 intake
@@ -1958,12 +2072,15 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="xl:mt-6 lg:mt-5 mt-4 flex">
-                    <Link
-                      href="#"
-                      className="btn btn-md btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold"
-                    >
-                      SUBMIT
-                    </Link>
+                    <div className="flex group">
+                      <Link
+                        href="#"
+                        className="btn btn-md btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+                    group-hover:hover:translate-y-[2px]!"
+                      >
+                        SUBMIT
+                      </Link>
+                    </div>
                   </div>
                 </form>
               </div>
@@ -1976,7 +2093,7 @@ export default function Home() {
       <footer className="footer-section">
         <div className="footer-wrapper px-fixed-20">
           <div className="container mx-auto">
-            <div className="flex flex-col lg:flex-row gap-12 lg:gap-3 px-70">
+            <div className="flex flex-col lg:flex-row gap-12 lg:gap-3">
               <div className="flex w-full lg:w-[30%]">
                 <div className="flex flex-col w-[90%] xl:w-[80%]">
                   <div className="logo-wrapper cursor-pointer">
@@ -1997,50 +2114,120 @@ export default function Home() {
               </div>
               <div className="flex w-full lg:w-[70%]">
                 <div className="grid justify-between grid-cols-2 sm:grid-cols-5 gap-8 sm:gap-3 auto-cols-max w-full">
+                  {/* Column 1: Product */}
                   <div className="flex flex-col gap-3">
-                    <p className="font-bold pb-1 text-white">Product</p>
-                    <p className=" text-white">Overview</p>
-                    <p className=" text-white">Features</p>
-                    <p className=" text-white">Solutions</p>
-                    <p className=" text-white">Tutorials</p>
-                    <p className=" text-white">Pricing</p>
-                    <p className=" text-white">Releases</p>
+                    {/* Title/Heading remains a non-link element */}
+                    <span className="font-bold pb-1 text-white">Product</span>
+                    <Link href="#" className=" text-white">
+                      Overview
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Features
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Solutions
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Tutorials
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Pricing
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Releases
+                    </Link>
                   </div>
+
+                  {/* Column 2: Company (Assuming) */}
                   <div className="flex flex-col gap-3">
-                    <p className="font-bold pb-1 text-white">Product</p>
-                    <p className=" text-white">About us</p>
-                    <p className=" text-white">Careers</p>
-                    <p className=" text-white">Press</p>
-                    <p className=" text-white">News</p>
-                    <p className=" text-white">Media kit</p>
-                    <p className=" text-white">Contact</p>
+                    <span className="font-bold pb-1 text-white">Product</span>
+                    <Link href="#" className=" text-white">
+                      About us
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Careers
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Press
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      News
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Media kit
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Contact
+                    </Link>
                   </div>
+
+                  {/* Column 3: Resources (Assuming) */}
                   <div className="flex flex-col gap-3">
-                    <p className="font-bold pb-1 text-white">Product</p>
-                    <p className=" text-white">Blogs</p>
-                    <p className=" text-white">Newsletter</p>
-                    <p className=" text-white">Events</p>
-                    <p className=" text-white">Help Center</p>
-                    <p className=" text-white">Tutorials</p>
-                    <p className=" text-white">Support</p>
+                    <span className="font-bold pb-1 text-white">Product</span>
+                    <Link href="#" className=" text-white">
+                      Blogs
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Newsletter
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Events
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Help Center
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Tutorials
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Support
+                    </Link>
                   </div>
+
+                  {/* Column 4: Social/Community (Assuming) */}
                   <div className="flex flex-col gap-3">
-                    <p className="font-bold pb-1 text-white">Product</p>
-                    <p className=" text-white">Twitter</p>
-                    <p className=" text-white">LinkedIn</p>
-                    <p className=" text-white">FaceBook</p>
-                    <p className=" text-white">GitHub</p>
-                    <p className=" text-white">AngelList</p>
-                    <p className=" text-white">Dribble</p>
+                    <span className="font-bold pb-1 text-white">Product</span>
+                    <Link href="#" className=" text-white">
+                      Twitter
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      LinkedIn
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      FaceBook
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      GitHub
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      AngelList
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Dribble
+                    </Link>
                   </div>
+
+                  {/* Column 5: Legal (Assuming) */}
                   <div className="flex flex-col gap-3">
-                    <p className="font-bold pb-1 text-white">Product</p>
-                    <p className=" text-white">Terms</p>
-                    <p className=" text-white">Privacy</p>
-                    <p className=" text-white">Cookies</p>
-                    <p className=" text-white">Licenses</p>
-                    <p className=" text-white">Settings</p>
-                    <p className=" text-white">Contact</p>
+                    <span className="font-bold pb-1 text-white">Product</span>
+                    <Link href="#" className=" text-white">
+                      Terms
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Privacy
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Cookies
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Licenses
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Settings
+                    </Link>
+                    <Link href="#" className=" text-white">
+                      Contact
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -2050,7 +2237,7 @@ export default function Home() {
         <div className="footer-bottom">
           <div className="bottom-footer-wrapper px-fixed-20">
             <div className="container mx-auto">
-              <div className="flex px-70">
+              <div className="flex">
                 <div className="flex flex-col lg:flex-row gap-6  lg:gap-5 items-center justify-between w-full py-48">
                   <div>
                     <p className="text-white">

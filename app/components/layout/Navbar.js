@@ -30,6 +30,43 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Place this inside your functional component (e.g., Navbar or Layout)
+  const [activeHash, setActiveHash] = useState("");
+
+  useEffect(() => {
+    // 1. Set the initial active hash on client load
+    setActiveHash(window.location.hash);
+
+    // 2. Add an event listener to update the hash when it changes (e.g., user clicks a link)
+    const handleHashChange = () => {
+      setActiveHash(window.location.hash);
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    // 3. Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []); // Empty dependency array means this runs once on mount
+
+  // Helper function to build the class string
+  const getLinkClasses = (href) => {
+    // Check if the current hash matches the link's href
+    const isActive = activeHash === href;
+
+    // Base classes
+    const baseClasses =
+      "fs-14 font-segoeUi leading-[100%] transition-colors duration-200";
+
+    // Conditional classes: Active state gets the green color, otherwise it's black.
+    const activeClass = isActive
+      ? "text-[#6C8E69]" // Active color
+      : "text-black hover:text-[#6C8E69]"; // Default color + hover effect
+
+    return `${baseClasses} ${activeClass}`;
+  };
+
   return (
     <>
       <nav className="navbar absolute top-[17px] w-full z-10" id="navbar">
@@ -46,29 +83,37 @@ const Navbar = () => {
               />
             </div>
             <div className="lg:flex hidden navbar-menu items-center justify-center gap-6">
-              <a className="fs-14 font-segoeUi leading-[100%] text-black" href="#navbar">
+              <Link className={getLinkClasses("#navbar")} href="#navbar">
                 Home
-              </a>
-              <a className="fs-14 font-segoeUi leading-[100%] text-black" href="#ourmission">
+              </Link>
+              <Link
+                className={getLinkClasses("#ourmission")}
+                href="#ourmission"
+              >
                 Our Mission
-              </a>
-              <a className="fs-14 font-segoeUi leading-[100%] text-black" href="#process">
+              </Link>
+              <Link className={getLinkClasses("#process")} href="#process">
                 How it Works
-              </a>
-              <a className="fs-14 font-segoeUi leading-[100%] text-black" href="#testimonials">
+              </Link>
+              <Link
+                className={getLinkClasses("#testimonials")}
+                href="#testimonials"
+              >
                 Testimonials
-              </a>
-              <a className="fs-14 font-segoeUi leading-[100%] text-black" href="#faqs">
+              </Link>
+              <Link className={getLinkClasses("#faqs")} href="#faqs">
                 FAQS
-              </a>
+              </Link>
             </div>
-
-            <div className="lg:flex hidden">
-              <a href="#" className="btn btn-green btn-md font-segoeUi">
+            <div className="lg:flex hidden group">
+              <a
+                href="#"
+                className="btn btn-green btn-md font-segoeUi group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+                    group-hover:hover:translate-y-[2px]!"
+              >
                 Contact Us
               </a>
             </div>
-
             <div className="lg:hidden flex items-center">
               <div className="lg:hidden flex mr-[18px]">
                 <a href="#" className="btn btn-green btn-md font-segoeUi">
@@ -81,9 +126,7 @@ const Navbar = () => {
                 aria-label="Toggle menu"
               >
                 <Image
-                  src={
-                    "/images/hamburger.png"
-                  }
+                  src={"/images/hamburger.png"}
                   width={24}
                   height={25}
                   alt="hamburger"

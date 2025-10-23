@@ -7,6 +7,7 @@ body {
   color: #2d343a;
   background-color: #f4f3ee;
   background-size: cover;
+  line-height: 30px;
 }
 
 img {
@@ -354,6 +355,11 @@ h6 {
   width: 10px;
 }
 
+.faq-drawer:has(input:checked) {
+  background-color: #6c8e69 !important;
+  color: #fff;
+}
+
 /* OPTIONAL HOVER STATE */
 .faq-drawer__trigger:checked
   + .faq-drawer__title
@@ -389,6 +395,7 @@ input[type="checkbox"] {
 @media screen and (max-width: 1399.97px) {
   body {
     font-size: 15px;
+    line-height: 28px;
   }
   h1 {
     font-size: 50px;
@@ -536,6 +543,7 @@ input[type="checkbox"] {
 @media screen and (max-width: 1199.97px) {
   body {
     font-size: 14px;
+    line-height: 26px;
   }
   .px-fixed-20 {
     padding: 0 20px;
@@ -667,8 +675,8 @@ input[type="checkbox"] {
   .users {
     background-color: #fff;
     border-radius: 13px;
-    bottom: 85px;
-    left: 50px;
+    bottom: 24px;
+    left: -10px;
   }
 
   .hero-wrapper {
@@ -686,6 +694,7 @@ input[type="checkbox"] {
 @media screen and (max-width: 1023.97px) {
   body {
     font-size: 14px;
+    line-height: 26px;
   }
   .px-fixed-20 {
     padding: 0 20px;
@@ -812,8 +821,8 @@ input[type="checkbox"] {
   .users {
     background-color: #fff;
     border-radius: 13px;
-    bottom: 26px;
-    left: -10px;
+    bottom: 75px;
+    left: 45px;
   }
 
   .footer-section .footer-wrapper {
@@ -826,6 +835,7 @@ input[type="checkbox"] {
 @media screen and (max-width: 767.97px) {
   body {
     font-size: 14px;
+    line-height: 24px;
   }
   .px-fixed-20 {
     padding: 0 20px;
@@ -945,13 +955,13 @@ input[type="checkbox"] {
   }
 
   .slide-btn {
-    padding: 20px 22px;
+    padding: 18px 20px;
   }
   .users {
     background-color: #fff;
     border-radius: 13px;
-    bottom: 26px;
-    left: 0px;
+    bottom: 50px;
+    left: -7px;
   }
   .footer-section .footer-wrapper {
     background-color: #6c8e69;
@@ -963,20 +973,21 @@ input[type="checkbox"] {
 @media screen and (max-width: 575.97) {
   body {
     font-size: 15px;
+    line-height: 22px;
   }
   .px-fixed-20 {
     padding: 0 20px;
   }
   h1 {
-    font-size: 45px;
+    font-size: 43px;
   }
   /* 44 */
   h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
   /* 32 */
   h3 {
-    font-size: 32px;
+    font-size: 28px;
   }
   /* 28 */
   h4 {
@@ -1082,13 +1093,13 @@ input[type="checkbox"] {
   }
 
   .slide-btn {
-    padding: 20px 22px;
+    padding: 16px 18px;
   }
   .users {
     background-color: #fff;
     border-radius: 13px;
-    bottom: 10px;
-    left: -5px;
+    bottom: 23px;
+    left: -6px;
   }
   .footer-section .footer-wrapper {
     background-color: #6c8e69;
@@ -1100,6 +1111,7 @@ input[type="checkbox"] {
 @media screen and (max-width: 399.97) {
   body {
     font-size: 14px;
+      line-height: 20px;
   }
   .px-fixed-20 {
     padding: 0 20px;
@@ -1176,7 +1188,7 @@ input[type="checkbox"] {
   .p-70 {
     padding: 30px;
   }
-  
+
   .px-70 {
     padding: 0 30px;
   }
@@ -1240,8 +1252,13 @@ input[type="checkbox"] {
   }
 
   .slide-btn {
-    padding: 20px 22px;
+    padding: 14px 16px;
   }
+
+  .hero-wrapper h1 {
+    line-height: 100%;
+  }
+
   .footer-section .footer-wrapper {
     background-color: #6c8e69;
     padding-top: 48px;
