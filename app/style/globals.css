@@ -502,18 +502,23 @@ input[type="checkbox"] {
   }
 
   .btn {
-    padding: 14px 14px;
+    padding: 13px 18px;
+    font-size: 14px;
+  }
+
+  .btn-sm {
+    padding: 15px;
+    font-size: 14;
   }
 
   .btn-md {
-    padding: 10px 16px;
-    font-size: 16px;
-    font-weight: 600;
+    padding: 11px 16px;
+    font-size: 13px;
   }
-  /* 14 70 */
+
   .btn-lg {
     padding: 14px 70px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .slide-btn {
@@ -656,18 +661,23 @@ input[type="checkbox"] {
   }
 
   .btn {
+    padding: 11px 18px;
+    font-size: 13px;
+  }
+
+  .btn-sm {
+    padding: 14px;
     font-size: 13px;
   }
 
   .btn-md {
-    padding: 10px 16px;
-    font-size: 15px;
-    font-weight: 600;
+    padding: 10px 15px;
+    font-size: 13px;
   }
-  /* 14 70 */
+
   .btn-lg {
-    padding: 13px 64px;
-    font-size: 15px;
+    padding: 12px 55px;
+    font-size: 13px;
   }
 
   .slide-btn {
@@ -809,15 +819,24 @@ input[type="checkbox"] {
     padding: 14px;
   }
 
-  .btn-md {
-    padding: 10px 16px;
-    font-size: 15px;
-    font-weight: 600;
+  .btn {
+    padding: 10px 15px;
+    font-size: 13px;
   }
-  /* 14 70 */
+
+  .btn-sm {
+    padding: 13px;
+    font-size: 13px;
+  }
+
+  .btn-md {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
   .btn-lg {
-    padding: 13px 64px;
-    font-size: 15px;
+    padding: 10px 45px;
+    font-size: 13px;
   }
 
   .slide-btn {
@@ -953,14 +972,13 @@ input[type="checkbox"] {
   }
 
   .btn-md {
-    padding: 10px 16px;
-    font-size: 14px;
-    font-weight: 600;
+    padding: 9px 13px;
+    font-size: 13px;
   }
-  /* 14 70 */
+
   .btn-lg {
-    padding: 13px 64px;
-    font-size: 14px;
+    padding: 10px 35px;
+    font-size: 13px;
   }
 
   .slide-btn {
@@ -996,11 +1014,11 @@ input[type="checkbox"] {
   }
   /* 44 */
   h2 {
-    font-size: 28px;
+    font-size: 27px;
   }
   /* 32 */
   h3 {
-    font-size: 28px;
+    font-size: 25px;
   }
   /* 28 */
   h4 {
@@ -1095,14 +1113,13 @@ input[type="checkbox"] {
   }
 
   .btn-md {
-    padding: 10px 16px;
-    font-size: 14px;
-    font-weight: 600;
+    padding: 8px 8px;
+    font-size: 12px;
   }
-  /* 14 70 */
+
   .btn-lg {
-    padding: 13px 64px;
-    font-size: 14px;
+    padding: 9px 20px;
+    font-size: 12px;
   }
 
   .slide-btn {
@@ -1126,32 +1143,37 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 399.97) {
   body {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 13px;
+    line-height: 15px;
   }
+
   .px-fixed-20 {
     padding: 0 20px;
   }
-  /* 50 */
+
   h1 {
-    font-size: 45px;
+    font-size: 38px;
   }
+
   /* 44 */
   h2 {
-    font-size: 32px;
+    font-size: 25px;
   }
   /* 32 */
   h3 {
-    font-size: 32px;
-  }
-  /* 28 */
-  h4 {
     font-size: 22px;
   }
-  /* 20 */
-  h5 {
+
+  /* 28 */
+  h4 {
     font-size: 18px;
   }
+
+  /* 20 */
+  h5 {
+    font-size: 16px;
+  }
+
   /* 18 */
   h6 {
     font-size: 16px;
@@ -1162,11 +1184,11 @@ input[type="checkbox"] {
   }
 
   .fs-18 {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .fs-19 {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .pt-120 {
@@ -1182,16 +1204,19 @@ input[type="checkbox"] {
   }
 
   .p-260 {
-    padding: 0px 0px;
+    padding: 0 30px;
   }
+
   /* 44 70 */
   .process-box-padding {
-    padding: 20px 20px;
+    padding: 20px;
   }
+
   /* 30 24 */
   .price-box-padding {
     padding: 30px 20px;
   }
+
   /* 16 16 20 16 */
   .blog-box-padding {
     padding: 16px 16px 20px 16px;
@@ -1204,7 +1229,6 @@ input[type="checkbox"] {
   .p-70 {
     padding: 30px;
   }
-
   .px-70 {
     padding: 0 30px;
   }
@@ -1214,7 +1238,7 @@ input[type="checkbox"] {
   }
   /* all 46 */
   .p-46 {
-    padding: 30px 20px;
+    padding: 20px;
   }
 
   .p-25 {
@@ -1226,58 +1250,49 @@ input[type="checkbox"] {
   }
 
   .p-20 {
-    padding: 10px 16px;
+    padding: 12px;
   }
 
   .p-18 {
     padding: 18px;
   }
 
-  .p-15 {
-    padding: 15px;
-  }
-
   .p-16 {
-    padding: 12px 14px;
-  }
-
-  .btn {
-    padding: 14px 24px;
-    font-size: 14px;
-    font-weight: 700;
-    border-radius: 6px;
-  }
-  /* padding: 16px;
-    font-size: 16px;
-    border-radius: 100px; */
-  .btn-sm {
-    padding: 16px;
-    font-size: 14px;
-    border-radius: 100px;
+    padding: 10px;
   }
 
   .btn-md {
-    padding: 12px 27px;
-    font-size: 14px;
-    font-weight: 600;
+    padding: 6px 8px;
+    font-size: 11px;
   }
 
   .btn-lg {
-    padding: 12px 50px;
-    font-size: 16px;
+    padding: 8px 12px;
+    font-size: 12px;
   }
 
   .slide-btn {
-    padding: 14px 16px;
+    padding: 10px 13px;
   }
 
   .hero-wrapper h1 {
     line-height: 100%;
   }
 
+  .users {
+    background-color: #fff;
+    border-radius: 13px;
+    bottom: 20px;
+    left: -10px;
+  }
+
   .footer-section .footer-wrapper {
     background-color: #6c8e69;
     padding-top: 48px;
     padding-bottom: 48px;
+  }
+
+  .faq-drawer__title::after {
+    top: -17px;
   }
 }

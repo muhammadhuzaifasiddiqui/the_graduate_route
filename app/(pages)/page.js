@@ -83,7 +83,7 @@ export default function Home() {
                   <div className="flex group">
                     <Link
                       href="#"
-                      className="btn btn-primary w-full! font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+                      className="btn btn-md btn-primary w-full! font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
                     group-hover:hover:translate-y-[2px]!"
                     >
                       Take the Quiz → Find Your Path
@@ -93,7 +93,7 @@ export default function Home() {
                   <div className="flex group">
                     <Link
                       href="#"
-                      className="btn btn-secondary w-full! font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E] group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
+                      className="btn btn-md btn-secondary w-full! font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E] group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
                     group-hover:hover:translate-y-[2px]"
                     >
                       Book a Strategy Call
@@ -155,7 +155,7 @@ export default function Home() {
                     height={44}
                     alt="users"
                     unoptimized={true}
-                    className="mt-2 md:mt-4"
+                    className="mt-2 md:mt-4 w-[70px]! sm:w-[80px]! md:w-[90px]! lg:w-[120px]!"
                   />
                 </div>
               </div>
@@ -441,17 +441,17 @@ export default function Home() {
                   <h5 className="font-the-bold xl:mt-6 lg:mt-5 md:mt-4 mt-3">
                     Decision & Next Steps
                   </h5>
-                  <p className="font-semibold leading-[130%] sm:leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
+                  <p className="font-semibold   leading-[130%] sm:leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
                     You accept an offer, we help with visa, transitions, and
                     visionary next steps.
                   </p>
                 </div>
                 <div className="bg-dark-green p-46 rounded-[20px]">
-                  <div className="flex flex-col text-center gap-3 lg:mt-8.5 md:mt-9 sm:mt-5.5 mt-1.5">
+                  <div className="flex flex-col text-center gap-3 lg:mt-11 md:mt-9 sm:mt-5.5 mt-1.5">
                     <div className="flex group">
                       <Link
                         href="#"
-                        className="btn btn-primary w-full! font-the-bold text-center group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+                        className="btn btn-md btn-primary w-full! font-the-bold text-center group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
                     group-hover:hover:translate-y-[2px]!"
                       >
                         Take the Quiz → Find Your Path
@@ -460,7 +460,7 @@ export default function Home() {
                     <div className="flex group">
                       <Link
                         href="#"
-                        className="btn btn-tertiary  w-full! font-semibold text-center group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+                        className="btn btn-md btn-tertiary  w-full! font-semibold text-center group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
                     group-hover:hover:translate-y-[2px]!"
                       >
                         Book a Free consult
@@ -521,7 +521,7 @@ export default function Home() {
                     height={16}
                     alt="slide-left"
                     unoptimized={true}
-                    className=""
+                    className="w-[10px]! sm:w-[12px]! md:w-[14px] lg:w-[16px]"
                   />
                 </div>
                 <div
@@ -534,7 +534,7 @@ export default function Home() {
                     height={16}
                     alt="slide-right"
                     unoptimized={true}
-                    className=""
+                    className="w-[10px]! sm:w-[12px]! md:w-[14px] lg:w-[16px]"
                   />
                 </div>
               </div>
@@ -1353,7 +1353,7 @@ export default function Home() {
 
                   <Link
                     href="#"
-                    className="btn btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
+                    className="btn btn-md btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
                     group-hover:bg-[#6C8E69]! group-hover:shadow-[0_4px_0_0_#1E1E1E] group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
                     group-hover:hover:translate-y-[2px]"
                   >
@@ -1566,7 +1566,7 @@ export default function Home() {
 
                   <Link
                     href="#"
-                    className="btn btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
+                    className="btn btn-md btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
                     group-hover:bg-[#6C8E69]! group-hover:shadow-[0_4px_0_0_#1E1E1E] group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
                     group-hover:hover:translate-y-[2px]"
                   >
@@ -1779,7 +1779,7 @@ export default function Home() {
 
                   <Link
                     href="#"
-                    className="btn btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
+                    className="btn btn-md btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
                     group-hover:bg-[#6C8E69]! group-hover:shadow-[0_4px_0_0_#1E1E1E] group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
                     group-hover:hover:translate-y-[2px]"
                   >
@@ -1949,7 +1949,7 @@ export default function Home() {
                   <div className="flex group w-full sm:w-auto">
                     <Link
                       href="#"
-                      className="btn btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! w-full
+                      className="btn btn-md btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! w-full
             group-hover:hover:translate-y-[2px]!"
                     >
                       Take the Quiz Now
@@ -1959,7 +1959,7 @@ export default function Home() {
                   <div className="flex group w-full sm:w-auto">
                     <Link
                       href="#"
-                      className="btn btn-transparent font-semibold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! w-full
+                      className="btn btn-md btn-transparent font-semibold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! w-full
             group-hover:hover:translate-y-[2px]!"
                     >
                       Schedule a Free Call
