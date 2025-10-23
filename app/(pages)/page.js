@@ -250,7 +250,7 @@ export default function Home() {
                     unoptimized={true}
                     className=""
                   />
-                  <p className="font-the-bold leading-[175%]">
+                  <p className="font-the-bold leading-[120%] sm:leading-[175%]">
                     Stand out among a competitive applicant pool
                   </p>
                 </div>
@@ -263,7 +263,7 @@ export default function Home() {
                     unoptimized={true}
                     className=""
                   />
-                  <p className="font-the-bold leading-[175%]">
+                  <p className="font-the-bold leading-[120%] sm:leading-[175%]">
                     Secure high-value scholarships & fellowships
                   </p>
                 </div>
@@ -276,7 +276,7 @@ export default function Home() {
                     unoptimized={true}
                     className=""
                   />
-                  <p className="font-the-bold leading-[175%]">
+                  <p className="font-the-bold leading-[120%] sm:leading-[175%]">
                     Craft essays, research proposals, and applications that
                     highlight your unique impact
                   </p>
@@ -290,7 +290,7 @@ export default function Home() {
                     unoptimized={true}
                     className=""
                   />
-                  <p className="font-the-bold leading-[175%]">
+                  <p className="font-the-bold leading-[120%] sm:leading-[175%]">
                     Build a compelling narrative around your goals and mission
                   </p>
                 </div>
@@ -303,7 +303,7 @@ export default function Home() {
                     unoptimized={true}
                     className=""
                   />
-                  <p className="font-the-bold leading-[175%]">
+                  <p className="font-the-bold leading-[120%] sm:leading-[175%]">
                     Navigate admissions, interview prep, funding, and post-grad
                     planning
                   </p>
@@ -368,7 +368,7 @@ export default function Home() {
                   <h5 className="font-the-bold xl:mt-6 lg:mt-5 md:mt-4 mt-3">
                     Discovery & Profile Assessment
                   </h5>
-                  <p className="font-semibold leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
+                  <p className="font-semibold leading-[130%] sm:leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
                     We evaluate your background, goals, strengths & gaps.
                   </p>
                 </div>
@@ -386,7 +386,7 @@ export default function Home() {
                   <h5 className="font-the-bold xl:mt-6 lg:mt-5 md:mt-4 mt-3">
                     Discovery & Profile Assessment
                   </h5>
-                  <p className="font-semibold leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
+                  <p className="font-semibold leading-[130%] sm:leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
                     We evaluate your background, goals, strengths & gaps.
                   </p>
                 </div>
@@ -404,7 +404,7 @@ export default function Home() {
                   <h5 className="font-the-bold xl:mt-6 lg:mt-5 md:mt-4 mt-3">
                     Strategic Planning & Roadmap
                   </h5>
-                  <p className="font-semibold leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
+                  <p className="font-semibold leading-[130%] sm:leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
                     Together we design a timeline choice of programs,
                     application components.
                   </p>
@@ -423,7 +423,7 @@ export default function Home() {
                   <h5 className="font-the-bold xl:mt-6 lg:mt-5 md:mt-4 mt-3">
                     Interview & Scholarship Prep
                   </h5>
-                  <p className="font-semibold leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
+                  <p className="font-semibold leading-[130%] sm:leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
                     Mock interviews, funding pitch coaching, mindset support.
                   </p>
                 </div>
@@ -441,7 +441,7 @@ export default function Home() {
                   <h5 className="font-the-bold xl:mt-6 lg:mt-5 md:mt-4 mt-3">
                     Decision & Next Steps
                   </h5>
-                  <p className="font-semibold leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
+                  <p className="font-semibold leading-[130%] sm:leading-[187%] xl:mt-4 lg:mt-3 mt-2 uppercase">
                     You accept an offer, we help with visa, transitions, and
                     visionary next steps.
                   </p>
@@ -2113,7 +2113,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex w-full lg:w-[70%]">
-                <div className="grid justify-between grid-cols-2 sm:grid-cols-5 gap-8 sm:gap-3 auto-cols-max w-full">
+                <div className="grid justify-between grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 sm:gap-3 auto-cols-max w-full">
                   {/* Column 1: Product */}
                   <div className="flex flex-col gap-3">
                     {/* Title/Heading remains a non-link element */}

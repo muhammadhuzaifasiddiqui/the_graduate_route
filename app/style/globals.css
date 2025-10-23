@@ -348,7 +348,7 @@ h6 {
   left: 2px;
   position: relative;
   right: 20px;
-  top: 2px;
+  top: -2px;
   transform: rotate(135deg);
   transition: 0.35s ease-in-out;
   vertical-align: top;
@@ -538,6 +538,9 @@ input[type="checkbox"] {
     padding-top: 58px;
     padding-bottom: 48px;
   }
+  .faq-drawer__title::after {
+    top: 7px;
+  }
 }
 
 @media screen and (max-width: 1199.97px) {
@@ -689,6 +692,9 @@ input[type="checkbox"] {
     padding-top: 52px;
     padding-bottom: 48px;
   }
+  .faq-drawer__title::after {
+    top: 7px;
+  }
 }
 
 @media screen and (max-width: 1023.97px) {
@@ -830,6 +836,9 @@ input[type="checkbox"] {
     padding-top: 48px;
     padding-bottom: 48px;
   }
+  .faq-drawer__title::after {
+    top: 5px;
+  }
 }
 
 @media screen and (max-width: 767.97px) {
@@ -968,11 +977,15 @@ input[type="checkbox"] {
     padding-top: 48px;
     padding-bottom: 48px;
   }
+
+  .faq-drawer__title::after {
+    top: 7px;
+  }
 }
 
 @media screen and (max-width: 575.97) {
   body {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 22px;
   }
   .px-fixed-20 {
@@ -1106,12 +1119,15 @@ input[type="checkbox"] {
     padding-top: 48px;
     padding-bottom: 48px;
   }
+  .faq-drawer__title::after {
+    top: -17px;
+  }
 }
 
 @media screen and (max-width: 399.97) {
   body {
     font-size: 14px;
-      line-height: 20px;
+    line-height: 20px;
   }
   .px-fixed-20 {
     padding: 0 20px;
