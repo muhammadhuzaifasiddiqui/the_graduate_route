@@ -51,7 +51,7 @@ export default function Home() {
                     className="absolute top-0 right-0"
                   />
                   <h1 className="font-the-bold font-bold">
-                    <span className="text-brown">Unlock </span>
+                    <span className="text-brown">Unlock</span>
                     Full Funding for
                     <span className="text-brown"> Global Masters</span>
                   </h1>
@@ -569,7 +569,7 @@ export default function Home() {
                         &quot;Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
-                        response to a lecture. I don't know if you saw the
+                        response to a lecture. I don&apos;t know if you saw the
                         internal comments but there were lots of them. &quot;
                       </p>
                     </div>
@@ -608,8 +608,8 @@ export default function Home() {
                         &quot;Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
-                        response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them.&quot;
+                        response to a lecture. I don&apos;t know if you saw the
+                        internal comments but there were lots of them. &quot;
                       </p>
                     </div>
                     <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
@@ -647,8 +647,8 @@ export default function Home() {
                         &quot;Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
-                        response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them.&quot;
+                        response to a lecture. I don&apos;t know if you saw the
+                        internal comments but there were lots of them. &quot;
                       </p>
                     </div>
                     <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
@@ -686,8 +686,8 @@ export default function Home() {
                         &quot;Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
-                        response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them.&quot;
+                        response to a lecture. I don&apos;t know if you saw the
+                        internal comments but there were lots of them. &quot;
                       </p>
                     </div>
                     <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
@@ -725,8 +725,8 @@ export default function Home() {
                         &quot;Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
-                        response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them.&quot;
+                        response to a lecture. I don&apos;t know if you saw the
+                        internal comments but there were lots of them. &quot;
                       </p>
                     </div>
                     <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
@@ -764,8 +764,8 @@ export default function Home() {
                         &quot;Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
-                        response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them.&quot;
+                        response to a lecture. I don&apos;t know if you saw the
+                        internal comments but there were lots of them. &quot;
                       </p>
                     </div>
                     <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
