@@ -566,11 +566,11 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
-                        "Thank you for educating me and my Spotify colleague
+                        &quot;Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
                         response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them. "
+                        internal comments but there were lots of them. &quot;
                       </p>
                     </div>
                     <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
@@ -605,11 +605,11 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
-                        "Thank you for educating me and my Spotify colleague
+                        &quot;Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
                         response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them. "
+                        internal comments but there were lots of them.&quot;
                       </p>
                     </div>
                     <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
@@ -644,11 +644,11 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
-                        "Thank you for educating me and my Spotify colleague
+                        &quot;Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
                         response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them. "
+                        internal comments but there were lots of them.&quot;
                       </p>
                     </div>
                     <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
@@ -683,11 +683,11 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
-                        "Thank you for educating me and my Spotify colleague
+                        &quot;Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
                         response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them. "
+                        internal comments but there were lots of them.&quot;
                       </p>
                     </div>
                     <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
@@ -722,11 +722,11 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
-                        "Thank you for educating me and my Spotify colleague
+                        &quot;Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
                         response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them. "
+                        internal comments but there were lots of them.&quot;
                       </p>
                     </div>
                     <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
@@ -761,11 +761,11 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="line-clamp-8 fs-18 font-semibold xl:mt-7 lg:mt-6 mt-5">
-                        "Thank you for educating me and my Spotify colleague
+                        &quot;Thank you for educating me and my Spotify colleague
                         today. You were amazing. We area pretty engaged
                         community but I have rarely seen such a positive
                         response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them. "
+                        internal comments but there were lots of them.&quot;
                       </p>
                     </div>
                     <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
@@ -1058,8 +1058,8 @@ export default function Home() {
                   Book a free consultation
                 </Link>
                 <p className="mt-8 px-120 text-black">
-                  “Book a free consultation” or “See matching program + funding
-                  roadmap”.
+                  &quot;Book a free consultation&quot; or &quot;See matching program + funding
+                  roadmap&quot;.
                 </p>
               </div>
             </div>
@@ -1741,9 +1741,9 @@ export default function Home() {
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
                     <p className="mt-5 group-hover:text-white transition-colors duration-300">
-                      Our A+ talent goes through a no-joke vetting process. Only
-                      the top 1% make it through. Once we’ve got three
-                      rockstars, we’ll line up interviews so you can pick your
+                      Our A Plus talent goes through a no joke vetting process. Only
+                      the top 1 percent make it through. Once we have got three
+                      rockstars, we will line up interviews so you can pick your
                       fave—easy peasy.
                     </p>
                   </div>
@@ -1765,9 +1765,9 @@ export default function Home() {
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
                     <p className="mt-5 group-hover:text-white transition-colors duration-300">
-                      Our A+ talent goes through a no-joke vetting process. Only
-                      the top 1% make it through. Once we’ve got three
-                      rockstars, we’ll line up interviews so you can pick your
+                      Our A Plus talent goes through a no joke vetting process. Only
+                      the top 1 percent make it through. Once we have got three
+                      rockstars, we will line up interviews so you can pick your
                       fave—easy peasy.
                     </p>
                   </div>
@@ -1789,9 +1789,9 @@ export default function Home() {
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
                     <p className="mt-5 group-hover:text-white transition-colors duration-300">
-                      Our A+ talent goes through a no-joke vetting process. Only
-                      the top 1% make it through. Once we’ve got three
-                      rockstars, we’ll line up interviews so you can pick your
+                      Our A Plus talent goes through a no joke vetting process. Only
+                      the top 1 percent make it through. Once we have got three
+                      rockstars, we will line up interviews so you can pick your
                       fave—easy peasy.
                     </p>
                   </div>
@@ -1813,9 +1813,9 @@ export default function Home() {
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
                     <p className="mt-5 group-hover:text-white transition-colors duration-300">
-                      Our A+ talent goes through a no-joke vetting process. Only
-                      the top 1% make it through. Once we’ve got three
-                      rockstars, we’ll line up interviews so you can pick your
+                      Our A Plus talent goes through a no joke vetting process. Only
+                      the top 1 percent make it through. Once we have got three
+                      rockstars, we will line up interviews so you can pick your
                       fave—easy peasy.
                     </p>
                   </div>
@@ -1851,12 +1851,12 @@ export default function Home() {
                     Take the Quiz Now
                   </Link>
                   <Link href="#" className="btn btn-transparent font-semibold">
-                    Schedule a Free Call”
+                    Schedule a Free Call
                   </Link>
                 </div>
                 <p className="fs-12 mt-4 text-black">
-                  (Optional small print: “Spots are limited. 2026 intake
-                  applications open now.”)
+                  (Optional small print: &quot;Spots are limited. 2026 intake
+                  applications open now.&quot;)
                 </p>
               </div>
               <div className="flex flex-col w-full md:w-[45%]">
