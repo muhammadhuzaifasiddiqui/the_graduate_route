@@ -772,26 +772,25 @@ export default function Home() {
                 Frequently <span className="text-brown">asked </span>questions
               </h2>
             </div>
-
             <div className="flex flex-col mt-50 xl:gap-5 lg:gap-4 gap-3">
-              {/* FAQ Item 1 */}
-              <div className="faq-drawer p-24 rounded-[12px] group transition-colors duration-300">
+              <div className="faq-drawer rounded-[12px] group transition-colors duration-300">
                 <input
-                  // 1. Add 'peer' class and 'hidden' (optional, but good practice)
                   className="faq-drawer__trigger peer hidden"
-                  id="faq-drawer-1" // IMPORTANT: Use unique IDs for each input
-                  type="checkbox"
+                  id="faq-drawer-1"
+                  type="radio"
+                  name="accordion-group"
                 />
+
                 <label
-                  // 2. Remove 'group-hover:' and replace with 'peer-checked:'
-                  className="faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300"
+                  className="px-24 faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300 block w-full cursor-pointer"
                   htmlFor="faq-drawer-1"
                 >
-                  Q: Can you help with US applications / non-UK?{" "}
+                  Q: Can you help with US applications / non-UK?
                 </label>
+
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p className="mt-5 peer-checked:text-white transition-colors duration-300">
+                    <p className="px-24 peer-checked:text-white transition-colors duration-300">
                       Our A Plus talent goes through a no joke vetting process.
                       Only the top 1 percent make it through. Once we have got
                       three rockstars, we will line up interviews so you can
@@ -801,22 +800,22 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* FAQ Item 2 */}
-              <div className="faq-drawer p-24 rounded-[12px] group transition-colors duration-300">
+              <div className="faq-drawer rounded-[12px] group transition-colors duration-300">
                 <input
                   className="faq-drawer__trigger peer hidden"
                   id="faq-drawer-2"
-                  type="checkbox"
+                  type="radio"
+                  name="accordion-group"
                 />
                 <label
-                  className="faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300"
+                  className="px-24 faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300 block w-full cursor-pointer"
                   htmlFor="faq-drawer-2"
                 >
                   Q: Can you help with US applications / non-UK?
                 </label>
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p className="mt-5 peer-checked:text-white transition-colors duration-300">
+                    <p className="px-24 peer-checked:text-white transition-colors duration-300">
                       Our A Plus talent goes through a no joke vetting process.
                       Only the top 1 percent make it through. Once we have got
                       three rockstars, we will line up interviews so you can
@@ -826,22 +825,22 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* FAQ Item 3 */}
-              <div className="faq-drawer p-24 rounded-[12px] group transition-colors duration-300">
+              <div className="faq-drawer rounded-[12px] group transition-colors duration-300">
                 <input
                   className="faq-drawer__trigger peer hidden"
                   id="faq-drawer-3"
-                  type="checkbox"
+                  type="radio"
+                  name="accordion-group"
                 />
                 <label
-                  className="faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300"
+                  className="px-24 faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300 block w-full cursor-pointer"
                   htmlFor="faq-drawer-3"
                 >
                   Q: What’s your refund or guarantee policy?
                 </label>
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p className="mt-5 peer-checked:text-white transition-colors duration-300">
+                    <p className="px-24 mt-5 peer-checked:text-white transition-colors duration-300">
                       Our A Plus talent goes through a no joke vetting process.
                       Only the top 1 percent make it through. Once we have got
                       three rockstars, we will line up interviews so you can
@@ -851,22 +850,22 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* FAQ Item 4 */}
-              <div className="faq-drawer p-24 rounded-[12px] group transition-colors duration-300">
+              <div className="faq-drawer rounded-[12px] group transition-colors duration-300">
                 <input
                   className="faq-drawer__trigger peer hidden"
                   id="faq-drawer-4"
-                  type="checkbox"
+                  type="radio"
+                  name="accordion-group"
                 />
                 <label
-                  className="faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300"
+                  className="px-24 faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300 block w-full cursor-pointer"
                   htmlFor="faq-drawer-4"
                 >
                   Q: How soon should I start?
                 </label>
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p className="mt-5 peer-checked:text-white transition-colors duration-300">
+                    <p className="px-24 mt-5 peer-checked:text-white transition-colors duration-300">
                       Our A Plus talent goes through a no joke vetting process.
                       Only the top 1 percent make it through. Once we have got
                       three rockstars, we will line up interviews so you can
