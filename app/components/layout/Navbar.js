@@ -174,7 +174,7 @@ const Navbar = () => {
                     className={""}
                     onClick={() => setIsOpen(false)}
                   >
-                    About
+                    Our Mission
                   </Link>
                 </li>
                 <li className="px-[6px] py-[10px]">
@@ -183,7 +183,7 @@ const Navbar = () => {
                     className={""}
                     onClick={() => setIsOpen(false)}
                   >
-                    Services
+                    How it Works
                   </Link>
                 </li>
                 <li className="px-[6px] py-[10px]">
@@ -192,7 +192,7 @@ const Navbar = () => {
                     className={""}
                     onClick={() => setIsOpen(false)}
                   >
-                    Products
+                    Testimonials
                   </Link>
                 </li>
                 <li className="px-[6px] py-[10px]">
@@ -201,16 +201,7 @@ const Navbar = () => {
                     className={""}
                     onClick={() => setIsOpen(false)}
                   >
-                    Locations
-                  </Link>
-                </li>
-                <li className="px-[6px] py-[10px]">
-                  <Link
-                    href={"/"}
-                    className={""}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Articles
+                    FAQS
                   </Link>
                 </li>
               </ul>
