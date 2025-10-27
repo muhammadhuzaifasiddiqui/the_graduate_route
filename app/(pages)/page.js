@@ -17,7 +17,7 @@ import Blogs from "../components/Blogs";
 import Packages from "../components/Packages";
 
 export default function Home() {
-  const [selectedOption, setSelectedOption] = useState("option1"); // Default selected
+  const [selectedOption, setSelectedOption] = useState("option1");
 
   const options = [
     { id: "option1", label: "Option 1" },
@@ -65,7 +65,7 @@ export default function Home() {
                     height={36}
                     alt="heading"
                     unoptimized={true}
-                    className="absolute top-0 right-0"
+                    className="absolute top-[-29px] right-0"
                   />
                   <h1 className="font-the-bold font-bold leading-[100%]">
                     <span className="text-brown">Unlock </span>
@@ -85,7 +85,7 @@ export default function Home() {
                     height={60}
                     alt="arrow-vector"
                     unoptimized={true}
-                    className="absolute right-0 lg:top-[-20px] top-[-65px] -z-10"
+                    className="absolute right-[140px] lg:top-[-55px] top-[-65px] -z-10"
                   />
                   <div className="flex group">
                     <Link
@@ -187,7 +187,7 @@ export default function Home() {
               <h3 className="font-the-bold text-center leading-[100%]">
                 Our <span className="text-brown">Statistics</span>
               </h3>
-              <div className="grid grid-flow-row lg:grid-flow-col grid-cols-2 lg:grid-cols-4 justify-center lg:justify-between gap-5 md:gap-3 lg:gap-1 xl:mt-11 lg:mt-9.5 mt-7.5">
+              <div className="grid grid-flow-row lg:grid-flow-col grid-cols-2 lg:grid-cols-4 justify-center lg:justify-between gap-5 md:gap-3 lg:gap-15 xl:mt-11 lg:mt-9.5 mt-7.5">
                 <StatisticsCounter
                   // This value (6.4) will show one decimal place.
                   endCount={6.4}
@@ -199,21 +199,21 @@ export default function Home() {
                 <StatisticsCounter
                   // This value (900) will show zero decimal places.
                   endCount={900}
-                  suffix=" + "
+                  suffix="+ "
                   Title="CLIENT"
                   Para="One-on-one mentoring with personalized strategy and success"
                 />
                 <StatisticsCounter
                   // This value (175) will show zero decimal places.
                   endCount={175}
-                  suffix=" + "
+                  suffix="+ "
                   Title="SCHOLARSHIPS"
                   Para="From Chevening to DAAD and Erasmus — our results speak for themselves."
                 />
                 <StatisticsCounter
                   // This value (98) will show zero decimal places.
                   endCount={98}
-                  suffix=" % "
+                  suffix="% "
                   Title="SATISFACTION"
                   Para="Strategic, personalized impact trusted by 98% clients"
                 />
@@ -388,41 +388,41 @@ export default function Home() {
                 // 4. Include the modules being used
                 spaceBetween={12}
                 slidesPerView={4}
-                centeredSlides={true}
+                // centeredSlides={true}
                 breakpoints={{
                   1399.97: {
                     slidesPerView: 3,
-                    centeredSlides: true,
+                    // centeredSlides: true,
                     spaceBetween: 20,
                   },
                   1199.97: {
                     slidesPerView: 3,
-                    centeredSlides: true,
+                    // centeredSlides: true,
                     spaceBetween: 16,
                   },
                   1023.97: {
                     slidesPerView: 3,
-                    centeredSlides: true,
+                    // centeredSlides: true,
                     spaceBetween: 16,
                   },
                   767.97: {
                     slidesPerView: 2,
-                    centeredSlides: true,
+                    // centeredSlides: true,
                     spaceBetween: 12,
                   },
                   575.97: {
                     slidesPerView: 1,
-                    centeredSlides: true,
+                    // centeredSlides: true,
                     spaceBetween: 12,
                   },
                   399.97: {
                     slidesPerView: 1,
-                    centeredSlides: true,
+                    // centeredSlides: true,
                     spaceBetween: 12,
                   },
                   319.97: {
                     slidesPerView: 1,
-                    centeredSlides: true,
+                    // centeredSlides: true,
                     spaceBetween: 12,
                   },
                 }}

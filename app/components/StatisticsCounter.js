@@ -55,10 +55,10 @@ const StatisticsCounter = ({
     <>
       <div className={`flex flex-col items-center`}>
         <div className="flex">
-          <h4 className={`font-the-bold text-center`}>
+          <h4 className={`font-the-bold text-center leading-[100%]`}>
             <AnimatedCounter endValue={endCount} duration={duration} />
             {Million ? " Million" : ""}
-            <span className="text-brown"> {suffix}</span>
+            <span className="text-brown">{suffix}</span>
             {Title}
           </h4>
         </div>
