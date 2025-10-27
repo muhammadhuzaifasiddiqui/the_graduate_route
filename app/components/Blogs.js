@@ -17,9 +17,9 @@ const Blogs = ({ imgSrc = ``, imgAlt, title, para, date }) => {
             className="w-full!"
           />
         </div>
-        <h5 className="xl:mt-5 mt-3 font-the-bold leading-[140%]">{title}</h5>
-        <p className="mt-1 leading-[131%]">{para}</p>
-        <div className="flex items-center! gap-2 xl:mt-5 lg:mt-4 mt-3">
+        <h5 className="mt-5 font-the-bold leading-[140%]">{title}</h5>
+        <p className="mt-1 leading-[131%] text-black">{para}</p>
+        <div className="flex items-center! gap-2 mt-4">
           <Image
             src={"/images/blog.png"}
             width={21}

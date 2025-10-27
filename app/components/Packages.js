@@ -197,7 +197,7 @@ const Packages = ({ packageTitle, Para, liTitle1, liTitle2, liTitle3, liTitle4, 
           </ul>
           <Link
             href="#"
-            className="btn btn-md btn-secondary font-the-bold group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
+            className="btn btn-md btn-secondary font-the-bold group-hover:mx-[35px]! group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
                     group-hover:bg-[#6C8E69]! group-hover:shadow-[0_4px_0_0_#1E1E1E] group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
                     group-hover:hover:translate-y-[2px]"
           >
@@ -208,4 +208,5 @@ const Packages = ({ packageTitle, Para, liTitle1, liTitle2, liTitle3, liTitle4, 
     </>
   );
 };
+
 export default Packages;

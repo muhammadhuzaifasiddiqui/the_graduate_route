@@ -78,7 +78,7 @@ export default function Home() {
                   scholarships and admission to world-class graduate schools —
                   then return home to build impact.
                 </p>
-                <div className="flex flex-col md:flex-row text-center gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-5 relative">
+                <div className="flex flex-col md:flex-row text-center gap-3 mt-10 relative">
                   <Image
                     src={"/images/arrow-vector.png"}
                     width={60}
@@ -233,7 +233,7 @@ export default function Home() {
               <span className="text-brown">Do</span>
             </h2>
             <div className="flex flex-col lg:flex-row items-center gap-7.5 lg:gap-5 mt-50">
-              <div className="flex flex-col xl:gap-5 lg:gap-4 gap-3 w-full lg:w-1/2 pr-5">
+              <div className="flex flex-col lg:gap-5 gap-4 w-full lg:w-1/2">
                 <Bullet Para="Stand out among a competitive applicant pool" />
                 <Bullet Para="Secure high-value scholarships & fellowships" />
                 <Bullet Para="Craft essays, research proposals, applications that highlight your impact" />
@@ -295,8 +295,8 @@ export default function Home() {
                   Title="Decision & Next Steps"
                   Para="You accept an offer, we help with visa, transitions, and visionary next steps."
                 />
-                <div className="bg-dark-green p-46 rounded-[20px]">
-                  <div className="flex flex-col text-center gap-3 lg:mt-11 md:mt-9 sm:mt-5.5 mt-1.5">
+                <div className="bg-dark-green p-45 rounded-[20px]">
+                  <div className="flex flex-col text-center gap-3">
                     <div className="flex group">
                       <Link
                         href="#"
@@ -348,7 +348,7 @@ export default function Home() {
               />
 
               {/* Navigation Buttons - Added z-10 and cursor-pointer */}
-              <div className="flex gap-2.5 absolute right-0 bottom-0 z-10">
+              <div className="hidden md:flex gap-2.5 absolute right-0 bottom-0 z-10">
                 <div
                   onClick={handlePrev}
                   className="bg-white slide-btn rounded-[100px] cursor-pointer"
@@ -502,6 +502,36 @@ export default function Home() {
                 </SwiperSlide>
               </Swiper>
             </div>
+
+            {/* Navigation Buttons - Added z-10 and cursor-pointer */}
+            <div className="flex justify-center md:hidden gap-2.5 mt-50">
+              <div
+                onClick={handlePrev}
+                className="bg-white slide-btn rounded-[100px] cursor-pointer"
+              >
+                <Image
+                  src={"/images/slide-left.png"}
+                  width={8}
+                  height={16}
+                  alt="slide-left"
+                  unoptimized={true}
+                  className="w-[10px]! sm:w-[12px]! md:w-[14px] lg:w-[16px]"
+                />
+              </div>
+              <div
+                onClick={handleNext}
+                className="bg-white slide-btn rounded-[100px] cursor-pointer"
+              >
+                <Image
+                  src={"/images/slide-right.png"}
+                  width={8}
+                  height={16}
+                  alt="slide-right"
+                  unoptimized={true}
+                  className="w-[10px]! sm:w-[12px]! md:w-[14px] lg:w-[16px]"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -551,7 +581,7 @@ export default function Home() {
                 OUR <span className="text-brown">BLOGS</span>
               </h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-5 lg:gap-4 gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-5 lg:gap-4 gap-3 mt-7.5 lg:mt-8">
               <Blogs
                 imgSrc="/images/Rectangle.png"
                 imgAlt="Rectangle"
@@ -576,6 +606,17 @@ export default function Home() {
                   typesetting industry."
                 date="15 Sep, 2023"
               />
+            </div>
+
+            <div class="flex justify-center mt-50">
+              <div class="flex group">
+                <a
+                  class="btn btn-lg btn-primary font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]!  group-hover:hover:translate-y-[2px]!"
+                  href="#"
+                >
+                  See More
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -593,17 +634,19 @@ export default function Home() {
         />
         <div className="take-the-quiz-wrapper pt-120 px-fixed-20 ">
           <div className="container px-120 mx-auto">
-            <div className="flex flex-col items-center xl:gap-3 gap-2">
-              <Bullets bullets="Take the Quiz" />
-              <h2 className="text-center justify-center font-the-bold leading-[100%]">
-                What’s Your Ideal <span className="text-brown">Graduate</span>{" "}
-                Route?
-              </h2>
-              <p className="p-260 text-center">
-                Answer 5 quick questions so we can pinpoint which route &
-                support package fits you best — and show how to amplify your
-                chances for admission and funding.
-              </p>
+            <div className="flex justify-center">
+              <div className="flex flex-col items-center lg:w-[65%] md:w-[75%] sm:w-[85%] w-[95%] gap-3">
+                <Bullets bullets="Take the Quiz" />
+                <h2 className="text-center justify-center font-the-bold leading-[100%]">
+                  What’s Your Ideal <span className="text-brown">Graduate</span>{" "}
+                  Route?
+                </h2>
+                <p className="text-center text-black fs-18">
+                  Answer 5 quick questions so we can pinpoint which route &
+                  support package fits you best — and show how to amplify your
+                  chances for admission and funding.
+                </p>
+              </div>
             </div>
             <div className="flex flex-col mt-50 rounded-[12px] bg-white p-25">
               <h5 className="font-the-bold">
@@ -617,14 +660,14 @@ export default function Home() {
                       key={option.id}
                       htmlFor={option.id}
                       className={`
-              flex items-center p-4 rounded-lg border cursor-pointer
-              transition-all duration-200 ease-in-out
-              ${
-                selectedOption === option.id
-                  ? "border-transparent bg-[#F1F5F9]"
-                  : "border-1 border-[#D4D4D8] bg-white"
-              }
-            `}
+          flex items-center px-4 py-3 rounded-lg border cursor-pointer
+          transition-all duration-200 ease-in-out
+          ${
+            selectedOption === option.id
+              ? "border-transparent bg-[#F1F5F9]"
+              : "border-1 border-[#D4D4D8] bg-white"
+          }
+        `}
                     >
                       <input
                         type="radio"
@@ -638,16 +681,16 @@ export default function Home() {
 
                       <div
                         className={`
-                w-4 h-4 rounded-full border-1 flex items-center justify-center mr-3
-                ${
-                  selectedOption === option.id
-                    ? "border-[#6C8E69] bg-[#6C8E69] "
-                    : "border-[#000000] bg-white"
-                }
-              `}
+            w-4 h-4 rounded-full border-1 flex items-center justify-center mr-3.5 transition-colors duration-200
+            ${
+              selectedOption === option.id
+                ? "border-[#6C8E69] bg-white"
+                : "border-[#000000] bg-white"
+            }
+          `}
                       >
                         {selectedOption === option.id && (
-                          <div className="w-4 h-4 rounded-full bg-[#6C8E69]"></div>
+                          <div className="w-2 h-2 rounded-full bg-[#6C8E69]"></div>
                         )}
                       </div>
 
@@ -680,7 +723,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col items-center w-full mt-10">
-              <div className="inline text-center w-[80%] md:w-[60%] lg:w-[40%]">
+              <div className="inline text-center w-[80%] sm:w-[65%] md:w-[50%] lg:w-[30%]">
                 <div className="flex justify-center group">
                   <Link
                     href="#"
@@ -690,7 +733,7 @@ export default function Home() {
                     Book a free consultation
                   </Link>
                 </div>
-                <p className="mt-8 text-black">
+                <p className="mt-5 text-black">
                   &quot;Book a free consultation&quot; or &quot;See matching
                   program + funding roadmap&quot;.
                 </p>
@@ -773,7 +816,7 @@ export default function Home() {
               </h2>
             </div>
             <div className="flex flex-col mt-50 xl:gap-5 lg:gap-4 gap-3">
-              <div className="faq-drawer rounded-[12px] group transition-colors duration-300">
+              <div className="faq-drawer rounded-[12px] group transition-colors duration-1500">
                 <input
                   className="faq-drawer__trigger peer hidden"
                   id="faq-drawer-1"
@@ -782,7 +825,7 @@ export default function Home() {
                 />
 
                 <label
-                  className="px-24 faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300 block w-full cursor-pointer"
+                  className="px-24 faq-drawer__title fs-18 font-the-bold leading-[100%] peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
                   htmlFor="faq-drawer-1"
                 >
                   Q: Can you help with US applications / non-UK?
@@ -790,7 +833,7 @@ export default function Home() {
 
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p className="px-24 peer-checked:text-white transition-colors duration-300">
+                    <p className="px-24 leading-20 peer-checked:text-white transition-colors duration-1500">
                       Our A Plus talent goes through a no joke vetting process.
                       Only the top 1 percent make it through. Once we have got
                       three rockstars, we will line up interviews so you can
@@ -800,7 +843,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="faq-drawer rounded-[12px] group transition-colors duration-300">
+              <div className="faq-drawer rounded-[12px] group transition-colors duration-1500">
                 <input
                   className="faq-drawer__trigger peer hidden"
                   id="faq-drawer-2"
@@ -808,14 +851,14 @@ export default function Home() {
                   name="accordion-group"
                 />
                 <label
-                  className="px-24 faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300 block w-full cursor-pointer"
+                  className="px-24 faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
                   htmlFor="faq-drawer-2"
                 >
                   Q: Can you help with US applications / non-UK?
                 </label>
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p className="px-24 peer-checked:text-white transition-colors duration-300">
+                    <p className="px-24 leading-20 peer-checked:text-white transition-colors duration-1500">
                       Our A Plus talent goes through a no joke vetting process.
                       Only the top 1 percent make it through. Once we have got
                       three rockstars, we will line up interviews so you can
@@ -825,7 +868,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="faq-drawer rounded-[12px] group transition-colors duration-300">
+              <div className="faq-drawer rounded-[12px] group transition-colors duration-1500">
                 <input
                   className="faq-drawer__trigger peer hidden"
                   id="faq-drawer-3"
@@ -833,14 +876,14 @@ export default function Home() {
                   name="accordion-group"
                 />
                 <label
-                  className="px-24 faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300 block w-full cursor-pointer"
+                  className="px-24 faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
                   htmlFor="faq-drawer-3"
                 >
                   Q: What’s your refund or guarantee policy?
                 </label>
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p className="px-24 mt-5 peer-checked:text-white transition-colors duration-300">
+                    <p className="px-24 leading-20 mt-5 peer-checked:text-white transition-colors duration-1500">
                       Our A Plus talent goes through a no joke vetting process.
                       Only the top 1 percent make it through. Once we have got
                       three rockstars, we will line up interviews so you can
@@ -850,7 +893,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="faq-drawer rounded-[12px] group transition-colors duration-300">
+              <div className="faq-drawer rounded-[12px] group transition-colors duration-1500">
                 <input
                   className="faq-drawer__trigger peer hidden"
                   id="faq-drawer-4"
@@ -858,14 +901,14 @@ export default function Home() {
                   name="accordion-group"
                 />
                 <label
-                  className="px-24 faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-300 block w-full cursor-pointer"
+                  className="px-24 faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
                   htmlFor="faq-drawer-4"
                 >
                   Q: How soon should I start?
                 </label>
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p className="px-24 mt-5 peer-checked:text-white transition-colors duration-300">
+                    <p className="px-24 leading-20 mt-5 peer-checked:text-white transition-colors duration-1500">
                       Our A Plus talent goes through a no joke vetting process.
                       Only the top 1 percent make it through. Once we have got
                       three rockstars, we will line up interviews so you can

@@ -28,6 +28,10 @@ img {
   font-family: var(--font-the-bold);
 }
 
+.leading-20{
+  line-height: 20px;
+}
+
 .text-brown {
   color: #ca8555;
 }
@@ -168,6 +172,10 @@ h6 {
   padding: 46px;
 }
 
+.p-45 {
+  padding: 86px 45px;
+}
+
 .p-25 {
   padding: 25px;
 }
@@ -193,10 +201,11 @@ h6 {
 }
 
 .btn {
-  padding: 14px 24px;
+  padding: 14px 41px;
   font-size: 14px;
   font-weight: 700;
   border-radius: 6px;
+  line-height: 100%;
 }
 
 .btn-sm {
@@ -649,7 +658,7 @@ input[type="checkbox"] {
   }
 
   .p-20 {
-    padding: 14px 16px;
+    padding: 16px 18px;
   }
 
   .p-18 {
@@ -808,7 +817,7 @@ input[type="checkbox"] {
   }
 
   .p-20 {
-    padding: 14px 16px;
+    padding: 15px 17px;
   }
 
   .p-18 {
@@ -982,8 +991,9 @@ input[type="checkbox"] {
   }
 
   .slide-btn {
-    padding: 18px 20px;
+    padding: 20px 22px;
   }
+
   .users {
     background-color: #fff;
     border-radius: 13px;
@@ -1004,7 +1014,7 @@ input[type="checkbox"] {
 @media screen and (max-width: 575.97) {
   body {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 24px;
   }
   .px-fixed-20 {
     padding: 0 20px;
@@ -1101,7 +1111,7 @@ input[type="checkbox"] {
   }
 
   .p-20 {
-    padding: 14px;
+    padding: 10px 16px;
   }
 
   .p-18 {
@@ -1123,8 +1133,9 @@ input[type="checkbox"] {
   }
 
   .slide-btn {
-    padding: 16px 18px;
+    padding: 20px 22px;
   }
+
   .users {
     background-color: #fff;
     border-radius: 13px;
@@ -1144,7 +1155,7 @@ input[type="checkbox"] {
 @media screen and (max-width: 399.97) {
   body {
     font-size: 13px;
-    line-height: 15px;
+    line-height: 20px;
   }
 
   .px-fixed-20 {
@@ -1250,7 +1261,7 @@ input[type="checkbox"] {
   }
 
   .p-20 {
-    padding: 12px;
+    padding: 10px 16px;
   }
 
   .p-18 {
@@ -1272,7 +1283,7 @@ input[type="checkbox"] {
   }
 
   .slide-btn {
-    padding: 10px 13px;
+    padding: 20px 22px;
   }
 
   .hero-wrapper h1 {
