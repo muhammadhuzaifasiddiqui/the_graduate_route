@@ -529,7 +529,7 @@ export default function Home() {
       </section>
 
       {/* INSTAGRAM-SECTION */}
-      {/* <section className="instagram-section relative">
+      <section className="instagram-section relative">
         <Image
           src={"/images/top-Ellipse.png"}
           width={125}
@@ -553,7 +553,7 @@ export default function Home() {
           unoptimized={true}
           className="w-full! absolute bottom-0 border-2 border-amber-600"
         />
-      </section> */}
+      </section>
 
       {/* BLOG-SECTION */}
       <section className="blog-section pt-120 px-5 relative">
