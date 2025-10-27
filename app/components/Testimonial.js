@@ -5,7 +5,7 @@ import Image from "next/image";
 const Testimonials = ({ imgSrc = ``, Para, ClinetName, ClientPaltform }) => {
   return (
     <>
-      <div className="flex flex-col xl:mt-12.5 lg:mt-9 md:mt-7 mt-5 p-25 bg-white rounded-[18px]">
+      <div className="flex flex-col p-25 bg-white rounded-[18px]">
         <div className="image-wrapper">
           <Image
             src={imgSrc}
@@ -13,7 +13,7 @@ const Testimonials = ({ imgSrc = ``, Para, ClinetName, ClientPaltform }) => {
             height={52}
             alt={`Testimonial from ${ClinetName || "client"}`}
             unoptimized={true}
-            className=""
+            className="object-cover"
           />
         </div>
         <div>
@@ -23,8 +23,8 @@ const Testimonials = ({ imgSrc = ``, Para, ClinetName, ClientPaltform }) => {
         </div>
         <div className="flex justify-between items-center xl:mt-15 lg:mt-10 md:mt-7.5 mt-5">
           <div className="flex flex-col">
-            <p className="font-the-bold">{ClinetName}</p>
-            <p className="fs-14 text-[#737373] mt-1">{ClientPaltform}</p>
+            <p className="font-the-bold leading-[100%]">{ClinetName}</p>
+            <p className="fs-14 text-[#737373] mt-1 leading-[100%]">{ClientPaltform}</p>
           </div>
           <div className="image-wrapper">
             <Image

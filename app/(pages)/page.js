@@ -186,7 +186,7 @@ export default function Home() {
             <h3 className="font-the-bold text-center leading-[100%]">
               Our <span className="text-brown">Statistics</span>
             </h3>
-            <div className="grid grid-flow-row lg:grid-flow-col grid-cols-2 lg:grid-cols-4 justify-center lg:justify-between gap-5 md:gap-3 lg:gap-15 xl:mt-11 lg:mt-9.5 mt-7.5">
+            <div className="grid grid-flow-row mt-50 lg:grid-flow-col grid-cols-2 lg:grid-cols-4 justify-center lg:justify-between gap-5 md:gap-4 lg:gap-15">
               <StatisticsCounter
                 // This value (6.4) will show one decimal place.
                 endCount={6.4}
@@ -221,8 +221,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHAT-WE-DO-SECTION */}
-      <section className="what-we-do-section px-5 pt-120">
+      {/* HELPING-SECTION */}
+      <section className="helping-section px-5 pt-120">
         <div className="container mx-auto">
           <Bullets bullets="WHAT WE DO" />
           <h2 className="font-the-bold leading-[100%]">
@@ -372,7 +372,7 @@ export default function Home() {
           </div>
 
           {/* Swiper Slider */}
-          <div className="testimonial-slider-wrapper w-full overflow-hidden">
+          <div className="testimonial-slider-wrapper w-full xl:mt-12.5 lg:mt-9 md:mt-7 mt-5 overflow-hidden">
             <Swiper
               // 3. Use onSwiper to save the instance to the ref
               onSwiper={(swiper) => {
@@ -572,7 +572,7 @@ export default function Home() {
               OUR <span className="text-brown">BLOGS</span>
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-5 lg:gap-4 gap-3 mt-7.5 lg:mt-8">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-5 lg:gap-4 gap-3 mt-50">
             <Blogs
               imgSrc="/images/Rectangle.png"
               imgAlt="Rectangle"
@@ -623,7 +623,7 @@ export default function Home() {
           className="absolute -z-10 left-auto right-0 lg:top-[15%] top-[18%] transform lg:-translate-y-15% -translate-y-18% w-[90px]! lg:w-[110px]!"
         />
         <div className="take-the-quiz-wrapper pt-120">
-          <div className="container px-120 mx-auto">
+          <div className="container max-w-[70%] mx-auto">
             <div className="flex justify-center">
               <div className="flex flex-col items-center lg:w-[65%] md:w-[75%] sm:w-[85%] w-[95%] gap-3">
                 <Bullets bullets="Take the Quiz" />
@@ -803,16 +803,17 @@ export default function Home() {
             </h2>
           </div>
           <div className="flex flex-col mt-50 xl:gap-5 lg:gap-4 gap-3">
-            <div className="faq-drawer rounded-[12px] group transition-colors duration-1500">
+
+            <div className="faq-drawer px-6 py-7.5 rounded-[12px] group transition-colors duration-1500">
               <input
-                className="faq-drawer__trigger peer hidden"
+                className="faq-drawer__trigger peer hidden leading-[100%]"
                 id="faq-drawer-1"
                 type="radio"
                 name="accordion-group"
               />
 
               <label
-                className="px-24 faq-drawer__title fs-18 font-the-bold leading-[100%] peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
+                className="faq-drawer__title fs-18 font-the-bold leading-[100%] peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
                 htmlFor="faq-drawer-1"
               >
                 Q: Can you help with US applications / non-UK?
@@ -820,7 +821,7 @@ export default function Home() {
 
               <div className="faq-drawer__content-wrapper">
                 <div className="faq-drawer__content">
-                  <p className="px-24 leading-20 peer-checked:text-white transition-colors duration-1500">
+                  <p className="leading-20 mt-5 peer-checked:text-white transition-colors duration-1500">
                     Our A Plus talent goes through a no joke vetting process.
                     Only the top 1 percent make it through. Once we have got
                     three rockstars, we will line up interviews so you can pick
@@ -830,22 +831,22 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="faq-drawer rounded-[12px] group transition-colors duration-1500">
+            <div className="faq-drawer px-6 py-7.5 rounded-[12px] group transition-colors duration-1500">
               <input
-                className="faq-drawer__trigger peer hidden"
+                className="faq-drawer__trigger peer hidden leading-[100%]"
                 id="faq-drawer-2"
                 type="radio"
                 name="accordion-group"
               />
               <label
-                className="px-24 faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
+                className="faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
                 htmlFor="faq-drawer-2"
               >
                 Q: Can you help with US applications / non-UK?
               </label>
               <div className="faq-drawer__content-wrapper">
                 <div className="faq-drawer__content">
-                  <p className="px-24 leading-20 peer-checked:text-white transition-colors duration-1500">
+                  <p className="leading-20 mt-5 peer-checked:text-white transition-colors duration-1500">
                     Our A Plus talent goes through a no joke vetting process.
                     Only the top 1 percent make it through. Once we have got
                     three rockstars, we will line up interviews so you can pick
@@ -855,22 +856,22 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="faq-drawer rounded-[12px] group transition-colors duration-1500">
+            <div className="faq-drawer px-6 py-7.5 rounded-[12px] group transition-colors duration-1500">
               <input
-                className="faq-drawer__trigger peer hidden"
+                className="faq-drawer__trigger peer hidden leading-[100%]"
                 id="faq-drawer-3"
                 type="radio"
                 name="accordion-group"
               />
               <label
-                className="px-24 faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
+                className="faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
                 htmlFor="faq-drawer-3"
               >
                 Q: What’s your refund or guarantee policy?
               </label>
               <div className="faq-drawer__content-wrapper">
                 <div className="faq-drawer__content">
-                  <p className="px-24 leading-20 mt-5 peer-checked:text-white transition-colors duration-1500">
+                  <p className="leading-20 mt-5 peer-checked:text-white transition-colors duration-1500">
                     Our A Plus talent goes through a no joke vetting process.
                     Only the top 1 percent make it through. Once we have got
                     three rockstars, we will line up interviews so you can pick
@@ -880,22 +881,22 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="faq-drawer rounded-[12px] group transition-colors duration-1500">
+            <div className="faq-drawer px-6 py-7.5 rounded-[12px] group transition-colors duration-1500">
               <input
-                className="faq-drawer__trigger peer hidden"
+                className="faq-drawer__trigger peer hidden leading-[100%]"
                 id="faq-drawer-4"
                 type="radio"
                 name="accordion-group"
               />
               <label
-                className="px-24 faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
+                className="faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
                 htmlFor="faq-drawer-4"
               >
                 Q: How soon should I start?
               </label>
               <div className="faq-drawer__content-wrapper">
                 <div className="faq-drawer__content">
-                  <p className="px-24 leading-20 mt-5 peer-checked:text-white transition-colors duration-1500">
+                  <p className="leading-20 mt-5 peer-checked:text-white transition-colors duration-1500">
                     Our A Plus talent goes through a no joke vetting process.
                     Only the top 1 percent make it through. Once we have got
                     three rockstars, we will line up interviews so you can pick
@@ -904,6 +905,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -1068,8 +1070,8 @@ export default function Home() {
       </section>
 
       {/* FOOTER-SECTION */}
-      <footer className="footer-section px-5 pt-120">
-        <div className="footer-wrapper">
+      <footer className="footer-section pt-120">
+        <div className="footer-wrapper px-5">
           <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-3">
               <div className="flex w-full lg:w-[30%]">

@@ -1,15 +1,22 @@
 "use clients";
-
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
-const Packages = ({ packageTitle, Para, liTitle1, liTitle2, liTitle3, liTitle4, liTitle5, btnText }) => {
+const Packages = ({
+  packageTitle,
+  Para,
+  liTitle1,
+  liTitle2,
+  liTitle3,
+  liTitle4,
+  liTitle5,
+  btnText,
+}) => {
   return (
     <>
-      <div className="bg-white price-box price-box-padding rounded-[16px] hover:bg-[#6C8E69] group transition duration-300 ease-in-out">
-        <div className="inline-block bg-dark-green rounded-[70px] px-[23px] py-[6px] group-hover:bg-white!">
-          <span className="font-segoeUi font-semibold text-white group-hover:text-black">
+      <div className="bg-white price-box price-box-padding rounded-[16px] hover:bg-[#6C8E69] group transition duration-500 ease-in-out">
+        <div className="inline-block bg-dark-green rounded-[70px] px-[23px] py-[6px] group-hover:bg-white! transition duration-500 ease-in-out">
+          <span className="font-segoeUi font-semibold text-white group-hover:text-black transition duration-500">
             {packageTitle}
           </span>
         </div>
@@ -26,7 +33,7 @@ const Packages = ({ packageTitle, Para, liTitle1, liTitle2, liTitle3, liTitle4, 
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                className="transition duration-150"
+                className="transition duration-500"
               >
                 <g clipPath="url(#clip0_22_4943)">
                   <path
@@ -61,7 +68,7 @@ const Packages = ({ packageTitle, Para, liTitle1, liTitle2, liTitle3, liTitle4, 
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                className="transition duration-150"
+                className="transition duration-500"
               >
                 <g clipPath="url(#clip0_22_4943)">
                   <path
@@ -96,7 +103,7 @@ const Packages = ({ packageTitle, Para, liTitle1, liTitle2, liTitle3, liTitle4, 
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                className="transition duration-150"
+                className="transition duration-500"
               >
                 <g clipPath="url(#clip0_22_4943)">
                   <path
@@ -131,7 +138,7 @@ const Packages = ({ packageTitle, Para, liTitle1, liTitle2, liTitle3, liTitle4, 
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                className="transition duration-150"
+                className="transition duration-500"
               >
                 <g clipPath="url(#clip0_22_4943)">
                   <path
@@ -166,7 +173,7 @@ const Packages = ({ packageTitle, Para, liTitle1, liTitle2, liTitle3, liTitle4, 
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                className="transition duration-150"
+                className="transition duration-500"
               >
                 <g clipPath="url(#clip0_22_4943)">
                   <path
@@ -197,9 +204,12 @@ const Packages = ({ packageTitle, Para, liTitle1, liTitle2, liTitle3, liTitle4, 
           </ul>
           <Link
             href="#"
-            className="btn btn-md btn-secondary font-the-bold group-hover:mx-[35px]! group-hover:text-white! text-center group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
-                    group-hover:bg-[#6C8E69]! group-hover:shadow-[0_4px_0_0_#1E1E1E] group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
-                    group-hover:hover:translate-y-[2px]"
+            className="btn btn-md btn-secondary font-the-bold group-hover:text-white! text-center 
+             group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
+             group-hover:bg-[#6C8E69]! group-hover:shadow-[0_4px_0_0_#1E1E1E] 
+             group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
+             group-hover:hover:translate-y-[2px] 
+             transition duration-500 ease-in-out"
           >
             {btnText}
           </Link>

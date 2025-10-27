@@ -10,6 +10,10 @@ body {
   line-height: 30px;
 }
 
+a{
+  cursor: pointer;
+}
+
 img {
   height: auto !important;
   width: auto !important;
@@ -28,7 +32,15 @@ img {
   font-family: var(--font-the-bold);
 }
 
-.leading-20{
+.leading-28{
+  line-height: 28px;
+}
+
+.leading-24 {
+  line-height: 24px;
+}
+
+.leading-20 {
   line-height: 20px;
 }
 
@@ -180,10 +192,6 @@ h6 {
   padding: 25px;
 }
 
-.px-24 {
-  padding: 16px 24px;
-}
-
 .p-20 {
   padding: 20px;
 }
@@ -319,18 +327,27 @@ h6 {
   left: 110px;
 }
 /* STATISTICS-SECTION */
-/* WHAT-WE-DO-SECTION */
 
-.what-we-do-section .image-wrapper{
-  width: 41px !important;
-  height: 41px !important;
+/* HELPING-SECTION */
+
+.helping-section .image-wrapper {
+  width: 41px;
+  height: 41px;
+}
+
+/* TESTIMONIAL-SECTION */
+.testimonial-section .image-wrapper {
+  height: 52px;
+  width: 52px;
 }
 
 /* PROCESS-SECTION */
-/* blog-section */
-.blog-section .imaege-wrapper {
-  width: 100%;
+.process-section .image-wrapper {
+  height: 32px;
+  width: 32px;
 }
+
+/* blog-section */
 
 /* FAQS-SECTION */
 .faq-drawer {
@@ -500,10 +517,6 @@ input[type="checkbox"] {
     padding: 22px;
   }
 
-  .px-24 {
-    padding: 16px 22px;
-  }
-
   .p-20 {
     padding: 18px;
   }
@@ -654,10 +667,6 @@ input[type="checkbox"] {
 
   .p-25 {
     padding: 20px;
-  }
-
-  .px-24 {
-    padding: 15px 20px;
   }
 
   .p-20 {
@@ -813,10 +822,6 @@ input[type="checkbox"] {
     padding: 20px;
   }
 
-  .px-24 {
-    padding: 15px 23px;
-  }
-
   .p-20 {
     padding: 15px 17px;
   }
@@ -875,6 +880,11 @@ input[type="checkbox"] {
     font-size: 14px;
     line-height: 24px;
   }
+
+  .leading-24 {
+    line-height: 20px;
+  }
+
   h1 {
     font-size: 45px;
   }
@@ -962,10 +972,6 @@ input[type="checkbox"] {
     padding: 20px;
   }
 
-  .px-24 {
-    padding: 14px 20px;
-  }
-
   .p-20 {
     padding: 14px 16px;
   }
@@ -1014,6 +1020,11 @@ input[type="checkbox"] {
     font-size: 14px;
     line-height: 24px;
   }
+
+  .leading-24 {
+    line-height: 20px;
+  }
+
   h1 {
     font-size: 43px;
   }
@@ -1101,10 +1112,6 @@ input[type="checkbox"] {
     padding: 20px;
   }
 
-  .px-24 {
-    padding: 12px 20px;
-  }
-
   .p-20 {
     padding: 10px 16px;
   }
@@ -1150,6 +1157,10 @@ input[type="checkbox"] {
 @media screen and (max-width: 399.97) {
   body {
     font-size: 13px;
+    line-height: 20px;
+  }
+
+  .leading-24 {
     line-height: 20px;
   }
 

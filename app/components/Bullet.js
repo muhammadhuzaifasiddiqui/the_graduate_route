@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+
 const Bullet = ({ Para = "null" }) => {
   return (
     <>
@@ -12,7 +13,7 @@ const Bullet = ({ Para = "null" }) => {
             height={9}
             alt="ellipse-circle"
             unoptimized={true}
-            className=""
+            className="object-cover"
           />
         </div>
         <p className={`font-the-bold leading-[120%] sm:leading-[175%]`}>

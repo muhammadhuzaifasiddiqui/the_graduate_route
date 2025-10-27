@@ -62,7 +62,7 @@ const StatisticsCounter = ({
             {Title}
           </h4>
         </div>
-        <p className={`mt-2 text-center font-medium line-clamp-3`}>{Para}</p>
+        <p className={`mt-2 text-center font-medium line-clamp-3 leading-24`}>{Para}</p>
       </div>
     </>
   );
