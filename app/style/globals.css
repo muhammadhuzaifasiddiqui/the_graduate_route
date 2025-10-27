@@ -320,6 +320,12 @@ h6 {
 }
 /* STATISTICS-SECTION */
 /* WHAT-WE-DO-SECTION */
+
+.what-we-do-section .image-wrapper{
+  width: 41px !important;
+  height: 41px !important;
+}
+
 /* PROCESS-SECTION */
 /* blog-section */
 .blog-section .imaege-wrapper {
@@ -562,9 +568,6 @@ input[type="checkbox"] {
     font-size: 14px;
     line-height: 26px;
   }
-  .px-fixed-20 {
-    padding: 0 20px;
-  }
   h1 {
     font-size: 48px;
   }
@@ -721,9 +724,7 @@ input[type="checkbox"] {
     font-size: 14px;
     line-height: 26px;
   }
-  .px-fixed-20 {
-    padding: 0 20px;
-  }
+
   h1 {
     font-size: 45px;
   }
@@ -874,9 +875,6 @@ input[type="checkbox"] {
     font-size: 14px;
     line-height: 24px;
   }
-  .px-fixed-20 {
-    padding: 0 20px;
-  }
   h1 {
     font-size: 45px;
   }
@@ -1016,9 +1014,6 @@ input[type="checkbox"] {
     font-size: 14px;
     line-height: 24px;
   }
-  .px-fixed-20 {
-    padding: 0 20px;
-  }
   h1 {
     font-size: 43px;
   }
@@ -1156,10 +1151,6 @@ input[type="checkbox"] {
   body {
     font-size: 13px;
     line-height: 20px;
-  }
-
-  .px-fixed-20 {
-    padding: 0 20px;
   }
 
   h1 {
