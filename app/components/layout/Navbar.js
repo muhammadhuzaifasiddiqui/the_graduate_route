@@ -106,19 +106,19 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="lg:flex hidden group">
-              <a
+              <Link
                 href="#"
-                className="btn btn-green btn-md font-segoeUi group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-                    group-hover:hover:translate-y-[2px]!"
+                className="btn btn-green font-segoeUi group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+                group-hover:hover:translate-y-[2px]! transition duration-500"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
             <div className="lg:hidden flex items-center">
               <div className="lg:hidden flex mr-[18px]">
-                <a href="#" className="btn btn-green btn-md font-segoeUi">
+                <Link href="#" className="btn btn-green btn-md font-segoeUi">
                   Contact Us
-                </a>
+                </Link>
               </div>
               <button
                 onClick={toggleMenu}
@@ -212,4 +212,5 @@ const Navbar = () => {
     </>
   );
 };
+
 export default Navbar;

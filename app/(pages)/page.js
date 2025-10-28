@@ -90,8 +90,8 @@ export default function Home() {
                   <div className="flex group">
                     <Link
                       href="#"
-                      className="btn btn-md btn-primary w-full! font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-                    group-hover:hover:translate-y-[2px]!"
+                      className="btn-md btn-primary w-full md:w-auto font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+                      group-hover:hover:translate-y-[2px]! transition duration-500"
                     >
                       Take the Quiz → Find Your Path
                     </Link>
@@ -100,8 +100,8 @@ export default function Home() {
                   <div className="flex group">
                     <Link
                       href="#"
-                      className="btn btn-md btn-secondary w-full! font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E] group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
-                    group-hover:hover:translate-y-[2px]"
+                      className="btn-md btn-lightgreen w-full md:w-auto font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E] group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
+                    group-hover:hover:translate-y-[2px] transition duration-500"
                     >
                       Book a Strategy Call
                     </Link>
@@ -164,7 +164,7 @@ export default function Home() {
                         height={44}
                         alt="avatar1"
                         unoptimized={true}
-                        className="absolute z-10"
+                        className="object-cover absolute z-10"
                       />
                     </div>
                     <div className="image-wrapper">
@@ -174,7 +174,7 @@ export default function Home() {
                         height={44}
                         alt="avatar2"
                         unoptimized={true}
-                        className="absolute z-8 ml-[-15px]"
+                        className="object-cover absolute z-8 ml-[-15px]"
                       />
                     </div>
                     <div className="image-wrapper">
@@ -184,7 +184,7 @@ export default function Home() {
                         height={44}
                         alt="avatar3"
                         unoptimized={true}
-                        className="absolute z-6 ml-[-30px]"
+                        className="object-cover absolute z-6 ml-[-30px]"
                       />
                     </div>
                     <div className="image-wrapper">
@@ -194,7 +194,7 @@ export default function Home() {
                         height={44}
                         alt="avatar4"
                         unoptimized={true}
-                        className="absolute z-4 ml-[-45px]"
+                        className="object-cover absolute z-4 ml-[-45px]"
                       />
                     </div>
                     <div className="image-wrapper">
@@ -204,7 +204,7 @@ export default function Home() {
                         height={44}
                         alt="avatar5"
                         unoptimized={true}
-                        className="absolute z-2 ml-[-60px]"
+                        className="object-cover absolute z-2 ml-[-60px]"
                       />
                     </div>
                   </div>
@@ -334,26 +334,25 @@ export default function Home() {
                 Title="Decision & Next Steps"
                 Para="You accept an offer, we help with visa, transitions, and visionary next steps."
               />
-              <div className="bg-dark-green p-45 rounded-[20px]">
-                <div className="flex flex-col text-center gap-3">
-                  <div className="flex group">
-                    <Link
-                      href="#"
-                      className="btn btn-md btn-primary w-full! font-the-bold text-center group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-                    group-hover:hover:translate-y-[2px]!"
-                    >
-                      Take the Quiz → Find Your Path
-                    </Link>
-                  </div>
-                  <div className="flex group">
-                    <Link
-                      href="#"
-                      className="btn btn-md btn-tertiary  w-full! font-semibold text-center group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-                    group-hover:hover:translate-y-[2px]!"
-                    >
-                      Book a Free consult
-                    </Link>
-                  </div>
+              <div className="flex flex-col px-11 justify-center items-center bg-dark-green rounded-[20px] gap-3">
+                <div className="flex w-full group">
+                  <Link
+                    href="#"
+                    className="btn-sm btn-primary w-full! font-bold font-the-bold text-center group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+             group-hover:hover:translate-y-[2px]! transition duration-500"
+                  >
+                    Take the Quiz → Find Your Path
+                  </Link>
+                </div>
+
+                <div className="flex w-full group">
+                  <Link
+                    href="#"
+                    className="btn-sm btn-tertiary w-full! font-semibold text-center group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+             group-hover:hover:translate-y-[2px]! transition duration-500"
+                  >
+                    Book a Free consult
+                  </Link>
                 </div>
               </div>
             </div>
@@ -715,12 +714,12 @@ export default function Home() {
 
           <div className="flex justify-center mt-50">
             <div className="flex group">
-              <a
-                className="btn btn-lg btn-primary font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]!  group-hover:hover:translate-y-[2px]!"
+              <Link
+                className="btn-xsm btn-primary font-segoeUi group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! group-hover:hover:translate-y-[2px]! transition duration-500"
                 href="#"
               >
                 See More
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -809,8 +808,8 @@ export default function Home() {
                 <div className="flex group">
                   <Link
                     href="#"
-                    className="btn btn-lg btn-secondary font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-                    group-hover:hover:translate-y-[2px]!"
+                    className="btn-lg btn-primary font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+             group-hover:hover:translate-y-[2px]! transition duration-500"
                   >
                     Go BAck
                   </Link>
@@ -818,8 +817,8 @@ export default function Home() {
                 <div className="flex group">
                   <Link
                     href="#"
-                    className="btn btn-lg btn-primary font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-                    group-hover:hover:translate-y-[2px]!"
+                    className="btn-lg btn-lightgreen font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+             group-hover:hover:translate-y-[2px]! transition duration-500"
                   >
                     Confirm
                   </Link>
@@ -827,16 +826,16 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col items-center w-full mt-10">
+              <div className="flex justify-center group">
+                <Link
+                  href="#"
+                  className="btn-xl btn-primary w-full! font-segoeUi group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+             group-hover:hover:translate-y-[2px]! transition duration-500"
+                >
+                  Book a free consultation
+                </Link>
+              </div>
               <div className="inline text-center w-[80%] sm:w-[65%] md:w-[50%] lg:w-[30%]">
-                <div className="flex justify-center group">
-                  <Link
-                    href="#"
-                    className="btn w-full! btn-lg btn-primary font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-                    group-hover:hover:translate-y-[2px]!"
-                  >
-                    Book a free consultation
-                  </Link>
-                </div>
                 <p className="mt-5 text-black">
                   &quot;Book a free consultation&quot; or &quot;See matching
                   program + funding roadmap&quot;.
@@ -1042,8 +1041,8 @@ export default function Home() {
                 <div className="flex group w-full sm:w-auto">
                   <Link
                     href="#"
-                    className="btn btn-md btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! w-full
-            group-hover:hover:translate-y-[2px]!"
+                    className="btn-md btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! w-full
+                    group-hover:hover:translate-y-[2px]! transition duration-500"
                   >
                     Take the Quiz Now
                   </Link>
@@ -1052,8 +1051,9 @@ export default function Home() {
                 <div className="flex group w-full sm:w-auto">
                   <Link
                     href="#"
-                    className="btn btn-md btn-transparent font-semibold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! w-full
-            group-hover:hover:translate-y-[2px]!"
+                    className="btn-md btn-transparent font-semibold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! w-full
+                    group-hover:hover:translate-y-[2px]!
+                    transition-all duration-500"
                   >
                     Schedule a Free Call
                   </Link>
@@ -1168,8 +1168,9 @@ export default function Home() {
                   <div className="flex group">
                     <Link
                       href="#"
-                      className="btn btn-md btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-                    group-hover:hover:translate-y-[2px]!"
+                      className="btn-xsm btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]!
+                      group-hover:hover:translate-y-[2px]!
+                      transition-all duration-500"
                     >
                       SUBMIT
                     </Link>
@@ -1195,10 +1196,10 @@ export default function Home() {
                       height={23}
                       alt="logo"
                       unoptimized={true}
-                      className=""
+                      className="object-cover"
                     />
                   </div>
-                  <p className="font-medium text-light-gray mt-8">
+                  <p className="font-medium text-light-gray mt-8 leading-24">
                     Design amazing digital experiences that create more happy in
                     the world.
                   </p>
@@ -1209,7 +1210,9 @@ export default function Home() {
                   {/* Column 1: Product */}
                   <div className="flex flex-col gap-3">
                     {/* Title/Heading remains a non-link element */}
-                    <span className="font-bold pb-1 text-white">Product</span>
+                    <span className="font-bold pb-1 text-white cursor-pointer">
+                      Product
+                    </span>
                     <Link href="#" className=" text-white">
                       Overview
                     </Link>
@@ -1232,7 +1235,9 @@ export default function Home() {
 
                   {/* Column 2: Company (Assuming) */}
                   <div className="flex flex-col gap-3">
-                    <span className="font-bold pb-1 text-white">Product</span>
+                    <span className="font-bold pb-1 text-white cursor-pointer">
+                      Product
+                    </span>
                     <Link href="#" className=" text-white">
                       About us
                     </Link>
@@ -1255,7 +1260,9 @@ export default function Home() {
 
                   {/* Column 3: Resources (Assuming) */}
                   <div className="flex flex-col gap-3">
-                    <span className="font-bold pb-1 text-white">Product</span>
+                    <span className="font-bold pb-1 text-white cursor-pointer">
+                      Product
+                    </span>
                     <Link href="#" className=" text-white">
                       Blogs
                     </Link>
@@ -1278,7 +1285,9 @@ export default function Home() {
 
                   {/* Column 4: Social/Community (Assuming) */}
                   <div className="flex flex-col gap-3">
-                    <span className="font-bold pb-1 text-white">Product</span>
+                    <span className="font-bold pb-1 text-white cursor-pointer">
+                      Product
+                    </span>
                     <Link href="#" className=" text-white">
                       Twitter
                     </Link>
@@ -1301,7 +1310,9 @@ export default function Home() {
 
                   {/* Column 5: Legal (Assuming) */}
                   <div className="flex flex-col gap-3">
-                    <span className="font-bold pb-1 text-white">Product</span>
+                    <span className="font-bold pb-1 text-white cursor-pointer">
+                      Product
+                    </span>
                     <Link href="#" className=" text-white">
                       Terms
                     </Link>
@@ -1337,54 +1348,71 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex items-center justify-between gap-6">
-                    <Image
-                      src={"/images/twitter.png"}
-                      width={24}
-                      height={24}
-                      alt="twitter"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <Image
-                      src={"/images/linkedin.png"}
-                      width={24}
-                      height={24}
-                      alt="linkedin"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <Image
-                      src={"/images/facebook.png"}
-                      width={24}
-                      height={24}
-                      alt="facebook"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <Image
-                      src={"/images/github.png"}
-                      width={24}
-                      height={24}
-                      alt="github"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <Image
-                      src={"/images/angellist.png"}
-                      width={24}
-                      height={24}
-                      alt="angellist"
-                      unoptimized={true}
-                      className=""
-                    />
-                    <Image
-                      src={"/images/dribble.png"}
-                      width={24}
-                      height={24}
-                      alt="dribble"
-                      unoptimized={true}
-                      className=""
-                    />
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/twitter.png"}
+                        width={24}
+                        height={24}
+                        alt="twitter"
+                        unoptimized={true}
+                        className="object-cover cursor-pointer"
+                      />
+                    </div>
+
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/linkedin.png"}
+                        width={24}
+                        height={24}
+                        alt="linkedin"
+                        unoptimized={true}
+                        className="object-cover cursor-pointer"
+                      />
+                    </div>
+
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/facebook.png"}
+                        width={24}
+                        height={24}
+                        alt="facebook"
+                        unoptimized={true}
+                        className="object-cover cursor-pointer"
+                      />
+                    </div>
+
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/github.png"}
+                        width={24}
+                        height={24}
+                        alt="github"
+                        unoptimized={true}
+                        className="object-cover cursor-pointer"
+                      />
+                    </div>
+
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/angellist.png"}
+                        width={24}
+                        height={24}
+                        alt="angellist"
+                        unoptimized={true}
+                        className="object-cover cursor-pointer"
+                      />
+                    </div>
+
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/dribble.png"}
+                        width={24}
+                        height={24}
+                        alt="dribble"
+                        unoptimized={true}
+                        className="object-cover cursor-pointer"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
