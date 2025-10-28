@@ -109,7 +109,7 @@ const Navbar = () => {
               <Link
                 href="#"
                 className="btn btn-green font-segoeUi group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-                group-hover:hover:translate-y-[2px]! transition duration-500"
+                group-hover:hover:translate-y-[2px]! transition duration-300"
               >
                 Contact Us
               </Link>

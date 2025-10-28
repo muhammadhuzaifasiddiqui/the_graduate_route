@@ -407,7 +407,7 @@ input[type="checkbox"] {
 }
 
 /* FOOTER-SECTION */
-.footer-wrapper .image-wrapper{
+.footer-wrapper .image-wrapper {
   height: 64px;
   width: 70px;
 }
@@ -422,7 +422,7 @@ input[type="checkbox"] {
   background-color: #81b57c;
 }
 
-.footer-bottom .image-wrapper{
+.footer-bottom .image-wrapper {
   height: 24px;
   width: 24px;
 }

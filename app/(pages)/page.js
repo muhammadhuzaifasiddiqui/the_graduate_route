@@ -16,28 +16,139 @@ import Testimonials from "../components/Testimonial";
 import Blogs from "../components/Blogs";
 import Packages from "../components/Packages";
 
+const faqData = [
+  {
+    id: 1,
+    question: "Q: Do I need perfect grades to get scholarships?",
+    answer:
+      "Our A+ talent goes through a no-joke vetting process. Only the top 1% make it through. Once we’ve got three rockstars, we’ll line up interviews so you can pick your fave—easy peasy.",
+  },
+  {
+    id: 2,
+    question: "Q: Can you help with US applications / non-UK?",
+    answer:
+      "Our A+ talent goes through a no-joke vetting process. Only the top 1% make it through. Once we’ve got three rockstars, we’ll line up interviews so you can pick your fave—easy peasy.",
+  },
+  {
+    id: 3,
+    question: "Q: What’s your refund or guarantee policy?",
+    answer:
+      "Our A+ talent goes through a no-joke vetting process. Only the top 1% make it through. Once we’ve got three rockstars, we’ll line up interviews so you can pick your fave—easy peasy.",
+  },
+  {
+    id: 4,
+    question: "Q: How soon should I start?",
+    answer:
+      "Our A+ talent goes through a no-joke vetting process. Only the top 1% make it through. Once we’ve got three rockstars, we’ll line up interviews so you can pick your fave—easy peasy.",
+  },
+];
+
+// Reusable Accordion Item component
+const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
+  // Use a dynamic height for the answer to allow for responsive content length
+  const contentRef = useRef(null);
+
+  // Calculate max-height dynamically
+  const contentHeight = isOpen
+    ? contentRef.current
+      ? contentRef.current.scrollHeight
+      : 0
+    : 0;
+
+  // Lucide icon (ChevronDown) as inline SVG for compatibility
+  const ChevronDown = ({ className }) => (
+    <svg
+      className={className}
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6 9L12 15L18 9"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+
+  return (
+    // PARENT DIV: Added transition-all duration-500 for smooth background color change
+    <div className={`overflow-hidden rounded-[12px] transition-all duration-500 ease-in-out
+      ${isOpen ? "bg-[#6C8E69]" : "bg-white"}
+    `}>
+      <button
+        onClick={onToggle}
+        // Corrected py-[20] to py-[20px] for valid Tailwind class
+        className={`flex w-full justify-between leading-[100%] items-center text-left px-[24px] py-[20px]
+        `}
+        aria-expanded={isOpen}
+      >
+        <p
+          className={`font-the-bold leading-[100%] fs-18
+            ${isOpen ? "text-white" : "text-black"}
+          `}
+        >
+          {question}
+        </p>
+        <ChevronDown
+          className={`
+            stroke-black transition-all duration-500
+            ${isOpen ? "rotate-180 stroke-white" : "rotate-0"}
+          `}
+        />
+      </button>
+
+      {/* Content area: Added transition-all duration-500 for smooth max-height/collapse */}
+      <div
+        style={{ maxHeight: `${contentHeight}px` }}
+        className=" overflow-hidden transition-all duration-500 ease-in-out "
+      >
+        <p
+          ref={contentRef}
+          className={`
+            text-white leading-20 px-[24px] pb-[20px]
+            ${isOpen ? "opacity-100 pt-0" : "opacity-0 pt-0"}
+          `}
+        >
+          {answer}
+        </p>
+      </div>
+    </div>
+  );
+};
+
+
+
+
 export default function Home() {
   const [selectedOption, setSelectedOption] = useState("option1");
-
   const options = [
     { id: "option1", label: "Option 1" },
     { id: "option2", label: "Option 2" },
     { id: "option3", label: "Option 3" },
     { id: "option4", label: "Option 4" },
   ];
-
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
   };
-
   const swiperRef = useRef(null);
-
   const handlePrev = () => {
     swiperRef.current?.slidePrev();
   };
-
   const handleNext = () => {
     swiperRef.current?.slideNext();
+  };
+
+
+  // State to manage the currently open accordion item's ID
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  // Function to toggle the accordion item
+  const handleToggle = (id) => {
+    setActiveIndex(id === activeIndex ? null : id);
   };
 
   return (
@@ -91,7 +202,7 @@ export default function Home() {
                     <Link
                       href="#"
                       className="btn-md btn-primary w-full md:w-auto font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-                      group-hover:hover:translate-y-[2px]! transition duration-500"
+                      group-hover:hover:translate-y-[2px]! transition duration-300"
                     >
                       Take the Quiz → Find Your Path
                     </Link>
@@ -101,7 +212,7 @@ export default function Home() {
                     <Link
                       href="#"
                       className="btn-md btn-lightgreen w-full md:w-auto font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E] group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
-                    group-hover:hover:translate-y-[2px] transition duration-500"
+                    group-hover:hover:translate-y-[2px] transition duration-300"
                     >
                       Book a Strategy Call
                     </Link>
@@ -339,7 +450,7 @@ export default function Home() {
                   <Link
                     href="#"
                     className="btn-sm btn-primary w-full! font-bold font-the-bold text-center group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-             group-hover:hover:translate-y-[2px]! transition duration-500"
+             group-hover:hover:translate-y-[2px]! transition duration-300"
                   >
                     Take the Quiz → Find Your Path
                   </Link>
@@ -349,7 +460,7 @@ export default function Home() {
                   <Link
                     href="#"
                     className="btn-sm btn-tertiary w-full! font-semibold text-center group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-             group-hover:hover:translate-y-[2px]! transition duration-500"
+             group-hover:hover:translate-y-[2px]! transition duration-300"
                   >
                     Book a Free consult
                   </Link>
@@ -715,7 +826,7 @@ export default function Home() {
           <div className="flex justify-center mt-50">
             <div className="flex group">
               <Link
-                className="btn-xsm btn-primary font-segoeUi group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! group-hover:hover:translate-y-[2px]! transition duration-500"
+                className="btn-xsm btn-primary font-segoeUi group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! group-hover:hover:translate-y-[2px]! transition duration-300"
                 href="#"
               >
                 See More
@@ -809,7 +920,7 @@ export default function Home() {
                   <Link
                     href="#"
                     className="btn-lg btn-primary font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-             group-hover:hover:translate-y-[2px]! transition duration-500"
+                    group-hover:hover:translate-y-[2px]! transition duration-300"
                   >
                     Go BAck
                   </Link>
@@ -818,7 +929,7 @@ export default function Home() {
                   <Link
                     href="#"
                     className="btn-lg btn-lightgreen font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-             group-hover:hover:translate-y-[2px]! transition duration-500"
+                    group-hover:hover:translate-y-[2px]! transition duration-300"
                   >
                     Confirm
                   </Link>
@@ -830,7 +941,7 @@ export default function Home() {
                 <Link
                   href="#"
                   className="btn-xl btn-primary w-full! font-segoeUi group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-             group-hover:hover:translate-y-[2px]! transition duration-500"
+             group-hover:hover:translate-y-[2px]! transition duration-300"
                 >
                   Book a free consultation
                 </Link>
@@ -915,107 +1026,18 @@ export default function Home() {
               Frequently <span className="text-brown">asked </span>questions
             </h2>
           </div>
-          <div className="flex flex-col mt-50 xl:gap-5 lg:gap-4 gap-3">
-            <div className="faq-drawer px-6 py-7.5 rounded-[12px] group transition-colors duration-1500">
-              <input
-                className="faq-drawer__trigger peer hidden leading-[100%]"
-                id="faq-drawer-1"
-                type="radio"
-                name="accordion-group"
-              />
 
-              <label
-                className="faq-drawer__title fs-18 font-the-bold leading-[100%] peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
-                htmlFor="faq-drawer-1"
-              >
-                Q: Can you help with US applications / non-UK?
-              </label>
-
-              <div className="faq-drawer__content-wrapper">
-                <div className="faq-drawer__content">
-                  <p className="leading-20 mt-5 peer-checked:text-white transition-colors duration-1500">
-                    Our A Plus talent goes through a no joke vetting process.
-                    Only the top 1 percent make it through. Once we have got
-                    three rockstars, we will line up interviews so you can pick
-                    your fave—easy peasy.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="faq-drawer px-6 py-7.5 rounded-[12px] group transition-colors duration-1500">
-              <input
-                className="faq-drawer__trigger peer hidden leading-[100%]"
-                id="faq-drawer-2"
-                type="radio"
-                name="accordion-group"
-              />
-              <label
-                className="faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
-                htmlFor="faq-drawer-2"
-              >
-                Q: Can you help with US applications / non-UK?
-              </label>
-              <div className="faq-drawer__content-wrapper">
-                <div className="faq-drawer__content">
-                  <p className="leading-20 mt-5 peer-checked:text-white transition-colors duration-1500">
-                    Our A Plus talent goes through a no joke vetting process.
-                    Only the top 1 percent make it through. Once we have got
-                    three rockstars, we will line up interviews so you can pick
-                    your fave—easy peasy.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="faq-drawer px-6 py-7.5 rounded-[12px] group transition-colors duration-1500">
-              <input
-                className="faq-drawer__trigger peer hidden leading-[100%]"
-                id="faq-drawer-3"
-                type="radio"
-                name="accordion-group"
-              />
-              <label
-                className="faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
-                htmlFor="faq-drawer-3"
-              >
-                Q: What’s your refund or guarantee policy?
-              </label>
-              <div className="faq-drawer__content-wrapper">
-                <div className="faq-drawer__content">
-                  <p className="leading-20 mt-5 peer-checked:text-white transition-colors duration-1500">
-                    Our A Plus talent goes through a no joke vetting process.
-                    Only the top 1 percent make it through. Once we have got
-                    three rockstars, we will line up interviews so you can pick
-                    your fave—easy peasy.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="faq-drawer px-6 py-7.5 rounded-[12px] group transition-colors duration-1500">
-              <input
-                className="faq-drawer__trigger peer hidden leading-[100%]"
-                id="faq-drawer-4"
-                type="radio"
-                name="accordion-group"
-              />
-              <label
-                className="faq-drawer__title fs-18 font-the-bold peer-checked:text-white transition-colors duration-1500 block w-full cursor-pointer"
-                htmlFor="faq-drawer-4"
-              >
-                Q: How soon should I start?
-              </label>
-              <div className="faq-drawer__content-wrapper">
-                <div className="faq-drawer__content">
-                  <p className="leading-20 mt-5 peer-checked:text-white transition-colors duration-1500">
-                    Our A Plus talent goes through a no joke vetting process.
-                    Only the top 1 percent make it through. Once we have got
-                    three rockstars, we will line up interviews so you can pick
-                    your fave—easy peasy.
-                  </p>
-                </div>
-              </div>
+          <div className="flex flex-col mt-50">
+            <div className="flex flex-col xl:gap-5 lg:gap-4 gap-3">
+              {faqData.map((item) => (
+                <AccordionItem
+                  key={item.id}
+                  question={item.question}
+                  answer={item.answer}
+                  isOpen={item.id === activeIndex}
+                  onToggle={() => handleToggle(item.id)}
+                />
+              ))}
             </div>
           </div>
         </div>
@@ -1042,7 +1064,7 @@ export default function Home() {
                   <Link
                     href="#"
                     className="btn-md btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! w-full
-                    group-hover:hover:translate-y-[2px]! transition duration-500"
+                    group-hover:hover:translate-y-[2px]! transition duration-300"
                   >
                     Take the Quiz Now
                   </Link>
@@ -1053,7 +1075,7 @@ export default function Home() {
                     href="#"
                     className="btn-md btn-transparent font-semibold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! w-full
                     group-hover:hover:translate-y-[2px]!
-                    transition-all duration-500"
+                    transition-all duration-300"
                   >
                     Schedule a Free Call
                   </Link>
@@ -1170,7 +1192,7 @@ export default function Home() {
                       href="#"
                       className="btn-xsm btn-transparent shadow-[0_4px_0_0_#1e1e1e] font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]!
                       group-hover:hover:translate-y-[2px]!
-                      transition-all duration-500"
+                      transition-all duration-300"
                     >
                       SUBMIT
                     </Link>

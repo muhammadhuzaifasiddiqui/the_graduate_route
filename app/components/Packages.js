@@ -14,26 +14,26 @@ const Packages = ({
 }) => {
   return (
     <>
-      <div className="bg-white price-box price-box-padding rounded-[16px] hover:bg-[#6C8E69] group transition duration-500 ease-in-out">
-        <div className="inline-block bg-dark-green rounded-[70px] px-[23px] py-[6px] group-hover:bg-white! transition duration-500 ease-in-out">
-          <span className="font-segoeUi font-semibold text-white group-hover:text-black transition duration-500">
+      <div className="bg-white price-box price-box-padding rounded-[16px] hover:bg-[#6C8E69] group transition duration-300 ease-in-out">
+        <div className="inline-block bg-dark-green rounded-[70px] px-[23px] py-[6px] group-hover:bg-white! transition duration-300 ease-in-out">
+          <span className="font-segoeUi font-semibold text-white group-hover:text-black transition duration-300">
             {packageTitle}
           </span>
         </div>
-        <p className="fs-18 text-black group-hover:text-white leading-[145%] mt-7.5">
+        <p className="fs-18 text-black group-hover:text-white leading-[145%] mt-7.5 transition duration-300">
           {Para}
         </p>
-        <hr className="mt-5 opacity-[0.4] group-hover:opacity-[0.5] group-hover:border-white" />
+        <hr className="mt-5 opacity-[0.4] group-hover:opacity-[0.6] group-hover:border-white transition duration-300" />
         <div className="flex flex-col gap-3 pt-3 md:pt-5">
           <ul className="flex flex-col gap-3 pb-2">
-            <li className="flex items-center gap-3 group-hover:text-white!">
+            <li className="flex items-center gap-3 group-hover:text-white! transition duration-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                className="transition duration-500"
+                className="transition duration-300"
               >
                 <g clipPath="url(#clip0_22_4943)">
                   <path
@@ -61,14 +61,14 @@ const Packages = ({
                 {liTitle1}
               </h5>
             </li>
-            <li className="flex items-center gap-3 group-hover:text-white!">
+            <li className="flex items-center gap-3 group-hover:text-white! transition duration-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                className="transition duration-500"
+                className="transition duration-300"
               >
                 <g clipPath="url(#clip0_22_4943)">
                   <path
@@ -96,14 +96,14 @@ const Packages = ({
                 {liTitle2}
               </h5>
             </li>
-            <li className="flex items-center gap-3 group-hover:text-white!">
+            <li className="flex items-center gap-3 group-hover:text-white! transition duration-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                className="transition duration-500"
+                className="transition duration-300"
               >
                 <g clipPath="url(#clip0_22_4943)">
                   <path
@@ -131,14 +131,14 @@ const Packages = ({
                 {liTitle3}
               </h5>
             </li>
-            <li className="flex items-center gap-3 group-hover:text-white!">
+            <li className="flex items-center gap-3 group-hover:text-white! transition duration-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                className="transition duration-500"
+                className="transition duration-300"
               >
                 <g clipPath="url(#clip0_22_4943)">
                   <path
@@ -166,14 +166,14 @@ const Packages = ({
                 {liTitle4}
               </h5>
             </li>
-            <li className="flex items-center gap-3 group-hover:text-white!">
+            <li className="flex items-center gap-3 group-hover:text-white! transition duration-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                className="transition duration-500"
+                className="transition duration-300"
               >
                 <g clipPath="url(#clip0_22_4943)">
                   <path
@@ -205,11 +205,12 @@ const Packages = ({
           <Link
             href="#"
             className="btn-sm btn-lightgreen font-the-bold group-hover:text-white! text-center 
-             group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
-             group-hover:bg-[#6C8E69]! group-hover:shadow-[0_4px_0_0_#1E1E1E] 
-             group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
-             group-hover:hover:translate-y-[2px] 
-             transition duration-500 ease-in-out"
+            group-hover:rounded-[6px] group-hover:border! group-hover:border-black! 
+           group-hover:bg-[#6C8E69]! group-hover:shadow-[0_4px_0_0_#1E1E1E] 
+            group-hover:hover:shadow-[0_2px_0_0_#1E1E1E] 
+            group-hover:hover:translate-y-[2px] 
+            scale-x-100 group-hover:scale-x-85
+            transition duration-300 ease-in-out"
           >
             {btnText}
           </Link>
