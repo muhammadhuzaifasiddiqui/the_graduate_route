@@ -156,14 +156,58 @@ export default function Home() {
                 <div className="users absolute p-16">
                   <p className="fs-19 font-the-bold">Get ready to join</p>
                   <p className="">60k+ Users</p>
-                  <Image
-                    src={"/images/users.png"}
-                    width={152}
-                    height={44}
-                    alt="users"
-                    unoptimized={true}
-                    className="mt-2 md:mt-4 w-[70px]! sm:w-[80px]! md:w-[90px]! lg:w-[120px]!"
-                  />
+                  <div className="flex relative">
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/avatar1.png"}
+                        width={152}
+                        height={44}
+                        alt="avatar1"
+                        unoptimized={true}
+                        className="absolute z-10"
+                      />
+                    </div>
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/avatar2.png"}
+                        width={152}
+                        height={44}
+                        alt="avatar2"
+                        unoptimized={true}
+                        className="absolute z-8 ml-[-15px]"
+                      />
+                    </div>
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/avatar3.png"}
+                        width={152}
+                        height={44}
+                        alt="avatar3"
+                        unoptimized={true}
+                        className="absolute z-6 ml-[-30px]"
+                      />
+                    </div>
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/avatar4.png"}
+                        width={152}
+                        height={44}
+                        alt="avatar4"
+                        unoptimized={true}
+                        className="absolute z-4 ml-[-45px]"
+                      />
+                    </div>
+                    <div className="image-wrapper">
+                      <Image
+                        src={"/images/avatar5.png"}
+                        width={152}
+                        height={44}
+                        alt="avatar5"
+                        unoptimized={true}
+                        className="absolute z-2 ml-[-60px]"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -529,30 +573,100 @@ export default function Home() {
       </section>
 
       {/* INSTAGRAM-SECTION */}
-      <section className="instagram-section relative">
-        <Image
-          src={"/images/top-Ellipse.png"}
-          width={125}
-          height={124}
-          alt="excel"
-          unoptimized={true}
-          className="w-full! absolute top-0 border-2 border-amber-600"
-        />
-        <div className="instagram-wrapper py-120 z-10 relative">
-          <div className="flex flex-col">
-            <h2 className="text-center justify-center font-the-bold">
-              INSTAGRAM <span className="text-brown">FEED</span>
-            </h2>
-          </div>
+      <section className="instagram-section pt-120">
+        <div className="flex justify-center mb-[-100px] relative z-10">
+          <h2 className="text-center font-the-bold leading-[100%]">
+            INSTAGRAM <span className="text-brown">FEED</span>
+          </h2>
         </div>
-        <Image
-          src={"/images/bottom-Ellipse.png"}
-          width={125}
-          height={124}
-          alt="excel"
-          unoptimized={true}
-          className="w-full! absolute bottom-0 border-2 border-amber-600"
-        />
+        <div className="instagram-wrapper relative">
+          <Image
+            src={"/images/top-Ellipse.png"}
+            width={125}
+            height={124}
+            alt="excel"
+            unoptimized={true}
+            className="w-full! absolute top-0 z-2"
+          />
+          <div className="flex gap-2.5 bg-black relative">
+            <Image
+              src={"/images/insta_icon.png"}
+              width={125}
+              height={124}
+              alt="bottom-Ellipse"
+              unoptimized={true}
+              className="absolute top-1/2 left-1/2 -translate-x-1/2"
+            />
+            <div className="flex image-wrapper">
+              <Image
+                src={"/images/insta1.png"}
+                width={125}
+                height={124}
+                alt="insta1"
+                unoptimized={true}
+                className="object-cover"
+              />
+            </div>
+            <div className="flex image-wrapper">
+              <Image
+                src={"/images/insta2.png"}
+                width={125}
+                height={124}
+                alt="insta2"
+                unoptimized={true}
+                className="object-cover"
+              />
+            </div>
+            <div className="flex image-wrapper">
+              <Image
+                src={"/images/insta3.png"}
+                width={125}
+                height={124}
+                alt="insta3"
+                unoptimized={true}
+                className="object-cover"
+              />
+            </div>
+            <div className="flex image-wrapper">
+              <Image
+                src={"/images/insta4.png"}
+                width={125}
+                height={124}
+                alt="insta4"
+                unoptimized={true}
+                className="object-cover"
+              />
+            </div>
+            <div className="flex image-wrapper">
+              <Image
+                src={"/images/insta1.png"}
+                width={125}
+                height={124}
+                alt="insta1"
+                unoptimized={true}
+                className="object-cover"
+              />
+            </div>
+            <div className="flex image-wrapper">
+              <Image
+                src={"/images/insta1.png"}
+                width={125}
+                height={124}
+                alt="insta1"
+                unoptimized={true}
+                className="object-cover"
+              />
+            </div>
+          </div>
+          <Image
+            src={"/images/bottom-Ellipse.png"}
+            width={125}
+            height={124}
+            alt="bottom-Ellipse"
+            unoptimized={true}
+            className="w-full! absolute bottom-0 z-2"
+          />
+        </div>
       </section>
 
       {/* BLOG-SECTION */}
@@ -563,7 +677,7 @@ export default function Home() {
           height={120}
           alt="flower"
           unoptimized={true}
-          className="absolute -z-10 right-0 xl:top-[-55px] lg:top-[80px] top-[100px] w-[45px]! lg:w-[60px]!"
+          className="absolute z-10 right-0 w-[45px]! lg:w-[60px]!"
         />
         <div className="container mx-auto">
           <div className="flex flex-col items-center gap-3">
@@ -803,7 +917,6 @@ export default function Home() {
             </h2>
           </div>
           <div className="flex flex-col mt-50 xl:gap-5 lg:gap-4 gap-3">
-
             <div className="faq-drawer px-6 py-7.5 rounded-[12px] group transition-colors duration-1500">
               <input
                 className="faq-drawer__trigger peer hidden leading-[100%]"
@@ -905,7 +1018,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
