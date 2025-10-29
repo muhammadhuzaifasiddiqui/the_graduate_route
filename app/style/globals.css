@@ -346,6 +346,11 @@ h6 {
 
 /* blog-section */
 
+.blog-section .image-wrapper{
+  height: 246px;
+  border-radius: 14px;
+}
+
 /* FAQS-SECTION */
 .faq-drawer {
   background-color: #fff !important;

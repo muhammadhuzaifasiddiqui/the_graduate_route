@@ -76,9 +76,11 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
 
   return (
     // PARENT DIV: Added transition-all duration-500 for smooth background color change
-    <div className={`overflow-hidden rounded-[12px] transition-all duration-500 ease-in-out
+    <div
+      className={`overflow-hidden rounded-[12px] transition-all duration-500 ease-in-out
       ${isOpen ? "bg-[#6C8E69]" : "bg-white"}
-    `}>
+    `}
+    >
       <button
         onClick={onToggle}
         // Corrected py-[20] to py-[20px] for valid Tailwind class
@@ -120,7 +122,6 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
   );
 };
 
-
 export default function Home() {
   const [selectedOption, setSelectedOption] = useState("option1");
   const options = [
@@ -139,7 +140,6 @@ export default function Home() {
   const handleNext = () => {
     swiperRef.current?.slideNext();
   };
-
 
   // State to manage the currently open accordion item's ID
   const [activeIndex, setActiveIndex] = useState(null);
@@ -682,28 +682,28 @@ export default function Home() {
 
       {/* INSTAGRAM-SECTION */}
       <section className="instagram-section pt-120">
-        <div className="flex justify-center mb-[-100px] relative z-10">
+        <div className="flex justify-center">
           <h2 className="text-center font-the-bold leading-[100%]">
             INSTAGRAM <span className="text-brown">FEED</span>
           </h2>
         </div>
         <div className="instagram-wrapper relative">
           <Image
-            src={"/images/top-Ellipse.png"}
+            src={"/images/bottom-Ellipse.png"}
             width={125}
             height={124}
-            alt="excel"
+            alt="bottom-Ellipse"
             unoptimized={true}
-            className="w-full! absolute top-0 z-2"
+            className="w-full! absolute top-[-10px] z-2 transform rotate-180"
           />
-          <div className="flex gap-2.5 bg-black relative">
+          <div className="flex gap-2.5 bg-black mt-50 relative">
             <Image
               src={"/images/insta_icon.png"}
               width={125}
               height={124}
               alt="bottom-Ellipse"
               unoptimized={true}
-              className="absolute top-1/2 left-1/2 -translate-x-1/2"
+              className="absolute left-[50%] top-[50%] translate-[-50%]"
             />
             <div className="flex image-wrapper">
               <Image
@@ -835,7 +835,7 @@ export default function Home() {
       </section>
 
       {/* TAKE-THE-QUIZ-SECTION */}
-      <section className="take-the-quiz-section px-5 relative">
+      <section className="take-the-quiz-section pt-120 px-5 relative">
         <Image
           src={"/images/sharp-shape.png"}
           width={114}
@@ -844,34 +844,33 @@ export default function Home() {
           unoptimized={true}
           className="absolute -z-10 left-auto right-0 lg:top-[15%] top-[18%] transform lg:-translate-y-15% -translate-y-18% w-[90px]! lg:w-[110px]!"
         />
-        <div className="take-the-quiz-wrapper pt-120">
-          <div className="container max-w-[70%] mx-auto">
-            <div className="flex justify-center">
-              <div className="flex flex-col items-center lg:w-[65%] md:w-[75%] sm:w-[85%] w-[95%] gap-3">
-                <Bullets bullets="Take the Quiz" />
-                <h2 className="text-center justify-center font-the-bold leading-[100%]">
-                  What’s Your Ideal <span className="text-brown">Graduate</span>{" "}
-                  Route?
-                </h2>
-                <p className="text-center text-black fs-18">
-                  Answer 5 quick questions so we can pinpoint which route &
-                  support package fits you best — and show how to amplify your
-                  chances for admission and funding.
-                </p>
-              </div>
+        <div className="container max-w-[70%] mx-auto">
+          <div className="flex justify-center">
+            <div className="flex flex-col items-center lg:w-[65%] md:w-[75%] sm:w-[85%] w-[95%] gap-3">
+              <Bullets bullets="Take the Quiz" />
+              <h2 className="text-center justify-center font-the-bold leading-[100%]">
+                What’s Your Ideal <span className="text-brown">Graduate</span>{" "}
+                Route?
+              </h2>
+              <p className="text-center text-black fs-18">
+                Answer 5 quick questions so we can pinpoint which route &
+                support package fits you best — and show how to amplify your
+                chances for admission and funding.
+              </p>
             </div>
-            <div className="flex flex-col mt-50 rounded-[12px] bg-white p-25">
-              <h5 className="font-the-bold">
-                Q. What region do you plan to study in? (UK / US / Europe / Asia
-                / Other)
-              </h5>
-              <div className="flex items-center justify-center xl:mt-6.5 lg:mt-5 md:mt-4 mt-3">
-                <div className="flex flex-col w-full gap-3">
-                  {options.map((option) => (
-                    <label
-                      key={option.id}
-                      htmlFor={option.id}
-                      className={`
+          </div>
+          <div className="flex flex-col mt-50 rounded-[12px] bg-white p-25">
+            <h5 className="font-the-bold">
+              Q. What region do you plan to study in? (UK / US / Europe / Asia /
+              Other)
+            </h5>
+            <div className="flex items-center justify-center xl:mt-6.5 lg:mt-5 md:mt-4 mt-3">
+              <div className="flex flex-col w-full gap-3">
+                {options.map((option) => (
+                  <label
+                    key={option.id}
+                    htmlFor={option.id}
+                    className={`
           flex items-center px-4 py-3 rounded-lg border cursor-pointer
           transition-all duration-200 ease-in-out
           ${
@@ -880,19 +879,19 @@ export default function Home() {
               : "border-1 border-[#D4D4D8] bg-white"
           }
         `}
-                    >
-                      <input
-                        type="radio"
-                        id={option.id}
-                        name="form-option"
-                        value={option.id}
-                        checked={selectedOption === option.id}
-                        onChange={handleOptionChange}
-                        className="hidden"
-                      />
+                  >
+                    <input
+                      type="radio"
+                      id={option.id}
+                      name="form-option"
+                      value={option.id}
+                      checked={selectedOption === option.id}
+                      onChange={handleOptionChange}
+                      className="hidden"
+                    />
 
-                      <div
-                        className={`
+                    <div
+                      className={`
             w-4 h-4 rounded-full border-1 flex items-center justify-center mr-3.5 transition-colors duration-200
             ${
               selectedOption === option.id
@@ -900,56 +899,55 @@ export default function Home() {
                 : "border-[#000000] bg-white"
             }
           `}
-                      >
-                        {selectedOption === option.id && (
-                          <div className="w-2 h-2 rounded-full bg-[#6C8E69]"></div>
-                        )}
-                      </div>
+                    >
+                      {selectedOption === option.id && (
+                        <div className="w-2 h-2 rounded-full bg-[#6C8E69]"></div>
+                      )}
+                    </div>
 
-                      <span className="text-black select-none">
-                        {option.label}
-                      </span>
-                    </label>
-                  ))}
-                </div>
-              </div>
-              <div className="flex justify-center gap-3 xl:mt-7.5 lg:mt-6 md:mt-5 mt-4">
-                <div className="flex group">
-                  <Link
-                    href="#"
-                    className="btn-lg btn-primary font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-                    group-hover:hover:translate-y-[2px]! transition duration-300"
-                  >
-                    Go BAck
-                  </Link>
-                </div>
-                <div className="flex group">
-                  <Link
-                    href="#"
-                    className="btn-lg btn-lightgreen font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-                    group-hover:hover:translate-y-[2px]! transition duration-300"
-                  >
-                    Confirm
-                  </Link>
-                </div>
+                    <span className="text-black select-none">
+                      {option.label}
+                    </span>
+                  </label>
+                ))}
               </div>
             </div>
-            <div className="flex flex-col items-center w-full mt-10">
-              <div className="flex justify-center group">
+            <div className="flex justify-center gap-3 xl:mt-7.5 lg:mt-6 md:mt-5 mt-4">
+              <div className="flex group">
                 <Link
                   href="#"
-                  className="btn-xl btn-primary w-full! font-segoeUi group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-             group-hover:hover:translate-y-[2px]! transition duration-300"
+                  className="btn-lg btn-primary font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+                    group-hover:hover:translate-y-[2px]! transition duration-300"
                 >
-                  Book a free consultation
+                  Go BAck
                 </Link>
               </div>
-              <div className="inline text-center w-[80%] sm:w-[65%] md:w-[50%] lg:w-[30%]">
-                <p className="mt-5 text-black">
-                  &quot;Book a free consultation&quot; or &quot;See matching
-                  program + funding roadmap&quot;.
-                </p>
+              <div className="flex group">
+                <Link
+                  href="#"
+                  className="btn-lg btn-lightgreen font-the-bold group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+                    group-hover:hover:translate-y-[2px]! transition duration-300"
+                >
+                  Confirm
+                </Link>
               </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-center w-full mt-10">
+            <div className="flex justify-center group">
+              <Link
+                href="#"
+                className="btn-xl btn-primary w-full! font-segoeUi group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
+             group-hover:hover:translate-y-[2px]! transition duration-300"
+              >
+                Book a free consultation
+              </Link>
+            </div>
+            <div className="inline text-center w-[80%] sm:w-[65%] md:w-[50%] lg:w-[30%]">
+              <p className="mt-5 text-black">
+                &quot;Book a free consultation&quot; or &quot;See matching
+                program + funding roadmap&quot;.
+              </p>
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ const Blogs = ({ imgSrc = ``, imgAlt, title, para, date }) => {
             height={246}
             alt={imgAlt}
             unoptimized={true}
-            className="w-full!"
+            className="w-full! h-full!"
           />
         </div>
         <h5 className="mt-5 font-the-bold leading-28">{title}</h5>
