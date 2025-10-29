@@ -77,19 +77,19 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
   return (
     // PARENT DIV: Added transition-all duration-500 for smooth background color change
     <div
-      className={`overflow-hidden rounded-[12px] transition-all duration-500 ease-in-out
+      className={`cursor-pointer overflow-hidden rounded-[12px] transition-all duration-500 ease-in-out
       ${isOpen ? "bg-[#6C8E69]" : "bg-white"}
     `}
     >
       <button
         onClick={onToggle}
         // Corrected py-[20] to py-[20px] for valid Tailwind class
-        className={`flex w-full justify-between leading-[100%] items-center text-left px-[24px] py-[20px]
+        className={`cursor-pointer flex w-full justify-between leading-[100%] items-center text-left px-[24px] py-[20px]
         `}
         aria-expanded={isOpen}
       >
         <p
-          className={`font-the-bold leading-[100%] fs-18
+          className={`cursor-pointer font-the-bold leading-[100%] fs-18
             ${isOpen ? "text-white" : "text-black"}
           `}
         >
@@ -97,7 +97,7 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
         </p>
         <ChevronDown
           className={`
-            stroke-black transition-all duration-500
+            cursor-pointer stroke-black transition-all duration-500
             ${isOpen ? "rotate-180 stroke-white" : "rotate-0"}
           `}
         />
@@ -106,12 +106,12 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
       {/* Content area: Added transition-all duration-500 for smooth max-height/collapse */}
       <div
         style={{ maxHeight: `${contentHeight}px` }}
-        className=" overflow-hidden transition-all duration-500 ease-in-out "
+        className="cursor-pointer  overflow-hidden transition-all duration-500 ease-in-out "
       >
         <p
           ref={contentRef}
           className={`
-            text-white leading-20 px-[24px] pb-[20px]
+            cursor-pointer text-white leading-20 px-[24px] pb-[20px]
             ${isOpen ? "opacity-100 pt-0" : "opacity-0 pt-0"}
           `}
         >
@@ -194,7 +194,7 @@ export default function Home() {
                     height={60}
                     alt="arrow-vector"
                     unoptimized={true}
-                    className="absolute right-[140px] lg:top-[-55px] top-[-65px] -z-10"
+                    className="absolute right-0 lg:top-[-55px] top-[-65px] -z-10"
                   />
                   <div className="flex group">
                     <Link
@@ -335,11 +335,11 @@ export default function Home() {
           className="absolute -z-10 right-0 xl:top-[55px] lg:top-[30px] md:top-[10px] top-[5] w-[85px]! lg:w-[100px]!"
         />
         <div className="container mx-auto">
-          <div className="bg-white p-46 rounded-[20px]">
+          <div className="bg-white statistics-padding rounded-[20px]">
             <h3 className="font-the-bold text-center leading-[100%]">
               Our <span className="text-brown">Statistics</span>
             </h3>
-            <div className="grid grid-flow-row mt-50 lg:grid-flow-col grid-cols-2 lg:grid-cols-4 justify-center lg:justify-between gap-5 md:gap-4 lg:gap-15">
+            <div className="grid grid-flow-row mt-50 lg:grid-flow-col grid-cols-2 lg:grid-cols-4 justify-center lg:justify-between gap-5 lg:gap-4 xl:gap-15">
               <StatisticsCounter
                 // This value (6.4) will show one decimal place.
                 endCount={6.4}
@@ -386,7 +386,7 @@ export default function Home() {
             <div className="flex flex-col lg:gap-5 gap-4 w-full lg:w-1/2">
               <Bullet Para="Stand out among a competitive applicant pool" />
               <Bullet Para="Secure high-value scholarships & fellowships" />
-              <Bullet Para="Craft essays, research proposals, applications that highlight your impact" />
+              <Bullet Para="Craft essays, research proposals, and applications that highlight your unique impact" />
               <Bullet Para="Build a compelling narrative around your goals and mission" />
               <Bullet Para="Navigate admissions, interview prep, funding, and post-grad planning" />
             </div>
@@ -443,12 +443,12 @@ export default function Home() {
                 Title="Decision & Next Steps"
                 Para="You accept an offer, we help with visa, transitions, and visionary next steps."
               />
-              <div className="flex flex-col px-11 justify-center items-center bg-dark-green rounded-[20px] gap-3">
+              <div className="flex flex-col p-25 py-15.5! md:py-0 justify-center items-center bg-dark-green rounded-[20px] gap-3">
                 <div className="flex w-full group">
                   <Link
                     href="#"
                     className="btn-sm btn-primary w-full! font-bold font-the-bold text-center group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
-             group-hover:hover:translate-y-[2px]! transition duration-300"
+                    group-hover:hover:translate-y-[2px]! transition duration-300"
                   >
                     Take the Quiz → Find Your Path
                   </Link>
@@ -476,7 +476,7 @@ export default function Home() {
           <Bullets bullets="SUCCESS STORIES" />
           {/* Header and Custom Navigation Buttons Container */}
           <div className="flex relative">
-            <div className="w-[75%] md:w-[60%] lg:w-[40%]">
+            <div className="w-[80%] md:w-[60%] lg:w-[50%] xl:w-[40%]">
               <h2 className="font-the-bold uppercase leading-[100%]">
                 Client <span className="text-brown">Experiences</span> – What
                 People Are
@@ -844,9 +844,9 @@ export default function Home() {
           unoptimized={true}
           className="absolute -z-10 left-auto right-0 lg:top-[15%] top-[18%] transform lg:-translate-y-15% -translate-y-18% w-[90px]! lg:w-[110px]!"
         />
-        <div className="container max-w-[70%] mx-auto">
+        <div className="container max-w-[100%] md:max-w-[80%] xl:max-w-[70%] mx-auto">
           <div className="flex justify-center">
-            <div className="flex flex-col items-center lg:w-[65%] md:w-[75%] sm:w-[85%] w-[95%] gap-3">
+            <div className="flex flex-col items-center max-w-[100%] sm:max-w-[90%] md:max-w-[75%] xl:max-w-[55%] gap-3">
               <Bullets bullets="Take the Quiz" />
               <h2 className="text-center justify-center font-the-bold leading-[100%]">
                 What’s Your Ideal <span className="text-brown">Graduate</span>{" "}
@@ -933,8 +933,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center w-full mt-10">
-            <div className="flex justify-center group">
+
+          <div className="flex flex-col items-center w-full mt-13">
+            <div className="text-center group max-w-[80%] sm:max-w-[60%] lg:max-w-[40%] mx-auto">
               <Link
                 href="#"
                 className="btn-xl btn-primary w-full! font-segoeUi group-hover:shadow-[0_4px_0_0_#1E1E1E]! group-hover:hover:shadow-[0_2px_0_0_#1E1E1E]! 
@@ -942,14 +943,13 @@ export default function Home() {
               >
                 Book a free consultation
               </Link>
-            </div>
-            <div className="inline text-center w-[80%] sm:w-[65%] md:w-[50%] lg:w-[30%]">
-              <p className="mt-5 text-black">
+              <p className="mt-7 text-black">
                 &quot;Book a free consultation&quot; or &quot;See matching
                 program + funding roadmap&quot;.
               </p>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -1015,7 +1015,7 @@ export default function Home() {
           unoptimized={true}
           className="absolute -z-10 left-0 right-auto top-[30px] lg:top-[0px] w-[50px]! lg:w-[66px]!"
         />
-        <div className="container px-120 mx-auto">
+        <div className="container max-w-[100%] md:max-w-[80%] xl:max-w-[70%] mx-auto">
           <div className="flex flex-col items-center gap-3">
             <Bullets bullets="FAQS" />
             <h2 className="text-center uppercase justify-center font-the-bold leading-[100%]">
@@ -1023,18 +1023,16 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="flex flex-col mt-50">
-            <div className="flex flex-col xl:gap-5 lg:gap-4 gap-3">
-              {faqData.map((item) => (
-                <AccordionItem
-                  key={item.id}
-                  question={item.question}
-                  answer={item.answer}
-                  isOpen={item.id === activeIndex}
-                  onToggle={() => handleToggle(item.id)}
-                />
-              ))}
-            </div>
+          <div className="flex flex-col xl:gap-5 lg:gap-4 gap-3 mt-50">
+            {faqData.map((item) => (
+              <AccordionItem
+                key={item.id}
+                question={item.question}
+                answer={item.answer}
+                isOpen={item.id === activeIndex}
+                onToggle={() => handleToggle(item.id)}
+              />
+            ))}
           </div>
         </div>
       </section>
@@ -1050,12 +1048,12 @@ export default function Home() {
           className="absolute -z-10 left-auto right-0 xl:top-[50%] top-[2%] transform xl:-translate-y-50% -translate-y-[2%] w-[45px]! lg:w-[60px]!"
         />
         <div className="container mx-auto p-70 bg-white rounded-[16px]">
-          <div className="flex flex-col md:flex-row xl:gap-5 lg:gap-4 md:gap-3 gap-7.5">
-            <div className="flex flex-col w-full md:w-[55%]">
+          <div className="flex flex-col lg:flex-row xl:gap-5 lg:gap-4 md:gap-3 gap-7.5">
+            <div className="flex flex-col w-full lg:w-[55%]">
               <h2 className="font-the-bold text-black leading-[100%]">
                 Ready to Launch Your Global Grad Journey?
               </h2>
-              <div className="flex flex-col md:flex-row text-center gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-5 relative">
+              <div className="flex flex-col sm:flex-row text-center gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-5 relative">
                 <div className="flex group w-full sm:w-auto">
                   <Link
                     href="#"
@@ -1082,7 +1080,7 @@ export default function Home() {
                 applications open now.&quot;)
               </p>
             </div>
-            <div className="flex flex-col w-full md:w-[45%]">
+            <div className="flex flex-col w-full lg:w-[45%]">
               <form className="">
                 <div className="flex flex-col xl:gap-5 lg:gap-4 gap-3">
                   <div className="flex flex-col">
@@ -1206,7 +1204,7 @@ export default function Home() {
           <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-3">
               <div className="flex w-full lg:w-[30%]">
-                <div className="flex flex-col w-[90%] xl:w-[80%]">
+                <div className="flex flex-col w-[75%] sm:w-[55%] md:w-[35%] xl:w-[80%]">
                   <div className="logo-wrapper cursor-pointer">
                     <Image
                       src={"/images/graduate-rout-logo.svg"}
@@ -1217,7 +1215,7 @@ export default function Home() {
                       className="object-cover"
                     />
                   </div>
-                  <p className="font-medium text-light-gray mt-8 leading-24">
+                  <p className="font-medium text-light-gray mt-8 leading-24 lg:max-w-[]">
                     Design amazing digital experiences that create more happy in
                     the world.
                   </p>

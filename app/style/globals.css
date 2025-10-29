@@ -124,10 +124,6 @@ h6 {
   font-size: 14px;
 }
 
-.fs-16 {
-  font-size: 16px;
-}
-
 .fs-18 {
   font-size: 18px;
 }
@@ -138,18 +134,6 @@ h6 {
 
 .pt-120 {
   padding-top: 120px;
-}
-
-.py-120 {
-  padding: 120px 0;
-}
-
-.px-120 {
-  padding: 0 120px;
-}
-
-.p-260 {
-  padding: 0 260px;
 }
 
 .process-box-padding {
@@ -172,15 +156,11 @@ h6 {
   padding: 70px;
 }
 
-.px-70 {
-  padding: 0 70px;
-}
-
 .py-48 {
   padding: 48px 0;
 }
 
-.p-46 {
+.statistics-padding {
   padding: 46px;
 }
 
@@ -216,14 +196,14 @@ h6 {
 }
 
 .btn-xsm {
-  padding: 15px 36px;
+  padding: 12px 41px;
   font-size: 16px;
   font-weight: 700;
   line-height: 100%;
 }
 
 .btn-sm {
-  padding: 14px 0;
+  padding: 14px 25px;
   font-size: 14px;
   line-height: 100%;
 }
@@ -307,7 +287,7 @@ h6 {
 }
 
 .hero-section .image-wrapper {
-  width: 44px;
+  min-width: 44px;
   height: 44px;
 }
 
@@ -322,13 +302,14 @@ h6 {
 /* HELPING-SECTION */
 
 .helping-section .image-wrapper {
-  width: 41px;
+  min-width: 41px;
   height: 41px;
+  border-radius: 10px;
 }
 
 /* TESTIMONIAL-SECTION */
 .testimonial-section .image-wrapper {
-  height: 52px;
+  min-width: 52px;
   width: 52px;
 }
 
@@ -341,77 +322,20 @@ h6 {
 /* PROCESS-SECTION */
 .process-section .image-wrapper {
   height: 32px;
-  width: 32px;
+  min-width: 32px;
 }
 
 /* blog-section */
 
-.blog-section .image-wrapper{
+.blog-section .image-wrapper {
   height: 246px;
   border-radius: 14px;
 }
 
 /* FAQS-SECTION */
-.faq-drawer {
-  background-color: #fff !important;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.faq-drawer__content-wrapper {
-  line-height: 1.4em;
-  max-height: 0px;
-  overflow: hidden;
-  transition: 0.25s ease-in-out;
-}
-
-.faq-drawer__title {
-  cursor: pointer;
-  display: block;
-  position: relative;
-  margin-bottom: 0;
-  transition: all 0.25s ease-out;
-}
-
-.faq-drawer__title::after {
-  border-style: solid;
-  border-width: 1px 1px 0 0;
-  content: " ";
-  display: inline-block;
-  float: right;
-  height: 10px;
-  left: 2px;
-  position: relative;
-  right: 20px;
-  top: -2px;
-  transform: rotate(135deg);
-  transition: 0.35s ease-in-out;
-  vertical-align: top;
-  width: 10px;
-}
-
-.faq-drawer:has(input:checked) {
-  background-color: #6c8e69 !important;
-  color: #fff;
-}
-
-/* OPTIONAL HOVER STATE */
-.faq-drawer__trigger:checked
-  + .faq-drawer__title
-  + .faq-drawer__content-wrapper {
-  max-height: 350px;
-}
-
-.faq-drawer__trigger:checked + .faq-drawer__title::after {
-  transform: rotate(-45deg);
-  transition: 0.25s ease-in-out;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
 
 /* FOOTER-SECTION */
-.footer-wrapper .image-wrapper {
+.footer-wrapper .logo-wrapper {
   height: 64px;
   width: 70px;
 }
@@ -428,21 +352,112 @@ input[type="checkbox"] {
 
 .footer-bottom .image-wrapper {
   height: 24px;
-  width: 24px;
+  min-width: 24px;
 }
-
-@media screen and (min-width: 1279.97px) {
-}
-
-/* ------------ */
 
 @media screen and (max-width: 1399.97px) {
+  .btn-sm {
+    padding: 14px 20px;
+    font-size: 13px;
+  }
+
+  /* 28 */
+  h4 {
+    font-size: 26px;
+  }
+
+  /* HERO-SECTION */
+  .users {
+    background-color: #fff;
+    border-radius: 13px;
+    bottom: 20px;
+    left: 25px;
+  }
+
+  .hero-wrapper {
+    padding-top: 160px;
+    padding-bottom: 60px;
+  }
+
+  .process-box-padding {
+    padding: 40px 50px;
+  }
+
+  .footer-section .footer-wrapper {
+    background-color: #6c8e69;
+    padding-top: 58px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 1199.97px) {
+  .btn-md {
+    padding: 15px 16px;
+    font-size: 15px;
+  }
+
+  .btn-sm {
+    padding: 14px 16px;
+    font-size: 13px;
+  }
+
+  /* 28 */
+  h4 {
+    font-size: 24px;
+  }
+
+  /* HERO-SECTION */
+  .users {
+    background-color: #fff;
+    border-radius: 13px;
+    bottom: 12px;
+    left: 5px;
+  }
+
+  .hero-wrapper {
+    padding-top: 160px;
+    padding-bottom: 50px;
+  }
+
+  .blog-section .image-wrapper {
+    border-radius: 14px;
+    height: 200px;
+  }
+
+  .process-box-padding {
+    padding: 34px 40px;
+  }
+
+  .footer-section .footer-wrapper {
+    background-color: #6c8e69;
+    padding-top: 52px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 1023.97px) {
   body {
     font-size: 15px;
-    line-height: 28px;
+    line-height: 27px;
   }
+
+  .btn-sm {
+    padding: 14px 16px;
+    font-size: 13px;
+  }
+
+  .btn-md {
+    padding: 15px 16px;
+    font-size: 15px;
+  }
+
+  .btn-lg {
+    padding: 13px 50px;
+    font-size: 15px;
+  }
+
   h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
   /* 44 */
   h2 {
@@ -450,11 +465,12 @@ input[type="checkbox"] {
   }
   /* 32 */
   h3 {
-    font-size: 32px;
+    font-size: 28px;
   }
   /* 28 */
+  /* 28 */
   h4 {
-    font-size: 23px;
+    font-size: 24px;
   }
   /* 20 */
   h5 {
@@ -462,10 +478,6 @@ input[type="checkbox"] {
   }
   /* 18 */
   h6 {
-    font-size: 18px;
-  }
-
-  .fs-16 {
     font-size: 16px;
   }
 
@@ -474,32 +486,23 @@ input[type="checkbox"] {
   }
 
   .fs-19 {
-    font-size: 19px;
+    font-size: 16px;
   }
 
   .pt-120 {
-    padding-top: 120px;
+    padding-top: 105px;
   }
 
-  .py-120 {
-    padding: 120px 0;
-  }
-
-  .px-120 {
-    padding: 0px 0px;
-  }
-
-  .p-260 {
-    padding: 0 260px;
-  }
   /* 44 70 */
   .process-box-padding {
-    padding: 34px 54px;
+    padding: 28px 32px;
   }
+
   /* 30 24 */
   .price-box-padding {
     padding: 30px 24px;
   }
+
   /* 16 16 20 16 */
   .blog-box-padding {
     padding: 16px 16px 16px 16px;
@@ -513,27 +516,19 @@ input[type="checkbox"] {
     padding: 56px;
   }
 
-  .px-70 {
-    padding: 0 56px;
-  }
-
   .py-48 {
     padding: 40px 0;
   }
   /* all 46 */
-  .p-46 {
-    padding: 46px 22px;
+  .statistics-padding {
+    padding: 40px;
   }
 
   .p-25 {
-    padding: 22px;
+    padding: 23px;
   }
 
   .p-20 {
-    padding: 18px;
-  }
-
-  .p-18 {
     padding: 18px;
   }
 
@@ -541,376 +536,84 @@ input[type="checkbox"] {
     padding: 16px;
   }
 
-  /* .btn {
-    padding: 13px 18px;
-    font-size: 14px;
-  }
-
-  .btn-sm {
-    padding: 15px;
-    font-size: 14;
-  }
-
-  .btn-md {
-    padding: 11px 16px;
-    font-size: 13px;
-  }
-
-  .btn-lg {
-    padding: 14px 70px;
-    font-size: 14px;
-  } */
-
   .slide-btn {
-    padding: 22px 26px;
-  }
-
-  /* HERO-SECTION */
-  .users {
-    background-color: #fff;
-    border-radius: 13px;
-    bottom: 26px;
-    left: -10px;
+    padding: 20px 24px;
   }
 
   .hero-wrapper {
-    padding-top: 130px;
-    padding-bottom: 56px;
-  }
-
-  .footer-section .footer-wrapper {
-    background-color: #6c8e69;
-    padding-top: 58px;
-    padding-bottom: 48px;
-  }
-  .faq-drawer__title::after {
-    top: 7px;
-  }
-}
-
-@media screen and (max-width: 1199.97px) {
-  body {
-    font-size: 14px;
-    line-height: 26px;
-  }
-  h1 {
-    font-size: 48px;
-  }
-  /* 44 */
-  h2 {
-    font-size: 38px;
-  }
-  /* 32 */
-  h3 {
-    font-size: 32px;
-  }
-  /* 28 */
-  h4 {
-    font-size: 22px;
-  }
-  /* 20 */
-  h5 {
-    font-size: 17px;
-  }
-  /* 18 */
-  h6 {
-    font-size: 17px;
-  }
-
-  .fs-16 {
-    font-size: 16px;
-  }
-
-  .fs-18 {
-    font-size: 16px;
-  }
-
-  .fs-19 {
-    font-size: 18px;
-  }
-
-  .pt-120 {
-    padding-top: 105px;
-  }
-
-  .py-120 {
-    padding: 105px 0;
-  }
-
-  .px-120 {
-    padding: 0px 0px;
-  }
-
-  .p-260 {
-    padding: 0 180px;
-  }
-
-  /* 44 70 */
-  .process-box-padding {
-    padding: 30px 48px;
-  }
-  /* 30 24 */
-  .price-box-padding {
-    padding: 30px 20px;
-  }
-  /* 16 16 20 16 */
-  .blog-box-padding {
-    padding: 16px 16px 20px 16px;
-  }
-
-  .mt-50 {
-    margin-top: 40px;
-  }
-
-  .p-70 {
-    padding: 44px;
-  }
-  .px-70 {
-    padding: 0 44px;
-  }
-  .py-48 {
-    padding: 40px 0;
-  }
-
-  /* all 46 */
-  .p-46 {
-    padding: 35px 20px;
-  }
-
-  .p-25 {
-    padding: 20px;
-  }
-
-  .p-20 {
-    padding: 16px 18px;
-  }
-
-  .p-18 {
-    padding: 18px;
-  }
-
-  .p-16 {
-    padding: 14px 16px;
-  }
-
-  /* .btn {
-    padding: 11px 18px;
-    font-size: 13px;
-  }
-
-  .btn-sm {
-    padding: 14px;
-    font-size: 13px;
-  }
-
-  .btn-md {
-    padding: 10px 15px;
-    font-size: 13px;
-  }
-
-  .btn-lg {
-    padding: 12px 55px;
-    font-size: 13px;
-  } */
-
-  .slide-btn {
-    padding: 22px 24px;
-  }
-
-  /* HERO-SECTION */
-  .users {
-    background-color: #fff;
-    border-radius: 13px;
-    bottom: 24px;
-    left: -10px;
-  }
-
-  .hero-wrapper {
-    padding-top: 122px;
-    padding-bottom: 50px;
-  }
-
-  .footer-section .footer-wrapper {
-    background-color: #6c8e69;
-    padding-top: 52px;
-    padding-bottom: 48px;
-  }
-  .faq-drawer__title::after {
-    top: 7px;
-  }
-}
-
-@media screen and (max-width: 1023.97px) {
-  body {
-    font-size: 14px;
-    line-height: 26px;
-  }
-
-  h1 {
-    font-size: 45px;
-  }
-  /* 44 */
-  h2 {
-    font-size: 38px;
-  }
-  /* 32 */
-  h3 {
-    font-size: 32px;
-  }
-  /* 28 */
-  h4 {
-    font-size: 22px;
-  }
-  /* 20 */
-  h5 {
-    font-size: 18px;
-  }
-  /* 18 */
-  h6 {
-    font-size: 17px;
-  }
-
-  .fs-16 {
-    font-size: 16px;
-  }
-
-  .fs-18 {
-    font-size: 16px;
-  }
-
-  .fs-19 {
-    font-size: 18px;
-  }
-
-  .pt-120 {
-    padding-top: 90px;
-  }
-
-  .py-120 {
-    padding: 90px 0;
-  }
-
-  .px-120 {
-    padding: 0px 0px;
-  }
-
-  .p-260 {
-    padding: 0 100px;
-  }
-  /* 44 70 */
-  .process-box-padding {
-    padding: 30px 30px;
-  }
-  /* 30 24 */
-  .price-box-padding {
-    padding: 30px 24px;
-  }
-  /* 16 16 20 16 */
-  .blog-box-padding {
-    padding: 16px 16px 20px 16px;
-  }
-
-  .mt-50 {
-    margin-top: 36px;
-  }
-
-  .p-70 {
-    padding: 40px;
-  }
-
-  .px-70 {
-    padding: 0 40px;
-  }
-
-  .py-48 {
-    padding: 40px 0;
-  }
-  /* all 46 */
-  .p-46 {
-    padding: 30px 20px;
-  }
-
-  .p-25 {
-    padding: 20px;
-  }
-
-  .p-20 {
-    padding: 15px 17px;
-  }
-
-  .p-18 {
-    padding: 18px;
-  }
-
-  .p-16 {
-    padding: 14px;
-  }
-
-  /* .btn {
-    padding: 10px 15px;
-    font-size: 13px;
-  }
-
-  .btn-sm {
-    padding: 13px;
-    font-size: 13px;
-  }
-
-  .btn-md {
-    padding: 10px 15px;
-    font-size: 13px;
-  }
-
-  .btn-lg {
-    padding: 10px 45px;
-    font-size: 13px;
-  } */
-
-  .slide-btn {
-    padding: 20px 22px;
+    padding-top: 160px;
+    padding-bottom: 45px;
   }
 
   .users {
     background-color: #fff;
     border-radius: 13px;
-    bottom: 75px;
-    left: 45px;
+    bottom: 20px;
+    left: 73px;
+  }
+
+  .blog-section .image-wrapper {
+    border-radius: 14px;
+    height: 230px;
   }
 
   .footer-section .footer-wrapper {
     background-color: #6c8e69;
     padding-top: 48px;
     padding-bottom: 48px;
-  }
-  .faq-drawer__title::after {
-    top: 5px;
   }
 }
 
 @media screen and (max-width: 767.97px) {
   body {
     font-size: 14px;
-    line-height: 24px;
-  }
-
-  .leading-24 {
     line-height: 20px;
   }
 
+  .btn {
+    padding: 11px 22px;
+    font-size: 15px;
+  }
+
+  .btn-xsm {
+    padding: 11px 41px;
+    font-size: 15px;
+  }
+
+  .btn-sm {
+    padding: 14px 16px;
+    font-size: 13px;
+  }
+
+  .btn-md {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
+  .btn-lg {
+    padding: 13px 45px;
+    font-size: 15px;
+  }
+
+  .btn-xl {
+    padding: 13px 65px;
+    font-size: 15px;
+  }
+
   h1 {
-    font-size: 45px;
+    font-size: 42px;
   }
   /* 44 */
   h2 {
-    font-size: 35px;
+    font-size: 36px;
   }
   /* 32 */
   h3 {
-    font-size: 32px;
+    font-size: 26px;
   }
   /* 28 */
   h4 {
-    font-size: 22px;
+    font-size: 24px;
   }
   /* 20 */
   h5 {
@@ -918,11 +621,7 @@ input[type="checkbox"] {
   }
   /* 18 */
   h6 {
-    font-size: 16px;
-  }
-
-  .fs-16 {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .fs-18 {
@@ -930,282 +629,158 @@ input[type="checkbox"] {
   }
 
   .fs-19 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .pt-120 {
-    padding-top: 75px;
+    padding-top: 90px;
   }
 
-  .py-120 {
-    padding: 75px 0;
-  }
-
-  .px-120 {
-    padding: 0px 0px;
-  }
-
-  .p-260 {
-    padding: 0 50px;
-  }
   /* 44 70 */
   .process-box-padding {
-    padding: 26px;
+    padding: 24px 26px;
   }
+
   /* 30 24 */
   .price-box-padding {
-    padding: 30px 20px;
+    padding: 30px 24px;
   }
+
   /* 16 16 20 16 */
   .blog-box-padding {
     padding: 16px 16px 20px 16px;
   }
 
   .mt-50 {
-    margin-top: 32px;
+    margin-top: 38px;
   }
 
   .p-70 {
-    padding: 32px;
-  }
-  .px-70 {
-    padding: 0 32px;
+    padding: 44px;
   }
 
   .py-48 {
-    padding: 40px 0;
+    padding: 36px 0;
   }
+
   /* all 46 */
-  .p-46 {
-    padding: 30px 20px;
+
+  .statistics-padding {
+    padding: 32px;
   }
 
   .p-25 {
-    padding: 20px;
+    padding: 22px;
   }
 
   .p-20 {
-    padding: 14px 16px;
-  }
-
-  .p-18 {
-    padding: 18px;
+    padding: 14px 18px;
   }
 
   .p-16 {
     padding: 14px;
   }
 
-  /* .btn-md {
-    padding: 9px 13px;
-    font-size: 13px;
+  .slide-btn {
+    padding: 21px 24px;
   }
 
-  .btn-lg {
-    padding: 10px 35px;
-    font-size: 13px;
-  } */
+  .navbar .logo-wrapper {
+    max-height: 54px;
+  }
 
-  .slide-btn {
-    padding: 20px 22px;
+  .hero-wrapper {
+    padding-top: 160px;
+    padding-bottom: 40px;
+  }
+
+  .hero-section .image-wrapper {
+    min-width: 35px;
+    height: 35px;
   }
 
   .users {
     background-color: #fff;
     border-radius: 13px;
-    bottom: 50px;
-    left: -7px;
+    bottom: 16px;
+    left: 20px;
   }
+
+  .blog-section .image-wrapper {
+    border-radius: 14px;
+    height: 255px;
+  }
+
+  .helping-section .image-wrapper {
+    min-width: 37px;
+    height: 37px;
+  }
+
   .footer-section .footer-wrapper {
     background-color: #6c8e69;
     padding-top: 48px;
     padding-bottom: 48px;
-  }
-
-  .faq-drawer__title::after {
-    top: 7px;
   }
 }
 
 @media screen and (max-width: 575.97) {
   body {
     font-size: 14px;
-    line-height: 24px;
-  }
-
-  .leading-24 {
     line-height: 20px;
   }
 
-  h1 {
-    font-size: 43px;
-  }
-  /* 44 */
-  h2 {
-    font-size: 27px;
-  }
-  /* 32 */
-  h3 {
-    font-size: 25px;
-  }
-  /* 28 */
-  h4 {
-    font-size: 22px;
-  }
-  /* 20 */
-  h5 {
-    font-size: 17px;
-  }
-  /* 18 */
-  h6 {
-    font-size: 16px;
-  }
-
-  .fs-16 {
-    font-size: 16px;
-  }
-
-  .fs-18 {
-    font-size: 16px;
-  }
-
-  .fs-19 {
+  .btn {
+    padding: 10px 16px;
     font-size: 14px;
   }
 
-  .pt-120 {
-    padding-top: 60px;
+  .btn-xsm {
+    padding: 10px 41px;
+    font-size: 14px;
   }
 
-  .py-120 {
-    padding: 60px 0;
+  .btn-sm {
+    padding: 14px 16px;
+    font-size: 13px;
   }
 
-  .px-120 {
-    padding: 0px 0px;
-  }
-
-  .p-260 {
-    padding: 0 30px;
-  }
-  /* 44 70 */
-  .process-box-padding {
-    padding: 20px;
-  }
-  /* 30 24 */
-  .price-box-padding {
-    padding: 30px 20px;
-  }
-  /* 16 16 20 16 */
-  .blog-box-padding {
-    padding: 16px 16px 20px 16px;
-  }
-
-  .mt-50 {
-    margin-top: 30px;
-  }
-
-  .p-70 {
-    padding: 30px;
-  }
-  .px-70 {
-    padding: 0 30px;
-  }
-
-  .py-48 {
-    padding: 40px 0;
-  }
-  /* all 46 */
-  .p-46 {
-    padding: 20px;
-  }
-
-  .p-25 {
-    padding: 20px;
-  }
-
-  .p-20 {
-    padding: 10px 16px;
-  }
-
-  .p-18 {
-    padding: 18px;
-  }
-
-  .p-16 {
-    padding: 12px;
-  }
-
-  /* .btn-md {
-    padding: 8px 8px;
-    font-size: 12px;
+  .btn-md {
+    padding: 14px 16px;
+    font-size: 14px;
   }
 
   .btn-lg {
-    padding: 9px 20px;
-    font-size: 12px;
-  } */
-
-  .slide-btn {
-    padding: 20px 22px;
+    padding: 12px 30px;
+    font-size: 14px;
   }
 
-  .users {
-    background-color: #fff;
-    border-radius: 13px;
-    bottom: 23px;
-    left: -6px;
-  }
-  .footer-section .footer-wrapper {
-    background-color: #6c8e69;
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-  .faq-drawer__title::after {
-    top: -17px;
-  }
-}
-
-@media screen and (max-width: 399.97) {
-  body {
-    font-size: 13px;
-    line-height: 20px;
-  }
-
-  .leading-24 {
-    line-height: 20px;
+  .btn-xl {
+    padding: 12px 35px;
+    font-size: 14px;
   }
 
   h1 {
-    font-size: 38px;
+    font-size: 40px;
   }
-
   /* 44 */
   h2 {
-    font-size: 25px;
+    font-size: 34px;
   }
   /* 32 */
   h3 {
-    font-size: 22px;
+    font-size: 25px;
   }
-
   /* 28 */
   h4 {
-    font-size: 18px;
+    font-size: 22px;
   }
-
   /* 20 */
   h5 {
     font-size: 16px;
   }
-
   /* 18 */
   h6 {
-    font-size: 16px;
-  }
-
-  .fs-16 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .fs-18 {
@@ -1213,28 +788,20 @@ input[type="checkbox"] {
   }
 
   .fs-19 {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .pt-120 {
-    padding-top: 60px;
+    padding-top: 75px;
   }
 
-  .py-120 {
-    padding: 60px 0;
-  }
-
-  .px-120 {
-    padding: 0px 0px;
-  }
-
-  .p-260 {
-    padding: 0 30px;
+  .statistics-padding {
+    padding: 32px;
   }
 
   /* 44 70 */
   .process-box-padding {
-    padding: 20px;
+    padding: 20px 20px;
   }
 
   /* 30 24 */
@@ -1254,61 +821,56 @@ input[type="checkbox"] {
   .p-70 {
     padding: 30px;
   }
-  .px-70 {
-    padding: 0 30px;
-  }
 
   .py-48 {
-    padding: 40px 0;
-  }
-  /* all 46 */
-  .p-46 {
-    padding: 20px;
+    padding: 30px 0;
   }
 
   .p-25 {
-    padding: 20px;
-  }
-
-  .px-24 {
-    padding: 10px 20px;
+    padding: 21px;
   }
 
   .p-20 {
-    padding: 10px 16px;
-  }
-
-  .p-18 {
-    padding: 18px;
+    padding: 13px 16px;
   }
 
   .p-16 {
-    padding: 10px;
+    padding: 13px;
   }
-
-  /* .btn-md {
-    padding: 6px 8px;
-    font-size: 11px;
-  }
-
-  .btn-lg {
-    padding: 8px 12px;
-    font-size: 12px;
-  } */
 
   .slide-btn {
     padding: 20px 22px;
   }
 
-  .hero-wrapper h1 {
-    line-height: 100%;
+  .navbar .logo-wrapper {
+    max-height: 54px;
+  }
+
+  .hero-wrapper {
+    padding-top: 160px;
+    padding-bottom: 35px;
+  }
+
+  .hero-section .image-wrapper {
+    width: 35px;
+    height: 35px;
+  }
+
+  .helping-section .image-wrapper {
+    min-width: 37px;
+    height: 37px;
   }
 
   .users {
     background-color: #fff;
     border-radius: 13px;
-    bottom: 20px;
-    left: -10px;
+    bottom: 10px;
+    left: -6px;
+  }
+
+  .blog-section .image-wrapper {
+    border-radius: 14px;
+    height: 200px;
   }
 
   .footer-section .footer-wrapper {
@@ -1316,8 +878,160 @@ input[type="checkbox"] {
     padding-top: 48px;
     padding-bottom: 48px;
   }
+}
 
-  .faq-drawer__title::after {
-    top: -17px;
+@media screen and (max-width: 399.97) {
+  body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .btn-xsm {
+    padding: 10px 41px;
+    font-size: 14px;
+  }
+
+  .btn-sm {
+    padding: 14px 16px;
+    font-size: 13px;
+  }
+
+  .btn-md {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
+  .btn-lg {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+
+  .btn-xl {
+    padding: 12px 40px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+  /* 44 */
+  h2 {
+    font-size: 30px;
+  }
+  /* 32 */
+  h3 {
+    font-size: 24px;
+  }
+  /* 28 */
+  h4 {
+    font-size: 20px;
+  }
+  /* 20 */
+  h5 {
+    font-size: 14px;
+  }
+  /* 18 */
+  h6 {
+    font-size: 14px;
+  }
+
+  .fs-18 {
+    font-size: 14px;
+  }
+
+  .fs-19 {
+    font-size: 14px;
+  }
+
+  .pt-120 {
+    padding-top: 60px;
+  }
+
+  .statistics-padding {
+    padding: 30px 20px;
+  }
+
+  /* 44 70 */
+  .process-box-padding {
+    padding: 20px 20px;
+  }
+
+  /* 30 24 */
+  .price-box-padding {
+    padding: 30px 20px;
+  }
+
+  /* 16 16 20 16 */
+  .blog-box-padding {
+    padding: 16px 16px 20px 16px;
+  }
+
+  .mt-50 {
+    margin-top: 30px;
+  }
+
+  .p-70 {
+    padding: 30px;
+  }
+
+  .py-48 {
+    padding: 30px 0;
+  }
+
+  .p-25 {
+    padding: 20px;
+  }
+
+  .p-20 {
+    padding: 12px 14px;
+  }
+
+  .p-16 {
+    padding: 12px;
+  }
+
+  .slide-btn {
+    padding: 20px 22px;
+  }
+
+  .navbar .logo-wrapper {
+    max-height: 54px;
+  }
+
+  .hero-wrapper {
+    padding-top: 155px;
+    padding-bottom: 30px;
+  }
+
+  .hero-section .image-wrapper {
+    min-width: 35px;
+    height: 35px;
+  }
+
+  .hero-wrapper h1 {
+    line-height: 100%;
+  }
+
+  .helping-section .image-wrapper {
+    min-width: 37px;
+    height: 37px;
+  }
+
+  .users {
+    background-color: #fff;
+    border-radius: 13px;
+    bottom: 9px;
+    left: -3px;
+  }
+
+  .footer-section .footer-wrapper {
+    background-color: #6c8e69;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
