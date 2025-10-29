@@ -14,7 +14,7 @@ const ProcessCards = ({ Title = "null", Para = "null" }) => {
               height={32}
               alt="not-found"
               unoptimized={true}
-              className="object-cover"
+              className="w-full! h-full! object-cover"
             />
           </div>
         </div>

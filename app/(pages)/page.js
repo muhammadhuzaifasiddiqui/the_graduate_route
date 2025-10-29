@@ -121,8 +121,6 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
 };
 
 
-
-
 export default function Home() {
   const [selectedOption, setSelectedOption] = useState("option1");
   const options = [
@@ -268,54 +266,54 @@ export default function Home() {
                   <p className="fs-19 font-the-bold">Get ready to join</p>
                   <p className="">60k+ Users</p>
                   <div className="flex relative">
-                    <div className="image-wrapper">
+                    <div className="image-wrapper relative z-10">
                       <Image
                         src={"/images/avatar1.png"}
                         width={152}
                         height={44}
                         alt="avatar1"
                         unoptimized={true}
-                        className="object-cover absolute z-10"
+                        className="object-cover h-full! w-full!"
                       />
                     </div>
-                    <div className="image-wrapper">
+                    <div className="image-wrapper relative z-8 ml-[-15px]">
                       <Image
                         src={"/images/avatar2.png"}
                         width={152}
                         height={44}
                         alt="avatar2"
                         unoptimized={true}
-                        className="object-cover absolute z-8 ml-[-15px]"
+                        className="object-cover h-full! w-full!"
                       />
                     </div>
-                    <div className="image-wrapper">
+                    <div className="image-wrapper relative z-6 ml-[-15px]">
                       <Image
                         src={"/images/avatar3.png"}
                         width={152}
                         height={44}
                         alt="avatar3"
                         unoptimized={true}
-                        className="object-cover absolute z-6 ml-[-30px]"
+                        className="object-cover h-full! w-full!"
                       />
                     </div>
-                    <div className="image-wrapper">
+                    <div className="image-wrapper relative z-4 ml-[-15px]">
                       <Image
                         src={"/images/avatar4.png"}
                         width={152}
                         height={44}
                         alt="avatar4"
                         unoptimized={true}
-                        className="object-cover absolute z-4 ml-[-45px]"
+                        className="object-cover h-full! w-full!"
                       />
                     </div>
-                    <div className="image-wrapper">
+                    <div className="image-wrapper relative z-2 ml-[-15px]">
                       <Image
                         src={"/images/avatar5.png"}
                         width={152}
                         height={44}
                         alt="avatar5"
                         unoptimized={true}
-                        className="object-cover absolute z-2 ml-[-60px]"
+                        className="object-cover h-full! w-full!"
                       />
                     </div>
                   </div>

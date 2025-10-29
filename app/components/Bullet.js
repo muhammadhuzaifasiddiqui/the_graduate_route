@@ -13,7 +13,7 @@ const Bullet = ({ Para = "null" }) => {
             height={9}
             alt="ellipse-circle"
             unoptimized={true}
-            className="object-cover"
+            className="h-full! w-full! object-cover"
           />
         </div>
         <p className={`font-the-bold leading-[120%] sm:leading-[175%]`}>

@@ -287,8 +287,7 @@ h6 {
 
 /* navbar */
 .navbar .logo-wrapper {
-  height: 69px;
-  width: 75px;
+  max-height: 69px;
 }
 
 .navbar-menu {

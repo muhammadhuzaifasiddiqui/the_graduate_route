@@ -69,19 +69,19 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar absolute top-[17px] w-full z-10" id="navbar">
+      <nav className="navbar absolute top-[17px] px-5 w-full z-10" id="navbar">
         <div className="w-full container mx-auto relative">
           <div className="bg-navbar px-5 flex justify-between items-center rounded-[30px]">
-            <div className="logo-wrapper cursor-pointer">
+            <Link href="#" className="logo-wrapper cursor-pointer">
               <Image
                 src={"/images/graduate-rout-logo.svg"}
                 width={151}
                 height={23}
                 alt="logo"
                 unoptimized={true}
-                className=""
+                className="h-full! w-full!"
               />
-            </div>
+            </Link>
             <div className="lg:flex hidden navbar-menu items-center justify-center gap-6">
               <Link className={getLinkClasses("#navbar")} href="#navbar">
                 Home

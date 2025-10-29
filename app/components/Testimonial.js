@@ -13,7 +13,7 @@ const Testimonials = ({ imgSrc = ``, Para, ClinetName, ClientPaltform }) => {
             height={52}
             alt={`Testimonial from ${ClinetName || "client"}`}
             unoptimized={true}
-            className="object-cover"
+            className="w-full! h-full! object-cover"
           />
         </div>
         <div>
