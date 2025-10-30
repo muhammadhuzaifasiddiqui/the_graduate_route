@@ -269,7 +269,7 @@ export default function Home() {
                     <div className="image-wrapper relative z-10">
                       <Image
                         src={"/images/avatar1.png"}
-                        width={152}
+                        width={44}
                         height={44}
                         alt="avatar1"
                         unoptimized={true}
@@ -279,7 +279,7 @@ export default function Home() {
                     <div className="image-wrapper relative z-8 ml-[-15px]">
                       <Image
                         src={"/images/avatar2.png"}
-                        width={152}
+                        width={44}
                         height={44}
                         alt="avatar2"
                         unoptimized={true}
@@ -289,7 +289,7 @@ export default function Home() {
                     <div className="image-wrapper relative z-6 ml-[-15px]">
                       <Image
                         src={"/images/avatar3.png"}
-                        width={152}
+                        width={44}
                         height={44}
                         alt="avatar3"
                         unoptimized={true}
@@ -299,7 +299,7 @@ export default function Home() {
                     <div className="image-wrapper relative z-4 ml-[-15px]">
                       <Image
                         src={"/images/avatar4.png"}
-                        width={152}
+                        width={44}
                         height={44}
                         alt="avatar4"
                         unoptimized={true}
@@ -309,7 +309,7 @@ export default function Home() {
                     <div className="image-wrapper relative z-2 ml-[-15px]">
                       <Image
                         src={"/images/avatar5.png"}
-                        width={152}
+                        width={44}
                         height={44}
                         alt="avatar5"
                         unoptimized={true}
@@ -1204,7 +1204,7 @@ export default function Home() {
           <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-3">
               <div className="flex w-full lg:w-[30%]">
-                <div className="flex flex-col w-[75%] sm:w-[55%] md:w-[35%] xl:w-[80%]">
+                <div className="flex flex-col w-[75%] sm:w-[55%] md:w-[35%]  lg:w-[90%]">
                   <div className="logo-wrapper cursor-pointer">
                     <Image
                       src={"/images/graduate-rout-logo.svg"}
@@ -1215,7 +1215,7 @@ export default function Home() {
                       className="object-cover"
                     />
                   </div>
-                  <p className="font-medium text-light-gray mt-8 leading-24 lg:max-w-[]">
+                  <p className="font-medium text-light-gray mt-8 leading-24">
                     Design amazing digital experiences that create more happy in
                     the world.
                   </p>

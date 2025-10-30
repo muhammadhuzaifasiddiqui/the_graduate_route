@@ -287,6 +287,7 @@ h6 {
 }
 
 .hero-section .image-wrapper {
+  width: 44px;
   min-width: 44px;
   height: 44px;
 }
@@ -302,6 +303,7 @@ h6 {
 /* HELPING-SECTION */
 
 .helping-section .image-wrapper {
+  width: 41px;
   min-width: 41px;
   height: 41px;
   border-radius: 10px;
@@ -309,8 +311,8 @@ h6 {
 
 /* TESTIMONIAL-SECTION */
 .testimonial-section .image-wrapper {
-  min-width: 52px;
   width: 52px;
+  height: 52px;
 }
 
 /* INSTAGRAM-SECTION */
@@ -322,7 +324,7 @@ h6 {
 /* PROCESS-SECTION */
 .process-section .image-wrapper {
   height: 32px;
-  min-width: 32px;
+  width: 32px;
 }
 
 /* blog-section */
@@ -457,11 +459,11 @@ h6 {
   }
 
   h1 {
-    font-size: 45px;
+    font-size: 40px;
   }
   /* 44 */
   h2 {
-    font-size: 40px;
+    font-size: 36px;
   }
   /* 32 */
   h3 {
@@ -470,23 +472,23 @@ h6 {
   /* 28 */
   /* 28 */
   h4 {
-    font-size: 24px;
+    font-size: 23px;
   }
   /* 20 */
   h5 {
-    font-size: 18px;
+    font-size: 19px;
   }
   /* 18 */
   h6 {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .fs-18 {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .fs-19 {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .pt-120 {
@@ -601,11 +603,11 @@ h6 {
   }
 
   h1 {
-    font-size: 42px;
+    font-size: 36px;
   }
   /* 44 */
   h2 {
-    font-size: 36px;
+    font-size: 30px;
   }
   /* 32 */
   h3 {
@@ -613,15 +615,15 @@ h6 {
   }
   /* 28 */
   h4 {
-    font-size: 24px;
+    font-size: 22px;
   }
   /* 20 */
   h5 {
-    font-size: 17px;
+    font-size: 18px;
   }
   /* 18 */
   h6 {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .fs-18 {
@@ -695,6 +697,7 @@ h6 {
   }
 
   .hero-section .image-wrapper {
+    width: 35px;
     min-width: 35px;
     height: 35px;
   }
@@ -712,6 +715,7 @@ h6 {
   }
 
   .helping-section .image-wrapper {
+    width: 37px;
     min-width: 37px;
     height: 37px;
   }
@@ -760,27 +764,27 @@ h6 {
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 34px;
   }
   /* 44 */
   h2 {
-    font-size: 34px;
+    font-size: 28px;
   }
   /* 32 */
   h3 {
-    font-size: 25px;
+    font-size: 24px;
   }
   /* 28 */
   h4 {
-    font-size: 22px;
+    font-size: 21px;
   }
   /* 20 */
   h5 {
-    font-size: 16px;
+    font-size: 17px;
   }
   /* 18 */
   h6 {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .fs-18 {
@@ -852,11 +856,13 @@ h6 {
   }
 
   .hero-section .image-wrapper {
+    min-width: 35px;
     width: 35px;
     height: 35px;
   }
 
   .helping-section .image-wrapper {
+    width: 37px;
     min-width: 37px;
     height: 37px;
   }
@@ -917,11 +923,11 @@ h6 {
   }
 
   h1 {
-    font-size: 38px;
+    font-size: 32px;
   }
   /* 44 */
   h2 {
-    font-size: 30px;
+    font-size: 28px;
   }
   /* 32 */
   h3 {
@@ -933,7 +939,7 @@ h6 {
   }
   /* 20 */
   h5 {
-    font-size: 14px;
+    font-size: 16px;
   }
   /* 18 */
   h6 {
@@ -1009,6 +1015,7 @@ h6 {
   }
 
   .hero-section .image-wrapper {
+    width: 35px;
     min-width: 35px;
     height: 35px;
   }
@@ -1018,6 +1025,7 @@ h6 {
   }
 
   .helping-section .image-wrapper {
+    width: 37px;
     min-width: 37px;
     height: 37px;
   }
