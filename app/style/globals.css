@@ -994,7 +994,7 @@ h6 {
   }
 
   .navbar .logo-wrapper {
-    max-height: 54px;
+    height: 54px;
   }
 
   .hero-wrapper {
@@ -1030,4 +1030,8 @@ h6 {
     padding-top: 48px;
     padding-bottom: 48px;
   }
+}
+
+@media screen and (max-width: 374.97) {
+
 }

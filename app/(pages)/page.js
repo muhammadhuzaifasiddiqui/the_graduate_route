@@ -154,7 +154,7 @@ export default function Home() {
       <Navbar />
 
       {/* HERO-SECTION */}
-      <section className="hero-section relative px-3 md:px-4 lg:px-3 md:px-4 lg:px-5">
+      <section className="hero-section relative px-3 md:px-4 lg:px-5">
         <Image
           src={"/images/H3.png"}
           width={69}
@@ -339,7 +339,7 @@ export default function Home() {
             <h3 className="font-the-bold text-center leading-[100%]">
               Our <span className="text-brown">Statistics</span>
             </h3>
-            <div className="grid grid-flow-row mt-50 lg:grid-flow-col grid-cols-2 lg:grid-cols-4 justify-center lg:justify-between gap-5 lg:gap-4 xl:gap-15">
+            <div className="grid grid-flow-row mt-50 lg:grid-flow-col grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center lg:justify-between gap-5 lg:gap-4 xl:gap-15">
               <StatisticsCounter
                 // This value (6.4) will show one decimal place.
                 endCount={6.4}
