@@ -422,7 +422,7 @@ export default function Home() {
                 HOW IT <span className="text-brown">WORKS</span>
               </h2>
             </div>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-5 lg:gap-4 gap-3 xl:mt-10 lg:mt-8 md:mt-6 mt-4">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-5 lg:gap-4 gap-3 mt-50">
               <ProcessCards
                 Title="Discovery & Profile Assessment"
                 Para="We evaluate your background, goals, strengths & gaps."

@@ -18,8 +18,8 @@ const ProcessCards = ({ Title = "null", Para = "null" }) => {
             />
           </div>
         </div>
-        <h5 className="font-the-bold xl:mt-6 lg:mt-5 md:mt-4 mt-3">{Title}</h5>
-        <p className="font-semibold leading-[130%] lg:leading-[157%] xl:mt-4 lg:mt-3 mt-2 uppercase">
+        <h5 className="font-the-bold xl:mt-6 mt-5">{Title}</h5>
+        <p className="font-semibold leading-[130%] lg:leading-[157%] xl:mt-4 lg:mt-3 mt-2.5 uppercase">
           {Para}
         </p>
       </div>
