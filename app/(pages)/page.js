@@ -844,7 +844,7 @@ export default function Home() {
           unoptimized={true}
           className="absolute -z-10 left-auto right-0 lg:top-[15%] top-[18%] transform lg:-translate-y-15% -translate-y-18% w-[90px]! lg:w-[110px]!"
         />
-        <div className="container max-w-[100%] md:max-w-[80%] xl:max-w-[70%] mx-auto">
+        <div className="container max-w-[100%] md:max-w-[90%] xl:max-w-[70%] mx-auto">
           <div className="flex justify-center">
             <div className="flex flex-col items-center max-w-[100%] sm:max-w-[90%] md:max-w-[75%] xl:max-w-[55%] gap-3">
               <Bullets bullets="Take the Quiz" />
@@ -1015,7 +1015,7 @@ export default function Home() {
           unoptimized={true}
           className="absolute -z-10 left-0 right-auto top-[30px] lg:top-[0px] w-[50px]! lg:w-[66px]!"
         />
-        <div className="container max-w-[100%] md:max-w-[80%] xl:max-w-[70%] mx-auto">
+        <div className="container max-w-[100%] md:max-w-[90%] xl:max-w-[70%] mx-auto">
           <div className="flex flex-col items-center gap-3">
             <Bullets bullets="FAQS" />
             <h2 className="text-center uppercase justify-center font-the-bold leading-[100%]">
