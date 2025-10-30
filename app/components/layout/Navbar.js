@@ -69,7 +69,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar absolute top-[17px] px-5 w-full z-10" id="navbar">
+      <nav className="navbar absolute top-[17px] px-3 md:px-4 lg:px-5 w-full z-10" id="navbar">
         <div className="w-full container mx-auto relative">
           <div className="bg-navbar flex justify-between items-center rounded-[30px]">
             <Link href="#" className="logo-wrapper cursor-pointer">
@@ -156,7 +156,7 @@ const Navbar = () => {
                 height: isOpen ? "auto" : 0,
               }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden px-5 w-full container mx-auto absolute mt-4 left-0 right-0 z-10 overflow-hidden"
+              className="lg:hidden px-3 md:px-4 lg:px-5 w-full container mx-auto absolute mt-4 left-0 right-0 z-10 overflow-hidden"
             >
               <ul className="flex flex-col items-start px-[20px] py-[10px] overflow-hidden bg-[#ffff] font-normal rounded-[12px]">
                 <li className="px-[6px] py-[10px]">

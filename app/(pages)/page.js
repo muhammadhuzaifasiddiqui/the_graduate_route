@@ -154,7 +154,7 @@ export default function Home() {
       <Navbar />
 
       {/* HERO-SECTION */}
-      <section className="hero-section relative px-5">
+      <section className="hero-section relative px-3 md:px-4 lg:px-3 md:px-4 lg:px-5">
         <Image
           src={"/images/H3.png"}
           width={69}
@@ -325,7 +325,7 @@ export default function Home() {
       </section>
 
       {/* STATISTICS-SECTION */}
-      <section className="statistics-section px-5 pt-120 relative">
+      <section className="statistics-section px-3 md:px-4 lg:px-5 pt-120 relative">
         <Image
           src={"/images/edged-Shape.png"}
           width={85}
@@ -375,7 +375,7 @@ export default function Home() {
       </section>
 
       {/* HELPING-SECTION */}
-      <section className="helping-section px-5 pt-120">
+      <section className="helping-section px-3 md:px-4 lg:px-5 pt-120">
         <div className="container mx-auto">
           <Bullets bullets="WHAT WE DO" />
           <h2 className="font-the-bold leading-[100%]">
@@ -405,7 +405,7 @@ export default function Home() {
       </section>
 
       {/* PROCESS-SECTION */}
-      <section className="process-section px-5 pt-120 relative">
+      <section className="process-section px-3 md:px-4 lg:px-5 pt-120 relative">
         <Image
           src={"/images/excel.png"}
           width={125}
@@ -470,7 +470,7 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIAL-SECTION */}
-      <section className="testimonial-section px-5 pt-120">
+      <section className="testimonial-section px-3 md:px-4 lg:px-5 pt-120">
         <div className="container mx-auto">
           {/* Title and Header Area */}
           <Bullets bullets="SUCCESS STORIES" />
@@ -778,7 +778,7 @@ export default function Home() {
       </section>
 
       {/* BLOG-SECTION */}
-      <section className="blog-section pt-120 px-5 relative">
+      <section className="blog-section pt-120 px-3 md:px-4 lg:px-5 relative">
         <Image
           src={"/images/flower.png"}
           width={114}
@@ -835,7 +835,7 @@ export default function Home() {
       </section>
 
       {/* TAKE-THE-QUIZ-SECTION */}
-      <section className="take-the-quiz-section pt-120 px-5 relative">
+      <section className="take-the-quiz-section pt-120 px-3 md:px-4 lg:px-5 relative">
         <Image
           src={"/images/sharp-shape.png"}
           width={114}
@@ -954,7 +954,7 @@ export default function Home() {
       </section>
 
       {/* PRICE-SECTION */}
-      <section className="price-section pt-120 px-5">
+      <section className="price-section pt-120 px-3 md:px-4 lg:px-5">
         <div className="container mx-auto relative">
           <Image
             src={"/images/Vector-box.png"}
@@ -1006,7 +1006,7 @@ export default function Home() {
       </section>
 
       {/* FAQS-SECTION */}
-      <section className="faqs-section px-5 pt-120 relative">
+      <section className="faqs-section px-3 md:px-4 lg:px-5 pt-120 relative">
         <Image
           src={"/images/Shape-shape.png"}
           width={86}
@@ -1038,7 +1038,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT-SECTION */}
-      <section className="contact-section pt-120 px-5 relative">
+      <section className="contact-section pt-120 px-3 md:px-4 lg:px-5 relative">
         <Image
           src={"/images/flower.png"}
           width={86}
@@ -1200,7 +1200,7 @@ export default function Home() {
 
       {/* FOOTER-SECTION */}
       <footer className="footer-section pt-120">
-        <div className="footer-wrapper px-5">
+        <div className="footer-wrapper px-3 md:px-4 lg:px-5">
           <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-3">
               <div className="flex w-full lg:w-[30%]">
