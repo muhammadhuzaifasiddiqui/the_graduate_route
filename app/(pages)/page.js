@@ -81,15 +81,16 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
       ${isOpen ? "bg-[#6C8E69]" : "bg-white"}
     `}
     >
+
       <button
         onClick={onToggle}
         // Corrected py-[20] to py-[20px] for valid Tailwind class
-        className={`cursor-pointer flex w-full justify-between leading-[100%] items-center text-left px-[24px] py-[20px]
+        className={`cursor-pointer flex w-full justify-between items-center! leading-22 text-left faq-head
         `}
         aria-expanded={isOpen}
       >
         <p
-          className={`cursor-pointer font-the-bold leading-[100%] fs-18
+          className={`cursor-pointer font-the-bold leading-22 fs-18
             ${isOpen ? "text-white" : "text-black"}
           `}
         >
@@ -97,7 +98,7 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
         </p>
         <ChevronDown
           className={`
-            cursor-pointer stroke-black transition-all duration-500
+            cursor-pointer leading-22 stroke-black transition-all duration-500
             ${isOpen ? "rotate-180 stroke-white" : "rotate-0"}
           `}
         />
@@ -111,7 +112,7 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
         <p
           ref={contentRef}
           className={`
-            cursor-pointer text-white leading-20 px-[24px] pb-[20px]
+            cursor-pointer text-white leading-20 faq-bottom
             ${isOpen ? "opacity-100 pt-0" : "opacity-0 pt-0"}
           `}
         >
@@ -161,7 +162,7 @@ export default function Home() {
           height={69}
           alt="H3"
           unoptimized={true}
-          className="absolute right-0 xl:top-[200px] lg:top-[120px] sm:top-[550px] top-[600px] w-[68px]! lg:w-[75px]!"
+          className="absolute -z-10 right-0 xl:top-[200px] lg:top-[120px] sm:top-[550px] top-[600px] w-[68px]! lg:w-[75px]!"
         />
         <div className="hero-wrapper">
           <div className="container mx-auto">
@@ -339,7 +340,7 @@ export default function Home() {
             <h3 className="font-the-bold text-center leading-[100%]">
               Our <span className="text-brown">Statistics</span>
             </h3>
-            <div className="grid grid-flow-row mt-50 lg:grid-flow-col grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-center lg:justify-between gap-5 lg:gap-4 xl:gap-15">
+            <div className="grid grid-flow-row mt-50 lg:grid-flow-col grid-cols-2 lg:grid-cols-4 justify-center lg:justify-between gap-5 lg:gap-4 xl:gap-15">
               <StatisticsCounter
                 // This value (6.4) will show one decimal place.
                 endCount={6.4}
@@ -443,7 +444,8 @@ export default function Home() {
                 Title="Decision & Next Steps"
                 Para="You accept an offer, we help with visa, transitions, and visionary next steps."
               />
-              <div className="flex flex-col p-25 py-15.5! md:py-0 justify-center items-center bg-dark-green rounded-[20px] gap-3">
+
+              <div className="flex flex-col p-25 py-15! justify-center items-center bg-dark-green rounded-[20px] gap-3">
                 <div className="flex w-full group">
                   <Link
                     href="#"

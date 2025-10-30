@@ -158,7 +158,7 @@ const Navbar = () => {
               exit={{ opacity: 0, height: 0 }}
               className="lg:hidden px-3 md:px-4 lg:px-5 w-full container mx-auto absolute mt-4 left-0 right-0 z-10 overflow-hidden"
             >
-              <ul className="flex flex-col items-start px-[20px] py-[10px] overflow-hidden bg-[#ffff] font-normal rounded-[12px]">
+              <ul className="flex flex-col items-start px-[12px] md:px-[16px] lg:px-[20px] py-[10px] overflow-hidden bg-[#ffff] font-normal rounded-[12px]">
                 <li className="px-[6px] py-[10px]">
                   <Link
                     href={"/"}
