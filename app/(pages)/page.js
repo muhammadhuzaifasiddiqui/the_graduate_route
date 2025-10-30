@@ -81,7 +81,6 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
       ${isOpen ? "bg-[#6C8E69]" : "bg-white"}
     `}
     >
-
       <button
         onClick={onToggle}
         // Corrected py-[20] to py-[20px] for valid Tailwind class
@@ -131,10 +130,10 @@ export default function Home() {
     { id: "option3", label: "Option 3" },
     { id: "option4", label: "Option 4" },
   ];
+
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
   };
-  const swiperRef = useRef(null);
   const handlePrev = () => {
     swiperRef.current?.slidePrev();
   };
@@ -149,6 +148,39 @@ export default function Home() {
   const handleToggle = (id) => {
     setActiveIndex(id === activeIndex ? null : id);
   };
+
+  const [testimonials, setTestimonials] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const swiperRef = React.useRef(null);
+
+  useEffect(() => {
+    const fetchTestimonials = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+
+        const response = await fetch(
+          "https://api-the-graduate-route.wasmer.app/wp-json/wp/v2/testimonial?_embed"
+        );
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log("Fetched testimonials:", data);
+        setTestimonials(data);
+      } catch (err) {
+        console.error("Error fetching testimonials:", err);
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchTestimonials();
+  }, []);
 
   return (
     <>
@@ -527,127 +559,82 @@ export default function Home() {
 
           {/* Swiper Slider */}
           <div className="testimonial-slider-wrapper w-full xl:mt-12.5 lg:mt-9 md:mt-7 mt-5 overflow-hidden">
-            <Swiper
-              // 3. Use onSwiper to save the instance to the ref
-              onSwiper={(swiper) => {
-                swiperRef.current = swiper;
-              }}
-              // 4. Include the modules being used
-              spaceBetween={12}
-              slidesPerView={4}
-              // centeredSlides={true}
-              breakpoints={{
-                1399.97: {
-                  slidesPerView: 3,
-                  // centeredSlides: true,
-                  spaceBetween: 20,
-                },
-                1199.97: {
-                  slidesPerView: 3,
-                  // centeredSlides: true,
-                  spaceBetween: 16,
-                },
-                1023.97: {
-                  slidesPerView: 3,
-                  // centeredSlides: true,
-                  spaceBetween: 16,
-                },
-                767.97: {
-                  slidesPerView: 2,
-                  // centeredSlides: true,
-                  spaceBetween: 12,
-                },
-                575.97: {
-                  slidesPerView: 1,
-                  // centeredSlides: true,
-                  spaceBetween: 12,
-                },
-                399.97: {
-                  slidesPerView: 1,
-                  // centeredSlides: true,
-                  spaceBetween: 12,
-                },
-                319.97: {
-                  slidesPerView: 1,
-                  // centeredSlides: true,
-                  spaceBetween: 12,
-                },
-              }}
-            >
-              {/* Swiper Slides */}
-              <SwiperSlide>
-                <Testimonials
-                  imgSrc={`/images/testimonial-clara.png`}
-                  Para={`"Thank you for educating me and my Spotify
-                        colleague today. You were amazing. We area pretty
-                        engaged community but I have rarely seen such a positive
-                        response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them."`}
-                  ClinetName={`Clara`}
-                  ClientPaltform={`Spotify`}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Testimonials
-                  imgSrc={`/images/testimonial-james.png`}
-                  Para={`"Thank you for educating me and my Spotify
-                        colleague today. You were amazing. We area pretty
-                        engaged community but I have rarely seen such a positive
-                        response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them."`}
-                  ClinetName={`James`}
-                  ClientPaltform={`Binance`}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Testimonials
-                  imgSrc={`/images/testimonial-jessi.png`}
-                  Para={`"Thank you for educating me and my Spotify
-                        colleague today. You were amazing. We area pretty
-                        engaged community but I have rarely seen such a positive
-                        response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them."`}
-                  ClinetName={`Jesica`}
-                  ClientPaltform={`LinkedIN`}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Testimonials
-                  imgSrc={`/images/testimonial-clara.png`}
-                  Para={`"Thank you for educating me and my Spotify
-                        colleague today. You were amazing. We area pretty
-                        engaged community but I have rarely seen such a positive
-                        response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them."`}
-                  ClinetName={`Clara`}
-                  ClientPaltform={`Spotify`}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Testimonials
-                  imgSrc={`/images/testimonial-james.png`}
-                  Para={`"Thank you for educating me and my Spotify
-                        colleague today. You were amazing. We area pretty
-                        engaged community but I have rarely seen such a positive
-                        response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them."`}
-                  ClinetName={`James`}
-                  ClientPaltform={`Binance`}
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Testimonials
-                  imgSrc={`/images/testimonial-jessi.png`}
-                  Para={`"Thank you for educating me and my Spotify
-                        colleague today. You were amazing. We area pretty
-                        engaged community but I have rarely seen such a positive
-                        response to a lecture. I don't know if you saw the
-                        internal comments but there were lots of them."`}
-                  ClinetName={`Jessi`}
-                  ClientPaltform={`LinkedIn`}
-                />
-              </SwiperSlide>
-            </Swiper>
+            {loading && (
+              <div className="text-center py-10">
+                <p>Loading testimonials...</p>
+              </div>
+            )}
+
+            {error && (
+              <div className="text-center py-10 text-red-500">
+                <p>Error loading testimonials: {error}</p>
+              </div>
+            )}
+
+            {!loading && !error && testimonials.length > 0 && (
+              <Swiper
+                onSwiper={(swiper) => {
+                  swiperRef.current = swiper;
+                }}
+                spaceBetween={12}
+                slidesPerView={4}
+                breakpoints={{
+                  1399.97: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                  },
+                  1199.97: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+                  },
+                  1023.97: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+                  },
+                  767.97: {
+                    slidesPerView: 2,
+                    spaceBetween: 12,
+                  },
+                  575.97: {
+                    slidesPerView: 1,
+                    spaceBetween: 12,
+                  },
+                  399.97: {
+                    slidesPerView: 1,
+                    spaceBetween: 12,
+                  },
+                  319.97: {
+                    slidesPerView: 1,
+                    spaceBetween: 12,
+                  },
+                }}
+              >
+                {testimonials.map((testimonial) => (
+                  <SwiperSlide key={testimonial.id}>
+                    <Testimonials
+                      imgSrc={
+                        testimonial.acf?.image ||
+                        testimonial.featured_media_url ||
+                        "/images/default-avatar.png"
+                      }
+                      Para={
+                        testimonial.acf?.testimonial_text ||
+                        testimonial.title?.rendered ||
+                        ""
+                      }
+                      ClinetName={testimonial.acf?.client_name || ""}
+                      ClientPaltform={testimonial.acf?.platform || ""}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            )}
+
+            {!loading && !error && testimonials.length === 0 && (
+              <div className="text-center py-10">
+                <p>No testimonials available.</p>
+              </div>
+            )}
           </div>
 
           {/* Navigation Buttons - Added z-10 and cursor-pointer */}
@@ -951,7 +938,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-
         </div>
       </section>
 
