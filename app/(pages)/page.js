@@ -149,6 +149,9 @@ export default function Home() {
     setActiveIndex(id === activeIndex ? null : id);
   };
 
+
+
+  // testimonial map
   const [testimonials, setTestimonials] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
