@@ -122,6 +122,7 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
   );
 };
 
+
 export default function Home() {
   const [selectedOption, setSelectedOption] = useState("option1");
   const options = [
