@@ -134,13 +134,15 @@ export default function Home() {
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
   };
+
+  const swiperRef = useRef(null);
+
   const handlePrev = () => {
     swiperRef.current?.slidePrev();
   };
   const handleNext = () => {
     swiperRef.current?.slideNext();
   };
-  const swiperRef = useRef(null);
 
   // State to manage the currently open accordion item's ID
   const [activeIndex, setActiveIndex] = useState(null);
