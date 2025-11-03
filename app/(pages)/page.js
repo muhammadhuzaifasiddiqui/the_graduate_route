@@ -131,7 +131,6 @@ export default function Home() {
     { id: "option3", label: "Option 3" },
     { id: "option4", label: "Option 4" },
   ];
-
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
   };
