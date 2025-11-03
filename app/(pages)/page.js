@@ -79,7 +79,7 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
     <div
       className={`cursor-pointer overflow-hidden rounded-[12px] transition-all duration-500 ease-in-out
       ${isOpen ? "bg-[#6C8E69]" : "bg-white"}
-    `}
+      `}
     >
       <button
         onClick={onToggle}
@@ -140,6 +140,7 @@ export default function Home() {
   const handleNext = () => {
     swiperRef.current?.slideNext();
   };
+  const swiperRef = useRef(null);
 
   // State to manage the currently open accordion item's ID
   const [activeIndex, setActiveIndex] = useState(null);
@@ -148,42 +149,6 @@ export default function Home() {
   const handleToggle = (id) => {
     setActiveIndex(id === activeIndex ? null : id);
   };
-
-
-
-  // testimonial map
-  const [testimonials, setTestimonials] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const swiperRef = React.useRef(null);
-
-  useEffect(() => {
-    const fetchTestimonials = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-
-        const response = await fetch(
-          "https://api-the-graduate-route.wasmer.app/wp-json/wp/v2/testimonial?_embed"
-        );
-
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const data = await response.json();
-        console.log("Fetched testimonials:", data);
-        setTestimonials(data);
-      } catch (err) {
-        console.error("Error fetching testimonials:", err);
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchTestimonials();
-  }, []);
 
   return (
     <>
@@ -562,82 +527,92 @@ export default function Home() {
 
           {/* Swiper Slider */}
           <div className="testimonial-slider-wrapper w-full xl:mt-12.5 lg:mt-9 md:mt-7 mt-5 overflow-hidden">
-            {loading && (
-              <div className="text-center py-10">
-                <p>Loading testimonials...</p>
-              </div>
-            )}
-
-            {error && (
-              <div className="text-center py-10 text-red-500">
-                <p>Error loading testimonials: {error}</p>
-              </div>
-            )}
-
-            {!loading && !error && testimonials.length > 0 && (
-              <Swiper
-                onSwiper={(swiper) => {
-                  swiperRef.current = swiper;
-                }}
-                spaceBetween={12}
-                slidesPerView={4}
-                breakpoints={{
-                  1399.97: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                  },
-                  1199.97: {
-                    slidesPerView: 3,
-                    spaceBetween: 16,
-                  },
-                  1023.97: {
-                    slidesPerView: 3,
-                    spaceBetween: 16,
-                  },
-                  767.97: {
-                    slidesPerView: 2,
-                    spaceBetween: 12,
-                  },
-                  575.97: {
-                    slidesPerView: 1,
-                    spaceBetween: 12,
-                  },
-                  399.97: {
-                    slidesPerView: 1,
-                    spaceBetween: 12,
-                  },
-                  319.97: {
-                    slidesPerView: 1,
-                    spaceBetween: 12,
-                  },
-                }}
-              >
-                {testimonials.map((testimonial) => (
-                  <SwiperSlide key={testimonial.id}>
-                    <Testimonials
-                      imgSrc={
-                        testimonial.acf?.image ||
-                        testimonial.featured_media_url ||
-                        "/images/default-avatar.png"
-                      }
-                      Para={
-                        testimonial.acf?.testimonial_text ||
-                        testimonial.title?.rendered ||
-                        ""
-                      }
-                      ClinetName={testimonial.acf?.client_name || ""}
-                      ClientPaltform={testimonial.acf?.platform || ""}
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            )}
-
-            {!loading && !error && testimonials.length === 0 && (
-              <div className="text-center py-10">
-                <p>No testimonials available.</p>
-              </div>
-            )}
+            <Swiper
+              onSwiper={(swiper) => {
+                swiperRef.current = swiper;
+              }}
+              spaceBetween={12}
+              slidesPerView={4}
+              breakpoints={{
+                1399.97: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+                1199.97: {
+                  slidesPerView: 3,
+                  spaceBetween: 16,
+                },
+                1023.97: {
+                  slidesPerView: 3,
+                  spaceBetween: 16,
+                },
+                767.97: {
+                  slidesPerView: 2,
+                  spaceBetween: 12,
+                },
+                575.97: {
+                  slidesPerView: 1,
+                  spaceBetween: 12,
+                },
+                399.97: {
+                  slidesPerView: 1,
+                  spaceBetween: 12,
+                },
+                319.97: {
+                  slidesPerView: 1,
+                  spaceBetween: 12,
+                },
+              }}
+            >
+              <SwiperSlide>
+                <Testimonials
+                  imgSrc="/images/testimonial-clara.png"
+                  Para="The Graduate Route transformed my scholarship application process. Their personalized guidance and expert insights helped me secure a fully-funded scholarship to my dream university. I couldn't have done it without them!"
+                  ClinetName="Clara"
+                  ClientPaltform="Spotify"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Testimonials
+                  imgSrc="/images/testimonial-james.png"
+                  Para="The Graduate Route transformed my scholarship application process. Their personalized guidance and expert insights helped me secure a fully-funded scholarship to my dream university. I couldn't have done it without them!"
+                  ClinetName="James"
+                  ClientPaltform="Spotify"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Testimonials
+                  imgSrc="/images/testimonial-jessi.png"
+                  Para="The Graduate Route transformed my scholarship application process. Their personalized guidance and expert insights helped me secure a fully-funded scholarship to my dream university. I couldn't have done it without them!"
+                  ClinetName="Jessi"
+                  ClientPaltform="Spotify"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Testimonials
+                  imgSrc="/images/testimonial-clara.png"
+                  Para="The Graduate Route transformed my scholarship application process. Their personalized guidance and expert insights helped me secure a fully-funded scholarship to my dream university. I couldn't have done it without them!"
+                  ClinetName="Clara"
+                  ClientPaltform="Spotify"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Testimonials
+                  imgSrc="/images/testimonial-james.png"
+                  Para="The Graduate Route transformed my scholarship application process. Their personalized guidance and expert insights helped me secure a fully-funded scholarship to my dream university. I couldn't have done it without them!"
+                  ClinetName="James"
+                  ClientPaltform="Spotify"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Testimonials
+                  imgSrc="/images/testimonial-jessi.png"
+                  Para="The Graduate Route transformed my scholarship application process. Their personalized guidance and expert insights helped me secure a fully-funded scholarship to my dream university. I couldn't have done it without them!"
+                  ClinetName="Jessi"
+                  ClientPaltform="Spotify"
+                />
+              </SwiperSlide>
+            </Swiper>
           </div>
 
           {/* Navigation Buttons - Added z-10 and cursor-pointer */}
