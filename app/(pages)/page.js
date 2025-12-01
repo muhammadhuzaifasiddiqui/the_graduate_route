@@ -15,6 +15,11 @@ import Bullets from "../components/Bullets";
 import Testimonials from "../components/Testimonial";
 import Blogs from "../components/Blogs";
 import Packages from "../components/Packages";
+import { useQuery } from "@tanstack/react-query";
+import { fetchTestimonials } from "../Services/fetchTestimonials";
+
+
+
 
 const faqData = [
   {
@@ -122,7 +127,6 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
   );
 };
 
-
 export default function Home() {
   const [selectedOption, setSelectedOption] = useState("option1");
   const options = [
@@ -154,6 +158,15 @@ export default function Home() {
 
   // Fetch data on the server
   // const testimonials = await getTestimonials();
+
+  const {
+    data: testimonials,
+    isLoading,
+    isError,
+  } = useQuery({
+    queryKey: ["testimonials"],
+    queryFn: fetchTestimonials,
+  });
 
   return (
     <>

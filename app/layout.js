@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./style/globals.css";
+import Providers from "./components/Providers"; 
 
 // Fustat
 const fustat = localFont({
@@ -73,7 +74,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${fustat.variable} ${helveticaNow.variable} ${segoeUi.variable} ${theBoldFont.variable} antialiased`}
       >
-        {children}
+        {/* 👇 Wrap the children with the provider */}
+        <Providers>
+            {children}
+        </Providers>
       </body>
     </html>
   );
