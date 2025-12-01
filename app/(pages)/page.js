@@ -18,10 +18,6 @@ import Packages from "../components/Packages";
 import { useQuery } from "@tanstack/react-query";
 import { fetchTestimonials } from "../Services/fetchTestimonials";
 
-
-
-
-
 const faqData = [
   {
     id: 1,
@@ -168,6 +164,9 @@ export default function Home() {
     queryKey: ["testimonials"],
     queryFn: fetchTestimonials,
   });
+
+  // 👇 Add this temporary log!
+  console.log("My Testimonial Data:", testimonials);
 
   return (
     <>
@@ -584,7 +583,26 @@ export default function Home() {
                 },
               }}
             >
-              <SwiperSlide>
+              {testimonials?.map((item) => {
+                const imageUrl =
+                  item._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
+                  "/images/default-avatar.png";
+                const rawText = item.content?.rendered || "";
+                const cleanText = rawText.replace(/<[^>]+>/g, ""); 
+
+                return (
+                  <SwiperSlide key={item.id}>
+                    <Testimonials
+                      imgSrc={imageUrl}
+                      Para={cleanText}
+                      ClinetName={item.title?.rendered}
+                      ClientPaltform="Spotify"
+                    />
+                  </SwiperSlide>
+                );
+              })}
+
+              {/* <SwiperSlide>
                 <Testimonials
                   imgSrc="/images/testimonial-clara.png"
                   Para="The Graduate Route transformed my scholarship application process. Their personalized guidance and expert insights helped me secure a fully-funded scholarship to my dream university. I couldn't have done it without them!"
@@ -631,7 +649,7 @@ export default function Home() {
                   ClinetName="Jessi"
                   ClientPaltform="Spotify"
                 />
-              </SwiperSlide>
+              </SwiperSlide> */}
             </Swiper>
           </div>
 
