@@ -15,7 +15,6 @@ import Bullets from "../components/Bullets";
 import Testimonials from "../components/Testimonial";
 import Blogs from "../components/Blogs";
 import Packages from "../components/Packages";
-// import TestimonialSlider from "../components/TestimonialSlider";
 
 const faqData = [
   {
@@ -123,25 +122,6 @@ const AccordionItem = ({ question, answer, isOpen, onToggle }) => {
   );
 };
 
-// Reusable Testimonial Slider Component
-// async function getTestimonials() {
-//   try {
-//     const res = await fetch(
-//       "https://api-the-graduate-route.wasmer.app/wp-json/wp/v2/testimonial?_embed",
-//       { cache: "no-store" }
-//     );
-
-//     if (!res.ok) {
-//       throw new Error("Failed to fetch data from API");
-//     }
-
-//     const testimonials = await res.json();
-//     return testimonials;
-//   } catch (error) {
-//     console.error("Error fetching testimonials:", error);
-//     return []; 
-//   }
-// }
 
 export default function Home() {
   const [selectedOption, setSelectedOption] = useState("option1");
